@@ -1,13 +1,15 @@
 import logo from './logo.svg';
-import './App.css';
+import './Landing.css';
 
-function App() {
+import Navbar from './MainNavbar.js';
+
+function Landing() {
   return (
-    <div className="App">
+    <div className="Landing">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello <code>src/App.js</code> hope this works!
+          Hello <code>src/Landing.js</code> hope this works!
         </p>
         <a
           className="App-link"
@@ -22,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default Landing;
