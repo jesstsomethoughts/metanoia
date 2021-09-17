@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Landing from './Landing';
 import reportWebVitals from './reportWebVitals';
 
+import { BrowserRouter } from 'react-router-dom';
+
+import App from './App.js';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Landing />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
