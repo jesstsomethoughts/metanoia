@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './Landing.css';
+import './css/Landing.css';
 
 import Navbar from './MainNavbar.js';
 
