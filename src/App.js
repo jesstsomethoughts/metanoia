@@ -1,27 +1,17 @@
-import logo from './logo.svg';
-import './Landing.css';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom'
 
 import Navbar from './MainNavbar.js';
+import Landing from'./Landing.js';
 
-function Landing() {
+function App () {
   return (
-    <div className="Landing">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello <code>src/Landing.js</code> hope this works!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">
+      <Switch>
+        <Route path="/" component={Landing} />
+      </Switch>
     </div>
   );
 }
 
-export default Landing;
+export default App;
