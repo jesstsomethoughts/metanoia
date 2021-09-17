@@ -8,7 +8,7 @@ import About from './pages/About.js';
 import Subscribe from './pages/Subscribe.js';
 
 function App () {
-  return (
+  return ( 
     <div className="App">
       <Navbar />
       <Switch>
