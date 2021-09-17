@@ -1,4 +1,4 @@
-import './Navbar.css';
+import './css/Navbar.css';
 
 import React from "react";
 import Button from 'react-bootstrap/Button';
@@ -72,10 +72,9 @@ class MainNavbar extends React.Component {
       <>
         <header className="header-global">
           <Navbar
-            className="navbar-main navbar-transparent navbar-light"
+            className="navbar-main"
             expand="lg"
-            id="navbar-main"
-            fixed="top"
+            sticky="top"
           >
               <Container>
                     <Navbar.Brand className="mr-lg-5" to="/">
