@@ -5,6 +5,8 @@ import Navbar from './MainNavbar.js';
 
 function Landing() {
   return (
+    <>
+    <Navbar />
     <div className="Landing">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -21,6 +23,7 @@ function Landing() {
         </a>
       </header>
     </div>
+    </>
   );
 }
 
