@@ -9,7 +9,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 
-import Logo from "./img/header_logo.png";
+import Logo from "../img/header_logo.png";
 // // import smallerLogo from "assets/img/brand/metanoia_newlogo.png"
 
 class MainNavbar extends React.Component {
