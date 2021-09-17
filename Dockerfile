@@ -1,4 +1,4 @@
-FROM node:16.8.0-alpine
+FROM node:14-alpine
 ENV NODE_ENV=production
 
 WORKDIR /metanoia
