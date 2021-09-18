@@ -1,4 +1,5 @@
 import './Navbar.css';
+import Headroom from "headroom.js";
 
 import React from "react";
 import Button from 'react-bootstrap/Button';
@@ -13,6 +14,12 @@ import Logo from "../img/header_logo.png";
 // // import smallerLogo from "assets/img/brand/metanoia_newlogo.png"
 
 class MainNavbar extends React.Component {
+  componentDidMount() {
+    let headroom = new Headroom(document.getElementById("navbar-main"));
+    // initialise
+    headroom.init();
+    window.addEventListener("resize", this.handleResize);
+  }
   componentDidMount() {
     window.addEventListener("resize", this.handleResize);
   }
@@ -45,7 +52,7 @@ class MainNavbar extends React.Component {
   render() {
     if (this.state.windowWidth < 992) {
       var a = (
-        <Nav className="navbar-main" activeKey="/home">
+        <Nav className="navbar-main justify-content-center" activeKey="/home">
             <Nav.Link
             className="nav-link-icon"
             href="subscribe" //
@@ -73,6 +80,7 @@ class MainNavbar extends React.Component {
         <header className="header-global">
           <Navbar
             className="navbar-main"
+            id="navbar-main"
             expand="lg"
             sticky="top"
           >
@@ -85,18 +93,18 @@ class MainNavbar extends React.Component {
                     </button> */}
                     <Nav navbar>
                         <Nav.Item>
-                            <Nav.Link href="/">
-                                <span>Home</span>
+                            <Nav.Link className="nav-link" href="/">
+                                <span className="nav-text">Home</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="about">
-                                <span>About</span>
+                                <span className="nav-text">About</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="contact">
-                                <span>Contact</span>
+                                <span className="nav-text">Contact</span>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
