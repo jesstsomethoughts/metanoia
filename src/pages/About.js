@@ -1,5 +1,18 @@
-import logo from '../img/metanoia_newlogo.png';
 import './About.css';
+
+// additional images/files
+import logo from '../img/metanoia_newlogo.png';
+import AsthaImage from '../img/astha.JPG';
+import JessicaImage from '../img/jessica.png';
+import TanveeImage from '../img/tanvee.png';
+import CassidyImage from '../img/cassidy.png';
+import BrettImage from '../img/brett.png';
+import JoyceImage from '../img/joyce.jpg';
+
+// react components
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 function About() {
   return (
@@ -18,6 +31,53 @@ function About() {
           and wherever they go!
         </p>
       </header>
+
+      {/* Team Intros */}
+      <Container>
+        <Row>
+          <Col>
+            <h2>
+              Our Team
+            </h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <img src={AsthaImage} className="team-image" />
+            <h5>Astha Rai</h5>
+            <h6>Co-Founder</h6>
+          </Col>
+          <Col>
+            <img src={JessicaImage} className="team-image" />
+            <h5>Jessica Li</h5>
+            <h6>Co-Founder</h6>
+          </Col>
+          <Col>
+            <img src={TanveeImage} className="team-image" />
+            <h5>Tanvee Joshi</h5>
+            <h6>Co-Founder</h6>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <img src={CassidyImage} className="team-image" />
+            <h5>Cassidy Cheng</h5>
+            <h6>Head of BD/Marketing</h6>
+          </Col>
+          <Col>
+            <img src={JoyceImage} className="team-image" />
+            <h5>Joyce Mok</h5>
+            <h6>Head of UI/UX</h6>
+          </Col>
+          <Col>
+            <img src={BrettImage} className="team-image" />
+            <h5>Brett Woltz</h5>
+            <h6>Head of Software + Web Development</h6>
+          </Col>
+        </Row>
+        
+      </Container>
     </div>
     </>
   );
