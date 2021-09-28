@@ -1,0 +1,22 @@
+{
+  "name": "metanoia",
+  "version": "1.0.0",
+  "description": "metanoia backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesstsomethoughts/metanoia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesstsomethoughts/metanoia/issues"
+  },
+  "homepage": "https://github.com/jesstsomethoughts/metanoia#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
