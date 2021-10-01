@@ -24,6 +24,10 @@
   color: black;
 }
 
+#main-description {
+  font-family: 'Acme';
+}
+
 .App-link {
   color: #61dafb;
 }

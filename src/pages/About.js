@@ -7,7 +7,7 @@ function About() {
     <div className="About">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p id = "main-description">
           Metanoia is an upcoming EdTech startup that seeks to put
           social issues at the forefront of children’s lives
           through our virtual interactive library. Our website
