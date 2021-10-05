@@ -65,12 +65,11 @@ class MainNavbar extends React.Component {
     } else {
       var b = (
         <Button
-          className="btn-neutral btn-icon"
-          color="default"
+          className="btn-light btn-icon"
           href="subscribe"
           id="subscribe"
         >
-          <span className="nav-link-inner--text text-danger">Subscribe</span>
+          <span className="nav-link-inner--text">SUBSCRIBE</span>
         </Button>
       );
     }

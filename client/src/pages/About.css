@@ -2,26 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+.about-para {
+  font-family: 'Acme';
+  margin: 10vh;
+  text-align: center;
 }
 
 #main-description {
@@ -39,4 +23,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.team-image {
+  width: 40vh;
+  border-radius: 50%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.team-pictures {
+  font-family: 'Acme';
+  text-align: center;
 }

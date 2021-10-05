@@ -1,16 +1,21 @@
 .navbar-main {
   background-color: #AC3791;
+  font-size: 3vh !important;
 }
   
 .nav-text {
   color: white;
   font-family: 'Acme';
+  padding-right: 30px;
 }
 
 .nav-link {
   text-decoration: none;
+  font-family: 'Acme';
 }
 
 .nav-link-inner--text {
   font-family: 'Acme';
+  font-size: 3vh !important;
+  color: #AC3791;
 }
