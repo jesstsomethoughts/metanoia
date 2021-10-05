@@ -16,12 +16,8 @@ function Contact() {
       <header className="App-header">
         {/* modal section */}
         <h4>Want to learn more?</h4>
-        <p>We care about your input and experiences</p>
+        <p>We care about your input and experiences!</p>
         {/* add inputs here: name, email address, type a message */}
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello, this is the contact page: <code>Contact.js</code>!
-        </p>
       </header>
 
       <Col>

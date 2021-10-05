@@ -9,8 +9,10 @@
 
 .nav-link {
   text-decoration: none;
+  font-family: 'Acme';
 }
 
 .nav-link-inner--text {
   font-family: 'Acme';
+  color: #AC3791;
 }
