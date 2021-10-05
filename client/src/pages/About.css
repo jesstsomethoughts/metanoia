@@ -5,6 +5,7 @@
 .about-para {
   font-family: 'Acme';
   margin: 10vh;
+  text-align: center;
 }
 
 #main-description {
