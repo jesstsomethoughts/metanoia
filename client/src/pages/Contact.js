@@ -50,7 +50,7 @@ function Contact() {
           <Form.Control as="textarea" rows={5} placeholder="Type a message..." />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Submit
+          Send Message
         </Button>
       </Form>
         {/* add inputs here: name, email address, type a message */}
