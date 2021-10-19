@@ -21,6 +21,7 @@
   "homepage": "https://github.com/jesstsomethoughts/metanoia#readme",
   "dependencies": {
     "concurrently": "^6.2.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react-horizontal-scrolling-menu": "^2.4.2"
   }
 }

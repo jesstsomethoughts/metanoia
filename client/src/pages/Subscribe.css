@@ -40,6 +40,7 @@
 #subscribeHeader {
   font-family: Acme;
   text-align: center;
+  margin-top: 10vh;
 }
 
 #description {
