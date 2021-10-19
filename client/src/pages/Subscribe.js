@@ -5,9 +5,9 @@ function Subscribe() {
   return (
     <>
     <div className="Subscribe">
-      <h1>Subscribe to Our Newsletter</h1>
+      <h1 id = "subscribeHeader">Subscribe to Our Newsletter!</h1>
       <div className="text-center mt-2 icont">
-        <h4>
+        <h4 id = "description">
           Fill out the form below to receive personalized book
           recommendations!
         </h4>

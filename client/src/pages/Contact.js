@@ -15,8 +15,8 @@ function Contact() {
     <div className="Contact">
       <header className="App-header">
         {/* modal section */}
-        <h4>Want to learn more?</h4>
-        <p>We care about your input and experiences</p>
+        <h4 id = "learn-more">Want to learn more?</h4>
+        <p id = "input">We care about your input and experiences!</p>
         {/* add inputs here: name, email address, type a message */}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
