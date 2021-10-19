@@ -52,7 +52,9 @@ class MainNavbar extends React.Component {
       <Navbar variant="dark" className="navbar-main" expand="lg" sticky="top">
         <Container>
           <Navbar.Brand className="mr-lg-5" to="/">
+            <Nav.Link className="nav-link mx-3" activeClassName="nav-link-active" href="/">
               <img style={{height: '60px'}} alt="..." src={Logo} />
+            </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle className="nav-toggle" aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse>
