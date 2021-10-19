@@ -20,6 +20,35 @@
   width: 5vh;
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#learn-more {
+  font-family: Acme;
+  font-size: 150%;
+}
+
+#input {
+  font-family: Acme;
+}
+
+.imageStyles {
+  max-height: 150px;
+  max-width: 200px;
+  width: 120px;
+  height: 120px;
+}
+
+.methodLabel {
+  font-family: Acme;
+}
+
 #modal {
   margin-bottom: 10vh;
   font-family: 'Acme';
