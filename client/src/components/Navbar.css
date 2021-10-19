@@ -4,9 +4,13 @@
   
 .nav-text {
   color: white;
-  font-family: Acme;
+  font-family: 'Acme';
 }
 
 .nav-link {
   text-decoration: none;
+}
+
+.nav-link-inner--text {
+  font-family: 'Acme';
 }
