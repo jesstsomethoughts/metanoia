@@ -2,20 +2,21 @@
   background-color: #AC3791;
   font-size: 3vh !important;
 }
-  
-.nav-text {
-  color: white;
-  font-family: 'Acme';
-  padding-right: 30px;
-}
 
 .nav-link {
+  color: white !important;
   text-decoration: none;
   font-family: 'Acme';
 }
 
-.nav-link-inner--text {
+.nav-link-active {
+  color: white !important;
+  text-decoration: none;
   font-family: 'Acme';
-  font-size: 3vh !important;
+}
+
+.btn-light {
   color: #AC3791;
+  font-family: 'Acme';
+  font-size: 2.5vh !important;
 }
