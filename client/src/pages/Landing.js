@@ -1,15 +1,337 @@
 import logo from '../img/metanoia_newlogo.png';
 import '../pages/Landing.css';
 
+import linkedin from '../img/social-icons/linkedin.png';
+import facebook from '../img/social-icons/facebook.png';
+import gmail from '../img/social-icons/gmail.png';
+import NewsletterImage from "../img/newsletter.png";
+import AccessibilityIcon from "../img/accessibility_icon.png";
+import ImpactIcon from "../img/impact_icon.png";
+import BiasPreventionIcon from "../img/bias_prevention_icon.png";
+
+import Card from "react-bootstrap/Card";
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+import { Button, Col, Container, Row, Badge, Modal, FormGroup, } from 'react-bootstrap';
+
 function Landing() {
   return (
     <>
     <div className="Landing">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello, this is the landing page: <code>Landing.js</code>!
-        </p>
+        <div>
+          <section>
+            <Container>
+              <Row>
+                <Col>
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <h1>Metanoia</h1>
+                  <p>THE DIGITAL LIBRARY THAT INSPIRES CONVERSATION</p>
+                  <Button className="button" href="subscribe">Get Started</Button>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+        </div>
+
+        <section>
+            <br></br>
+            
+            <Container>
+              {/* <Row className="justify-content-center text-center mb-lg"> */}
+              <h2>Recommended Topics</h2>
+            </Container>
+            <Container>
+              <Row className="justify-content-center">
+                <Col lg="12">
+                  <Row className="row-grid">
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0 roundEdges">
+                        <Card.Body className="py-5">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                            <i className="ni ni-single-02" />
+                          </div>
+                          <h6 className="text-primary text-uppercase">
+                            Identity
+                          </h6>
+                          <div>
+                            <Badge color="primary" pill className="mr-1">
+                              Pre-K
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              K-2
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              G3-5
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4 "
+                            color="primary"
+                            href=""
+                            //onClick={() => this.toggleModal("comingSoonModal")}
+                          >
+                            Explore
+                          </Button>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0 roundEdges">
+                        <Card.Body className="py-5">
+                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                            <i className="ni ni-world" />
+                          </div>
+                          <h6 className="text-success text-uppercase">
+                            Diversity
+                          </h6>
+                          <div>
+                            <Badge color="success" pill className="mr-1">
+                              Pre-K
+                            </Badge>
+                            <Badge color="success" pill className="mr-1">
+                              K-2
+                            </Badge>
+                            <Badge color="success" pill className="mr-1">
+                              G3-5
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="success"
+                            href=""
+                            //onClick={() => this.toggleModal("comingSoonModal_1")}
+                          >
+                            Explore
+                          </Button>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="card-lift--hover shadow border-0 roundEdges">
+                        <Card.Body className="py-5">
+                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                            <i className="ni ni-tie-bow" />
+                          </div>
+                          <h6 className="text-warning text-uppercase">
+                            Gender
+                          </h6>
+                          <div>
+                            <Badge color="warning" pill className="mr-1">
+                              Pre-K
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              K-2
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              G3-5
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="warning"
+                            href=""
+                            //onClick={() => this.toggleModal("comingSoonModal_2")}
+                          >
+                            Explore
+                          </Button>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+        
+        <section
+            // style={{ backgroundColor: "#FCFAD9" }}
+            className="section section-lg"
+          >
+            <Container>
+              <Row className="justify-content-center text-center mb-lg">
+                <Col lg="8">
+                  <h2 id="sectionHeading" className="display-3">
+                    The Problem
+                  </h2>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="mb-4 mb-lg-0" md="4">
+                  <div className="px-4">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={AccessibilityIcon}
+                      style={{ width: "300px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span id="beliefs" className="d-block mb-1">
+                          Accessibility
+                        </span>
+                      </h5>
+                    </div>
+                  </div>
+                </Col>
+                <Col className="mb-4 mb-lg-0" md="4">
+                  <div className="px-4">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={ImpactIcon}
+                      style={{ width: "300px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span id="beliefs" className="d-block mb-1">
+                          Social Impact
+                        </span>
+                      </h5>
+                    </div>
+                  </div>
+                </Col>
+                <Col className="mb-4 mb-lg-0" md="4">
+                  {/* maybe add lg="3" md="6"?? */}
+                  <div className="px-4">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={BiasPreventionIcon}
+                      style={{ width: "300px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span id="beliefs" className="d-block mb-1">
+                          Bias Prevention
+                        </span>
+                      </h5>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
+        <section
+            style={{ backgroundColor: "#FFFEF5" }}
+            className="section section-lg"
+          >
+            <Container>
+              <Row className="row-grid align-items-center">
+                <Col className="order-md-2" md="6">
+                  <img
+                    alt="..."
+                    className="img-fluid floating"
+                    src={NewsletterImage}
+                  />
+                </Col>
+                <Col className="order-md-1" md="6">
+                  <div className="pr-md-5">
+                    <div className="icon icon-lg icon-shape icon-shape-danger shadow rounded-circle mb-5">
+                      <i className="ni ni-settings-gear-65" />
+                    </div>
+                    <h3 id="signUpTitle">
+                      Sign up for our personalized newsletter!
+                    </h3>
+                    <p>
+                      A curated book recommendations list every month based on
+                      your preferences, just for you!
+                    </p>
+                    <Button
+                      className="btn-icon"
+                      // className="button"
+                      href="subscribe"
+                      id="subscribeBtn"
+                    >
+                      <span className="nav-link-inner--text ml-1">
+                        Sign Up Here
+                      </span>
+                    </Button>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
+          <section>
+            <div className="Contact">
+            <h2 className="mainText">Contact Us</h2>
+            {/* modal section */}
+            <Container>
+             <Col id="modal">
+              <Form>
+                <h4>Want to learn more?</h4>
+                <p>We care about your input and experiences!</p>
+                <Form.Group className="mb-3" controlId="formBasicName">
+                <FloatingLabel
+                  controlId="floatingInput"
+                  label="Name"
+                  className="mb-3"
+                >
+                <Form.Control type="name" placeholder="Your name" />
+                </FloatingLabel>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <FloatingLabel
+                  controlId="floatingInput"
+                  label="Email address"
+                  className="mb-3"
+                >
+              <Form.Control type="email" placeholder="Enter email" />
+               </FloatingLabel>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicMessage">
+              <Form.Label>Message</Form.Label>
+              <Form.Control as="textarea" rows={5} placeholder="Type a message..." />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Form>
+            {/* add inputs here: name, email address, type a message */}
+        </Col>
+      <Col>
+      <h4 className="contactMethod">
+                      <a href="https://www.gmail.com" target="_blank">
+                        <div>
+                          <img src={gmail} className="imageStyles"></img>
+                          <span className="methodLabel">
+                            metanoiabooks.co@gmail.com
+                          </span>
+                        </div>
+                      </a>
+                    </h4>
+                    <h4 className="contactMethod">
+                      <a
+                        href="https://www.linkedin.com/company/metanoiabooks/"
+                        target="_blank"
+                      >
+                        <div>
+                          <img src={linkedin} className="imageStyles"></img>
+                          <span className="methodLabel">@MetanoiaBooks</span>
+                        </div>
+                      </a>
+                    </h4>
+                    <h4 className="contactMethod">
+                      <a
+                        href="https://www.facebook.com/MetanoiaLibrary/"
+                        target="_blank"
+                      >
+                        <div>
+                          <img src={facebook} className="imageStyles"></img>
+                          <span className="methodLabel">
+                            {" "}
+                            @MetanoiaLibrary{" "}
+                          </span>
+                        </div>
+                      </a>
+                    </h4>
+        </Col>
+      </Container>
+    </div>
+      </section>
+          
       </header>
     </div>
     </>
@@ -17,755 +339,3 @@ function Landing() {
 }
 
 export default Landing;
-
-
-// // reactstrap components
-// import {
-//   Alert,
-//   Badge,
-//   Button,
-//   Card,
-//   CardBody,
-//   CardImg,
-//   FormGroup,
-//   Input,
-//   InputGroupAddon,
-//   InputGroupText,
-//   InputGroup,
-//   Container,
-//   Row,
-//   Col,
-//   UncontrolledCarousel,
-//   Modal,
-// } from "reactstrap";
-
-// // core components
-// import MainNavbar from "./components/Navbars/DemoNavbar.js";
-// import Footer from "./components/Footer/Footer.js";
-
-// // index page sections
-
-// /* images
-// import Banner from "assets/img/theme/anotherbanner.svg";
-// import NewsletterImage from "assets/img/theme/newsletter.png";
-// import AccessibilityIcon from "assets/img/icons/accessibility_icon.png";
-// import ImpactIcon from "assets/img/icons/impact_icon.png";
-// import BiasPreventionIcon from "assets/img/icons/bias_prevention_icon.png";
-// import Testimonial1 from "assets/img/theme/testimonial1.svg";
-// import Testimonial2 from "assets/img/theme/testimonial2.svg";
-// import Testimonial3 from "assets/img/theme/testimonial3.svg";
-// import LibraryImage from "assets/img/theme/solutionbook.svg";
-// */ 
-
-// // css
-// import "./landing.css";
-
-// const items = [
-//   {
-//     src: Testimonial1,
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-//   {
-//     src: Testimonial2,
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-//   {
-//     src: Testimonial3,
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-// ];
-
-// class Landing extends React.Component {
-//   state = {};
-//   componentDidMount() {
-//     document.documentElement.scrollTop = 0;
-//     document.scrollingElement.scrollTop = 0;
-//     this.refs.main.scrollTop = 0;
-//   }
-
-//   state = {
-//     comingSoonModal: false,
-//     entryModal: true,
-//   };
-//   toggleModal = (state) => {
-//     this.setState({
-//       [state]: !this.state[state],
-//     });
-//   };
-
-//   render() {
-//     return (
-//       <>
-//         <DemoNavbar />
-//         <main ref="main">
-//           <div className="position-relative">
-//             {/* shape Hero */}
-//             {/* <Modal
-//               className="modal-dialog-centered"
-//               contentClassName=""
-//               isOpen={this.state.entryModal}
-//             >
-//               <div className="modal-body" style={{ textAlign: "center" }}>
-//               <button
-//                   type="button"
-//                   class="close"
-//                   data-dismiss="modal"
-//                   aria-label="Close"
-//                   onClick={() => this.toggleModal("entryModal")}
-//                 >
-//                   <span aria-hidden="true">&times;</span>
-//                 </button>
-//                 <h4 class="modal-title" style={{ color: "#ac3791" }}>
-//                   SUBSCRIBE TO OUR NEWSLETTER!
-//                 </h4>
-//               </div>
-//               <div className="modal-body">
-//                 <div class="input-group mb-3">
-//                   <input
-//                     type="text"
-//                     class="form-control"
-//                     placeholder="Email address"
-//                     aria-label="Recipient's username"
-//                     aria-describedby="basic-addon2"
-//                   />
-//                   <div class="input-group-append">
-//                     <button
-//                       class="btn btn-outline-secondary"
-//                       type="button"
-//                       style={{ backgroundColor: "#ac3791", color: "white" }}
-//                     >
-//                       Subscribe
-//                     </button>
-//                   </div>
-//                 </div>
-//               </div>
-//             </Modal> */}
-//             <section className="section section-lg section-shaped pb-300">
-//               <div className="shape shape-style-1 shape-default cont">
-//                 <img alt="..." src={Banner} className="bannerStyles" />
-//               </div>
-//               <Container className="py-lg-md d-flex">
-//                 <div className="col px-0">
-//                   <Row>
-//                     <Col lg="6">
-//                       <h1 id="mainTitle" className="display-3 ">
-//                         Metanoia
-//                       </h1>
-//                       <p id="secondaryText" className="lead">
-//                         THE DIGITAL LIBRARY THAT INSPIRES MEANINGFUL CONVERSATIONS
-//                       </p>
-//                       <div className="btn-wrapper">
-//                         <Button className="button" href="subscribe">
-//                           Get Started
-//                         </Button>
-//                       </div>
-//                     </Col>
-//                   </Row>
-//                 </div>
-//               </Container>
-//               {/* SVG separator */}
-//               <div className="separator separator-bottom separator-skew">
-//                 <svg
-//                   xmlns="http://www.w3.org/2000/svg"
-//                   preserveAspectRatio="none"
-//                   version="1.1"
-//                   viewBox="0 0 2560 100"
-//                   x="0"
-//                   y="0"
-//                 >
-//                   <polygon
-//                     className="fill-white"
-//                     // style={{fill:"#FCFAD9"}}
-//                     points="2560 0 2560 100 0 100"
-//                   />
-//                 </svg>
-//               </div>
-//             </section>
-//             {/* 1st Hero Variation */}
-//           </div>
-//           <section
-//             // style={{ backgroundColor: "#FCFAD9" }}
-//             className="section section-lg pt-lg-0 mt--800"
-//           >
-//             <br></br>
-
-//             <Container>
-//               {/* <Row className="justify-content-center text-center mb-lg"> */}
-//               <h2
-//                 id="sectionHeading"
-//                 style={{ textAlign: "center" }}
-//                 className="display-3"
-//               >
-//                 Recommended Topics
-//               </h2>
-//               {/* <br></br> */}
-//               {/* </Row> */}
-//             </Container>
-//             <Container>
-//               <Row className="justify-content-center">
-//                 <Col lg="12">
-//                   <Row className="row-grid">
-//                     <Col lg="4">
-//                       <Card className="card-lift--hover shadow border-0 roundEdges">
-//                         <CardBody className="py-5">
-//                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-//                             <i className="ni ni-single-02" />
-//                           </div>
-//                           <h6 className="text-primary text-uppercase">
-//                             Identity
-//                           </h6>
-//                           {/* <div>
-//                             <Badge color="primary" pill className="mr-1">
-//                               Pre-K
-//                             </Badge>
-//                             <Badge color="primary" pill className="mr-1">
-//                               K-2
-//                             </Badge>
-//                             <Badge color="primary" pill className="mr-1">
-//                               G3-5
-//                             </Badge>
-//                           </div> */}
-//                           <Button
-//                             className="mt-4 "
-//                             color="primary"
-//                             href=""
-//                             onClick={() => this.toggleModal("comingSoonModal")}
-//                           >
-//                             Explore
-//                           </Button>
-//                           <Modal
-//                             className="modal-dialog-centered modal-primary"
-//                             contentClassName="bg-gradient-primary"
-//                             isOpen={this.state.comingSoonModal}
-//                             toggle={() => this.toggleModal("comingSoonModal")}
-//                           >
-//                             <div className="modal-header">
-//                               <button
-//                                 aria-label="Close"
-//                                 className="close"
-//                                 data-dismiss="modal"
-//                                 type="button"
-//                                 onClick={() =>
-//                                   this.toggleModal("comingSoonModal")
-//                                 }
-//                               >
-//                                 <span aria-hidden={true}>×</span>
-//                               </button>
-//                             </div>
-//                             <div className="modal-body">
-//                               <div className="py-3 text-center">
-//                                 <h2 className="heading">
-//                                   Coming soon! Check back for more updates!
-//                                 </h2>
-//                               </div>
-//                             </div>
-//                             <div className="modal-footer">
-//                               <Button
-//                                 className="text-white ml-auto"
-//                                 color="link"
-//                                 data-dismiss="modal"
-//                                 type="button"
-//                                 onClick={() =>
-//                                   this.toggleModal("comingSoonModal")
-//                                 }
-//                               >
-//                                 Close
-//                               </Button>
-//                             </div>
-//                           </Modal>
-//                         </CardBody>
-//                       </Card>
-//                     </Col>
-//                     <Col lg="4">
-//                       <Card className="card-lift--hover shadow border-0 roundEdges">
-//                         <CardBody className="py-5">
-//                           <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-//                             <i className="ni ni-world" />
-//                           </div>
-//                           <h6 className="text-success text-uppercase">
-//                             Diversity
-//                           </h6>
-//                           {/* <div>
-//                             <Badge color="success" pill className="mr-1">
-//                               Pre-K
-//                             </Badge>
-//                             <Badge color="success" pill className="mr-1">
-//                               K-2
-//                             </Badge>
-//                             <Badge color="success" pill className="mr-1">
-//                               G3-5
-//                             </Badge>
-//                           </div> */}
-//                           <Button
-//                             className="mt-4"
-//                             color="success"
-//                             href=""
-//                             onClick={() =>
-//                               window.open("https://mailchi.mp/ce9b98074ea7/personalized-book-recommendations", '_blank').focus()
-//                             }
-//                           >
-//                             Explore
-//                           </Button>
-//                           <Modal
-//                             className="modal-dialog-centered modal-success"
-//                             contentClassName="bg-gradient-success"
-//                             isOpen={this.state.comingSoonModal_1}
-//                             toggle={() => this.toggleModal("comingSoonModal_1")}
-//                           >
-//                             <div className="modal-header">
-//                               <button
-//                                 aria-label="Close"
-//                                 className="close"
-//                                 data-dismiss="modal"
-//                                 type="button"
-//                                 onClick={() =>
-//                                   this.toggleModal("comingSoonModal_1")
-//                                 }
-//                               >
-//                                 <span aria-hidden={true}>×</span>
-//                               </button>
-//                             </div>
-//                             <div className="modal-body">
-//                               <div className="py-3 text-center">
-//                                 <h2 className="heading">
-//                                   Click <a href="https://mailchi.mp/ce9b98074ea7/personalized-book-recommendations" target="blank">HERE</a> for an example newsletter!
-//                                 </h2>
-//                               </div>
-//                             </div>
-//                             <div className="modal-footer">
-//                               <Button
-//                                 className="text-white ml-auto"
-//                                 color="link"
-//                                 data-dismiss="modal"
-//                                 type="button"
-//                                 onClick={() =>
-//                                   this.toggleModal("comingSoonModal_1")
-//                                 }
-//                               >
-//                                 Close
-//                               </Button>
-//                             </div>
-//                           </Modal>
-//                         </CardBody>
-//                       </Card>
-//                     </Col>
-//                     <Col lg="4">
-//                       <Card className="card-lift--hover shadow border-0 roundEdges">
-//                         <CardBody className="py-5">
-//                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-//                             <i className="ni ni-tie-bow" />
-//                           </div>
-//                           <h6 className="text-warning text-uppercase">
-//                             Gender
-//                           </h6>
-//                           {/* <div>
-//                             <Badge color="warning" pill className="mr-1">
-//                               Pre-K
-//                             </Badge>
-//                             <Badge color="warning" pill className="mr-1">
-//                               K-2
-//                             </Badge>
-//                             <Badge color="warning" pill className="mr-1">
-//                               G3-5
-//                             </Badge>
-//                           </div> */}
-//                           <Button
-//                             className="mt-4"
-//                             color="warning"
-//                             href=""
-//                             onClick={() =>
-//                               this.toggleModal("comingSoonModal_2")
-//                             }
-//                           >
-//                             Explore
-//                           </Button>
-//                           <Modal
-//                             className="modal-dialog-centered modal-danger"
-//                             contentClassName="bg-gradient-danger"
-//                             isOpen={this.state.comingSoonModal_2}
-//                             toggle={() => this.toggleModal("comingSoonModal_2")}
-//                           >
-//                             <div className="modal-header">
-//                               <button
-//                                 aria-label="Close"
-//                                 className="close"
-//                                 data-dismiss="modal"
-//                                 type="button"
-//                                 onClick={() =>
-//                                   this.toggleModal("comingSoonModal_2")
-//                                 }
-//                               >
-//                                 <span aria-hidden={true}>×</span>
-//                               </button>
-//                             </div>
-//                             <div className="modal-body">
-//                               <div className="py-3 text-center">
-//                                 <h2 className="heading">
-//                                   Coming soon! Check back for more updates!
-//                                 </h2>
-//                               </div>
-//                             </div>
-//                             <div className="modal-footer">
-//                               <Button
-//                                 className="text-white ml-auto"
-//                                 color="link"
-//                                 data-dismiss="modal"
-//                                 type="button"
-//                                 onClick={() =>
-//                                   this.toggleModal("comingSoonModal_2")
-//                                 }
-//                               >
-//                                 Close
-//                               </Button>
-//                             </div>
-//                           </Modal>
-//                         </CardBody>
-//                       </Card>
-//                     </Col>
-//                   </Row>
-//                 </Col>
-//               </Row>
-//             </Container>
-//           </section>
-//           <section
-//             // style={{ backgroundColor: "#FCFAD9" }}
-//             className="section section-lg"
-//           >
-//             <Container>
-//               <Row className="justify-content-center text-center mb-lg">
-//                 <Col lg="8">
-//                   <h2 id="sectionHeading" className="display-3">
-//                     The Problem
-//                   </h2>
-//                 </Col>
-//               </Row>
-//               <Row>
-//                 <Col className="mb-4 mb-lg-0" md="4">
-//                   <div className="px-4">
-//                     <img
-//                       alt="..."
-//                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-//                       src={BiasPreventionIcon}
-//                       style={{ width: "300px" }}
-//                     />
-//                     <div className="pt-4 text-center">
-//                       <h5 className="title">
-//                         <span id="beliefs" className="d-block mb-1">
-//                           Implicit Bias
-//                         </span>
-//                       </h5>
-//                     </div>
-//                   </div>
-//                 </Col>
-//                 <Col className="mb-4 mb-lg-0" md="4">
-//                   <div className="px-4">
-//                     <img
-//                       alt="..."
-//                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-//                       src={AccessibilityIcon}
-//                       style={{ width: "300px" }}
-//                     />
-//                     <div className="pt-4 text-center">
-//                       <h5 className="title">
-//                         <span id="beliefs" className="d-block mb-1">
-//                           Accessibility
-//                         </span>
-//                       </h5>
-//                     </div>
-//                   </div>
-//                 </Col>
-//                 <Col className="mb-4 mb-lg-0" md="4">
-//                   {/* maybe add lg="3" md="6"?? */}
-//                   <div className="px-4">
-//                     <img
-//                       alt="..."
-//                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-//                       src={ImpactIcon}
-//                       style={{ width: "300px" }}
-//                     />
-//                     <div className="pt-4 text-center">
-//                       <h5 className="title">
-//                         <span id="beliefs" className="d-block mb-1">
-//                           Limited Knowledge
-//                         </span>
-//                       </h5>
-//                     </div>
-//                   </div>
-//                 </Col>
-//               </Row>
-//             </Container>
-//           </section>
-          
-//           <section
-//           className="section section-lg">
-//             <Container>
-//               <Row className="justify-content-center text-center mb-lg">
-//                 <Col lg="8">
-//                   <h2 id="sectionHeading" className="display-3">
-//                     Our Solution
-//                   </h2>
-//                 </Col>
-//               </Row>
-//               <Row className="row-grid align-items-center">
-//                 <Col lg="5" className="order-md-3">
-//                   <Alert id="library">Online Virtual Library</Alert>
-//                   <h6>
-//                   Personalized children’s book recommendations with a focus on books relating to social issues
-//                   </h6>
-//                 </Col>
-//                 <Col lg="3" className="order-md-2">
-//                 </Col>
-//                 <Col className="order-md-1" md="3">
-//                   <img
-//                     alt="..."
-//                     className="img-fluid floating"
-//                     src={LibraryImage}
-//                   />
-//                 </Col>
-//               </Row>
-//             </Container>
-//           </section>
-
-//           <section
-//             style={{ backgroundColor: "#FFFEF5" }}
-//             className="section section-lg"
-//           >
-//             <Container>
-//               <Row className="row-grid align-items-center">
-//                 <Col className="order-md-2" md="6">
-//                   <img
-//                     alt="..."
-//                     className="img-fluid floating"
-//                     src={NewsletterImage}
-//                   />
-//                 </Col>
-//                 <Col className="order-md-1" md="6">
-//                   <div className="pr-md-5">
-//                     <div className="icon icon-lg icon-shape icon-shape-danger shadow rounded-circle mb-5">
-//                       <i className="ni ni-settings-gear-65" />
-//                     </div>
-//                     <h3 id="signUpTitle">
-//                       Sign up for our personalized newsletter!
-//                     </h3>
-//                     <p>
-//                       A curated book recommendations list every month based on
-//                       your preferences, just for you!
-//                     </p>
-//                     <Button
-//                       className="btn-icon"
-//                       // className="button"
-//                       href="subscribe"
-//                       id="subscribeBtn"
-//                     >
-//                       <span className="nav-link-inner--text ml-1">
-//                         Sign Up Here
-//                       </span>
-//                     </Button>
-//                   </div>
-//                 </Col>
-//               </Row>
-//             </Container>
-//           </section>
-//           {/* <section
-//             // style={{ backgroundColor: "#FCFAD9" }}
-//             className="section section-lg"
-//           >
-//             <Container>
-//               <Row className="justify-content-center text-center mb-lg">
-//                 <Col lg="8">
-//                   <h2 id="sectionHeading" className="display-3">
-//                     What We Believe In
-//                   </h2>
-//                 </Col>
-//               </Row>
-//               <Row>
-//                 <Col className="mb-4 mb-lg-0" md="4">
-//                   <div className="px-4">
-//                     <img
-//                       alt="..."
-//                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-//                       src={AccessibilityIcon}
-//                       style={{ width: "300px" }}
-//                     />
-//                     <div className="pt-4 text-center">
-//                       <h5 className="title">
-//                         <span id="beliefs" className="d-block mb-1">
-//                           Accessibility
-//                         </span>
-//                       </h5>
-//                     </div>
-//                   </div>
-//                 </Col>
-//                 <Col className="mb-4 mb-lg-0" md="4">
-//                   <div className="px-4">
-//                     <img
-//                       alt="..."
-//                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-//                       src={ImpactIcon}
-//                       style={{ width: "300px" }}
-//                     />
-//                     <div className="pt-4 text-center">
-//                       <h5 className="title">
-//                         <span id="beliefs" className="d-block mb-1">
-//                           Social Impact
-//                         </span>
-//                       </h5>
-//                     </div>
-//                   </div>
-//                 </Col>
-//                 <Col className="mb-4 mb-lg-0" md="4">
-//                   <div className="px-4">
-//                     <img
-//                       alt="..."
-//                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-//                       src={BiasPreventionIcon}
-//                       style={{ width: "300px" }}
-//                     />
-//                     <div className="pt-4 text-center">
-//                       <h5 className="title">
-//                         <span id="beliefs" className="d-block mb-1">
-//                           Bias Prevention
-//                         </span>
-//                       </h5>
-//                     </div>
-//                   </div>
-//                 </Col>
-//               </Row>
-//             </Container>
-//           </section> */}
-//           <section
-//             style={{ backgroundColor: "#FFFEF5" }}
-//             className="section section-lg "
-//           >
-//             {/* section section-lg bg-gradient-default */}
-//             <Container className="pb-300">
-//               <Row className="text-center justify-content-center">
-//                 <Col lg="10">
-//                   <h2 id="sectionHeading" className="display-3 text">
-//                     Testimonials
-//                   </h2>
-//                   <p id="beliefs" className="lead text">
-//                     Read below for what our customers had to say.
-//                   </p>
-//                 </Col>
-//               </Row>
-//               {/* <Row className="row-grid mt-5"> */}
-//               <UncontrolledCarousel items={items} />
-//               {/* </Row> */}
-//             </Container>
-//             {/* SVG separator */}
-//             <div className="separator separator-bottom separator-skew zindex-100">
-//               <svg
-//                 xmlns="http://www.w3.org/2000/svg"
-//                 preserveAspectRatio="none"
-//                 version="1.1"
-//                 viewBox="0 0 2560 100"
-//                 x="0"
-//                 y="0"
-//               >
-//                 <polygon
-//                   className="fill-white"
-//                   points="2560 0 2560 100 0 100"
-//                 />
-//               </svg>
-//             </div>
-//           </section>
-//           <section className="section section-lg pt-lg-0 section-contact-us">
-//             <Container>
-//               <Row className="justify-content-center mt--300">
-//                 <Col lg="8">
-//                   <Card className="bg-gradient-secondary shadow">
-//                     <CardBody className="p-lg-5">
-//                       <h4 id="sectionHeading" className="mb-1">
-//                         Want to learn more?
-//                       </h4>
-//                       <p className="mt-0">
-//                         We care about your input and experiences.
-//                       </p>
-//                       <FormGroup
-//                         className={classnames("mt-5", {
-//                           focused: this.state.nameFocused,
-//                         })}
-//                       >
-//                         <InputGroup className="input-group-alternative">
-//                           <InputGroupAddon addonType="prepend">
-//                             <InputGroupText>
-//                               <i className="ni ni-user-run" />
-//                             </InputGroupText>
-//                           </InputGroupAddon>
-//                           <Input
-//                             placeholder="Your name"
-//                             type="text"
-//                             onFocus={(e) =>
-//                               this.setState({ nameFocused: true })
-//                             }
-//                             onBlur={(e) =>
-//                               this.setState({ nameFocused: false })
-//                             }
-//                           />
-//                         </InputGroup>
-//                       </FormGroup>
-//                       <FormGroup
-//                         className={classnames({
-//                           focused: this.state.emailFocused,
-//                         })}
-//                       >
-//                         <InputGroup className="input-group-alternative">
-//                           <InputGroupAddon addonType="prepend">
-//                             <InputGroupText>
-//                               <i className="ni ni-email-83" />
-//                             </InputGroupText>
-//                           </InputGroupAddon>
-//                           <Input
-//                             placeholder="Email address"
-//                             type="email"
-//                             onFocus={(e) =>
-//                               this.setState({ emailFocused: true })
-//                             }
-//                             onBlur={(e) =>
-//                               this.setState({ emailFocused: false })
-//                             }
-//                           />
-//                         </InputGroup>
-//                       </FormGroup>
-//                       <FormGroup className="mb-4">
-//                         <Input
-//                           className="form-control-alternative"
-//                           cols="80"
-//                           name="name"
-//                           placeholder="Type a message..."
-//                           rows="4"
-//                           type="textarea"
-//                         />
-//                       </FormGroup>
-//                       <div>
-//                         <Button
-//                           block
-//                           className="btn-round"
-//                           color="danger"
-//                           size="lg"
-//                           type="button"
-//                         >
-//                           Send Message
-//                         </Button>
-//                       </div>
-//                     </CardBody>
-//                   </Card>
-//                 </Col>
-//               </Row>
-//             </Container>
-//           </section>
-//         </main>
-//         <CardsFooter />
-//       </>
-//     );
-//   }
-// }
-
-// export default Landing;
