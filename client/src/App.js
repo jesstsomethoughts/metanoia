@@ -8,6 +8,8 @@ import Contact from './pages/Contact.js';
 import About from './pages/About.js';
 import Subscribe from './pages/Subscribe.js';
 import Catalog from './pages/Catalog.js';
+import friendshipCatalog from './pages/friendshipCatalog.js';
+import diversityCatalog from './pages/diversityCatalog.js';
 
 function App () {
   return ( 
@@ -19,6 +21,8 @@ function App () {
         <Route path="/about" component={About} />
         <Route path="/subscribe" component={Subscribe} />
         <Route path="/catalog" component={Catalog} />
+        <Route path="/friendshipCatalog" component={friendshipCatalog} />
+        <Route path="/diversityCatalog" component={diversityCatalog} />
       </Switch>
     </div>
   );
