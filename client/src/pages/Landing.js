@@ -8,6 +8,9 @@ import NewsletterImage from "../img/newsletter.png";
 import AccessibilityIcon from "../img/accessibility_icon.png";
 import ImpactIcon from "../img/impact_icon.png";
 import BiasPreventionIcon from "../img/bias_prevention_icon.png";
+import Testimonial1 from "../img/testimonial1.03958d1d.svg";
+import Testimonial2 from "../img/testimonial2.5df9c9c3.svg";
+import Testimonial3 from "../img/testimonial3.8d1ddce2.svg";
 
 import Card from "react-bootstrap/Card";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
