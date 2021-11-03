@@ -4,7 +4,7 @@ import './Subscribe.css';
 function Subscribe() {
   return (
     <>
-    <div className="Subscribe">
+    <div id = "background" className="Subscribe">
       <h1 id = "subscribeHeader">Subscribe to Our Newsletter!</h1>
       <div className="text-center mt-2 icont">
         <h4 id = "description">
