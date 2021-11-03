@@ -22,7 +22,9 @@ import Testimonial3 from "../img/testimonial3.8d1ddce2.svg";
 import Card from "react-bootstrap/Card";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import Carousel from 'react-bootstrap/Carousel'
 import { Button, Col, Container, Row, Badge, Modal, FormGroup, } from 'react-bootstrap';
+
 
 function Landing() {
   return (
@@ -262,6 +264,66 @@ function Landing() {
                 </Col>
               </Row>
             </Container>
+          </section>
+          
+          <section
+            style={{ backgroundColor: "#FFFEF5" }}
+            className="section section-lg "
+          >
+            {/* section section-lg bg-gradient-default */}
+            <Container className="pb-300">
+              <Row className="text-center justify-content-center">
+                <Col lg="10">
+                  <h2 id="sectionHeading" className="display-3 text">
+                    Testimonials
+                  </h2>
+                  <p id="beliefs" className="lead text">
+                    Read below for what our customers had to say.
+                  </p>
+                </Col>
+              </Row>
+              {/* <Row className="row-grid mt-5"> */}
+              <Carousel>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src= {Testimonial1}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={Testimonial2}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={Testimonial3}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+              {/* </Row> */}
+            </Container>
+            {/* SVG separator */}
+            <div className="separator separator-bottom separator-skew zindex-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+                version="1.1"
+                viewBox="0 0 2560 100"
+                x="0"
+                y="0"
+              >
+                <polygon
+                  className="fill-white"
+                  points="2560 0 2560 100 0 100"
+                />
+              </svg>
+            </div>
           </section>
 
           <section>
