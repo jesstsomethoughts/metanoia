@@ -4,6 +4,7 @@ import '../pages/Landing.css';
 import linkedin from '../img/social-icons/linkedin.png';
 import facebook from '../img/social-icons/facebook.png';
 import gmail from '../img/social-icons/gmail.png';
+import Banner from '../img/website-image.png';
 import NewsletterImage from "../img/newsletter.png";
 import AccessibilityIcon from "../img/accessibility_icon.png";
 import ImpactIcon from "../img/impact_icon.png";
@@ -29,18 +30,50 @@ function Landing() {
     <div className="Landing">
       <header className="App-header">
         <div>
-          <section>
-            <Container>
-              <Row>
-                <Col>
-                  <img src={logo} className="App-logo" alt="logo" />
-                  <h1>Metanoia</h1>
-                  <p>THE DIGITAL LIBRARY THAT INSPIRES CONVERSATION</p>
-                  <Button className="button" href="subscribe">Get Started</Button>
-                </Col>
-              </Row>
-            </Container>
-          </section>
+        <div className="position-relative">
+            {/* shape Hero */}
+            <section className="section section-lg section-shaped pb-300">
+              <div className="shape shape-style-1 shape-default cont">
+                <img alt="..." src={Banner} className="bannerStyles" />
+              </div>
+              <Container className="py-lg-md d-flex">
+                <div className="col px-0">
+                  <Row>
+                    <Col lg="6">
+                      <h1 id="mainTitle" className="display-3 ">
+                        Metanoia{" "}
+                      </h1>
+                      <p id="secondaryText" className="lead">
+                        THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
+                      </p>
+                      <div className="btn-wrapper">
+                        <Button className="button" href="subscribe">
+                          Get Started
+                        </Button>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+              </Container>
+              {/* SVG separator */}
+              <div className="separator separator-bottom separator-skew">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  version="1.1"
+                  viewBox="0 0 2560 100"
+                  x="0"
+                  y="0"
+                >
+                  <polygon
+                    className="fill-white"
+                    // style={{fill:"#FCFAD9"}}
+                    points="2560 0 2560 100 0 100"
+                  />
+                </svg>
+              </div>
+            </section>
+          </div>
         </div>
 
         <section>
