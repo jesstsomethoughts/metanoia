@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 // images and other components
 import Banner from '../img/website-image.png';
 import Placeholder from '../img/metanoia_newlogo.png';
-import BookList from './olBookList.json'
+import BookList from './olFriendshipBookList.json';
 
 
 const BookCard = ({ cover, title, author, url}) => {
@@ -32,13 +32,7 @@ const BookCard = ({ cover, title, author, url}) => {
     )
 }
 
-function Catalog() {
-    //<img src='http://covers.openlibrary.org/b/olid/" + BookList[0]["bookIds"][0] + "-M.jpg'>
-
-    // console.log(BookList[1]["records"][`/books/${BookList[0]["bookIds"][0]}`].details.details.covers[0]) //cover id
-    // console.log(BookList[1]["records"][`/books/${BookList[0]["bookIds"][0]}`].details.details.title) //title
-    // console.log(BookList[1]["records"][`/books/${BookList[0]["bookIds"][0]}`].details.details.authors[0].name) //author name
-    
+function friendshipCatalog() {
     const loadBooks = (list) => {
         let ar = []
         for (let index=0; index<list.length; index++) {
@@ -58,28 +52,19 @@ function Catalog() {
             {/* <div>
         <img alt="..." src={Banner} className="MainBanner" />
     </div> */}
-            <h1 className="header">Miscellaneous</h1>
+            <h1 className="header">Friendship</h1>
             <div className="section">
-            <h2 className="section-header">Grades K-2</h2>
+            <h2 className="section-header">Grades Pre-K - 2</h2>
             <Row className="book-row" class="flew-row flex-nowrap">
                     {
-                        loadBooks([0, 3, 4, 6])
+                        loadBooks([0, 1, 2, 3])
                     }
             </Row>
             </div>
             <div className="section">
-                <h2 className="section-header">Grades 3-5</h2>
                 <Row className="book-row" class="flew-row flex-nowrap">
                     {
-                        loadBooks([1, 2, 8, 9])
-                    }
-                </Row>
-            </div>
-            <div className="section">
-                <h2 className="section-header">Grades 6-8</h2>
-                <Row className="book-row" class="flew-row flex-nowrap">
-                    {
-                        loadBooks([5, 7])
+                        loadBooks([4, 5, 6])
                     }
                 </Row>
             </div>
@@ -88,4 +73,4 @@ function Catalog() {
     );
 }
 
-export default Catalog;
+export default friendshipCatalog;

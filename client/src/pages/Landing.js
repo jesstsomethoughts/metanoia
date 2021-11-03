@@ -61,7 +61,7 @@ function Landing() {
                             <i className="ni ni-single-02" />
                           </div>
                           <h6 className="text-primary text-uppercase">
-                            Identity
+                            Friendship
                           </h6>
                           <div>
                             <Badge color="primary" pill className="mr-1">
@@ -78,7 +78,7 @@ function Landing() {
                             className="mt-4 "
                             color="primary"
                             href=""
-                            //onClick={() => this.toggleModal("comingSoonModal")}
+                            onClick={() => window.location.href = "friendshipCatalog"}
                           >
                             Explore
                           </Button>
@@ -109,7 +109,7 @@ function Landing() {
                             className="mt-4"
                             color="success"
                             href=""
-                            //onClick={() => this.toggleModal("comingSoonModal_1")}
+                            onClick={() => window.location.href = "diversityCatalog"}
                           >
                             Explore
                           </Button>
@@ -123,7 +123,7 @@ function Landing() {
                             <i className="ni ni-tie-bow" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            Gender
+                            Miscellaneous
                           </h6>
                           <div>
                             <Badge color="warning" pill className="mr-1">
@@ -140,7 +140,7 @@ function Landing() {
                             className="mt-4"
                             color="warning"
                             href=""
-                            //onClick={() => this.toggleModal("comingSoonModal_2")}
+                            onClick={() => window.location.href = "catalog"}
                           >
                             Explore
                           </Button>

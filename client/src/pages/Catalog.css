@@ -3,12 +3,13 @@
 }
 
 .header {
+    font-family: Acme;
     text-align: center;
     margin: 10vh;
 }
 
 .book-row {
-    margin-left: 3vh;
+    margin: 3vh;
 }
 
 .section-header {
