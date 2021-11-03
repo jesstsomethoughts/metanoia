@@ -1,0 +1,2568 @@
+[
+    {"bookIds": ["OL1533827M", "OL7423511M", "OL28512646M", "OL25033526M", "OL7729372M", "OL20962459M", "OL7729382M", "OL3407784M", "OL24822730M", "OL3690143M"]  },
+    {
+        "records": {
+            "/books/OL1533827M": {
+                "isbns": [
+                    "0679823115",
+                    "067992311X"
+                ],
+                "issns": [],
+                "lccns": [
+                    "91011601"
+                ],
+                "oclcs": [],
+                "olids": [
+                    "OL1533827M"
+                ],
+                "publishDates": [
+                    "1993"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL1533827M/Sweet_Clara_and_the_freedom_quilt",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL1533827M/Sweet_Clara_and_the_freedom_quilt",
+                    "key": "/books/OL1533827M",
+                    "title": "Sweet Clara and the freedom quilt",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL30940A/Deborah_Hopkinson",
+                            "name": "Deborah Hopkinson"
+                        },
+                        {
+                            "url": "https://openlibrary.org/authors/OL765731A/Deborah_Gould",
+                            "name": "Deborah Gould"
+                        }
+                    ],
+                    "pagination": "p. cm.",
+                    "by_statement": "by Deborah Hopkinson ; illustrated by James Ransome.",
+                    "identifiers": {
+                        "librarything": [
+                            "296500"
+                        ],
+                        "goodreads": [
+                            "97651",
+                            "2869021"
+                        ],
+                        "isbn_10": [
+                            "0679823115",
+                            "067992311X"
+                        ],
+                        "lccn": [
+                            "91011601"
+                        ],
+                        "openlibrary": [
+                            "OL1533827M"
+                        ]
+                    },
+                    "classifications": {
+                        "lc_classifications": [
+                            "PZ7.H778125 Sw 1993",
+                            "PZ7.H778125Sw 1993"
+                        ],
+                        "dewey_decimal_class": [
+                            "[E]"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "Knopf"
+                        }
+                    ],
+                    "publish_places": [
+                        {
+                            "name": "New York"
+                        }
+                    ],
+                    "publish_date": "1993",
+                    "subjects": [
+                        {
+                            "name": "Fiction",
+                            "url": "https://openlibrary.org/subjects/fiction"
+                        },
+                        {
+                            "name": "Juvenile fiction",
+                            "url": "https://openlibrary.org/subjects/juvenile_fiction"
+                        },
+                        {
+                            "name": "Quilts",
+                            "url": "https://openlibrary.org/subjects/quilts"
+                        },
+                        {
+                            "name": "Slavery",
+                            "url": "https://openlibrary.org/subjects/slavery"
+                        },
+                        {
+                            "name": "Underground railroad",
+                            "url": "https://openlibrary.org/subjects/underground_railroad"
+                        },
+                        {
+                            "name": "Esclaves",
+                            "url": "https://openlibrary.org/subjects/esclaves"
+                        },
+                        {
+                            "name": "Romans pour la jeunesse",
+                            "url": "https://openlibrary.org/subjects/romans_pour_la_jeunesse"
+                        },
+                        {
+                            "name": "Underground Railroad",
+                            "url": "https://openlibrary.org/subjects/underground_railroad"
+                        },
+                        {
+                            "name": "1000blackgirlbooks",
+                            "url": "https://openlibrary.org/subjects/1000blackgirlbooks"
+                        },
+                        {
+                            "name": "Children's fiction",
+                            "url": "https://openlibrary.org/subjects/children's_fiction"
+                        },
+                        {
+                            "name": "Slavery, fiction",
+                            "url": "https://openlibrary.org/subjects/slavery,_fiction"
+                        },
+                        {
+                            "name": "Quilts, fiction",
+                            "url": "https://openlibrary.org/subjects/quilts,_fiction"
+                        }
+                    ],
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/sweetclarafreedo00hopk",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL1533827M/Sweet_Clara_and_the_freedom_quilt/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/423816-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/423816-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/423816-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL1533827M",
+                    "info_url": "https://openlibrary.org/books/OL1533827M/Sweet_Clara_and_the_freedom_quilt",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/sweetclarafreedo00hopk",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/423816-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "Knopf"
+                        ],
+                        "description": {
+                            "type": "/type/text",
+                            "value": "A young slave stitches a quilt with a map pattern which guides her to freedom in the North."
+                        },
+                        "isbn_10": [
+                            "0679823115",
+                            "067992311X"
+                        ],
+                        "covers": [
+                            423816,
+                            422254
+                        ],
+                        "ia_loaded_id": [
+                            "sweetclarafreed00hopk"
+                        ],
+                        "lc_classifications": [
+                            "PZ7.H778125 Sw 1993",
+                            "PZ7.H778125Sw 1993"
+                        ],
+                        "latest_revision": 15,
+                        "url": [
+                            "http://www.loc.gov/catdir/bios/random051/91011601.html",
+                            "http://www.loc.gov/catdir/description/random041/91011601.html"
+                        ],
+                        "key": "/books/OL1533827M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL30940A",
+                                "name": "Deborah Hopkinson"
+                            }
+                        ],
+                        "ocaid": "sweetclarafreedo00hopk",
+                        "publish_places": [
+                            "New York"
+                        ],
+                        "subjects": [
+                            "Slavery -- Fiction",
+                            "Quilts -- Fiction"
+                        ],
+                        "ia_box_id": [
+                            "IA134722"
+                        ],
+                        "uri_descriptions": [
+                            "Contributor biographical information",
+                            "Publisher description"
+                        ],
+                        "pagination": "p. cm.",
+                        "source_records": [
+                            "marc:marc_records_scriblio_net/part22.dat:3113094:993",
+                            "marc:CollingswoodLibraryMarcDump10-27-2008/Collingswood.out:12315720:1758",
+                            "marc:marc_loc_updates/v37.i38.records.utf8:4529137:993",
+                            "ia:sweetclarafreedo00hopk",
+                            "ia:sweetclarafreed00hopk",
+                            "marc:marc_openlibraries_sanfranciscopubliclibrary/sfpl_chq_2018_12_24_run02.mrc:73533655:2873",
+                            "bwb:9780679823117"
+                        ],
+                        "title": "Sweet Clara and the freedom quilt",
+                        "dewey_decimal_class": [
+                            "[E]"
+                        ],
+                        "identifiers": {
+                            "librarything": [
+                                "296500"
+                            ],
+                            "goodreads": [
+                                "97651",
+                                "2869021"
+                            ]
+                        },
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2008-04-01T03:28:50.625462"
+                        },
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "lccn": [
+                            "91011601"
+                        ],
+                        "local_id": [
+                            "urn:sfpl:31223034343476",
+                            "urn:sfpl:31223032078397",
+                            "urn:sfpl:31223032078330",
+                            "urn:sfpl:31223034343336",
+                            "urn:sfpl:31223037061901",
+                            "urn:sfpl:31223035936252"
+                        ],
+                        "publish_date": "1993",
+                        "publish_country": "nyu",
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2020-10-07T23:31:52.859105"
+                        },
+                        "by_statement": "by Deborah Hopkinson ; illustrated by James Ransome.",
+                        "works": [
+                            {
+                                "key": "/works/OL42630W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "uris": [
+                            "http://www.loc.gov/catdir/bios/random051/91011601.html",
+                            "http://www.loc.gov/catdir/description/random041/91011601.html"
+                        ],
+                        "revision": 15
+                    }
+                }
+            }
+        },
+        "items": []
+    },
+    {
+        "records": {
+            "/books/OL7423511M": {
+                "isbns": [
+                    "0374335273",
+                    "9780374335274"
+                ],
+                "issns": [],
+                "lccns": [
+                    "2003051417"
+                ],
+                "oclcs": [],
+                "olids": [
+                    "OL7423511M"
+                ],
+                "publishDates": [
+                    "August 11, 2005"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL7423511M/I_Could_Do_That!",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL7423511M/I_Could_Do_That!",
+                    "key": "/books/OL7423511M",
+                    "title": "I Could Do That!",
+                    "subtitle": "Esther Morris Gets Women the Vote (Melanie Kroupa Books)",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL239265A/Linda_Arms_White",
+                            "name": "Linda Arms White"
+                        }
+                    ],
+                    "number_of_pages": 40,
+                    "identifiers": {
+                        "librarything": [
+                            "403451"
+                        ],
+                        "goodreads": [
+                            "450372"
+                        ],
+                        "isbn_10": [
+                            "0374335273"
+                        ],
+                        "isbn_13": [
+                            "9780374335274"
+                        ],
+                        "lccn": [
+                            "2003051417"
+                        ],
+                        "openlibrary": [
+                            "OL7423511M"
+                        ]
+                    },
+                    "classifications": {
+                        "lc_classifications": [
+                            "JK1899.M67M55 2005",
+                            "JK1899.M67 M55 2005"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "Farrar, Straus and Giroux (BYR)"
+                        }
+                    ],
+                    "publish_date": "August 11, 2005",
+                    "subjects": [
+                        {
+                            "name": "History",
+                            "url": "https://openlibrary.org/subjects/history"
+                        },
+                        {
+                            "name": "Suffrage",
+                            "url": "https://openlibrary.org/subjects/suffrage"
+                        },
+                        {
+                            "name": "Justices of the peace",
+                            "url": "https://openlibrary.org/subjects/justices_of_the_peace"
+                        },
+                        {
+                            "name": "Suffragists",
+                            "url": "https://openlibrary.org/subjects/suffragists"
+                        },
+                        {
+                            "name": "Women",
+                            "url": "https://openlibrary.org/subjects/women"
+                        },
+                        {
+                            "name": "Juvenile literature",
+                            "url": "https://openlibrary.org/subjects/juvenile_literature"
+                        },
+                        {
+                            "name": "Biography",
+                            "url": "https://openlibrary.org/subjects/biography"
+                        },
+                        {
+                            "name": "Judges",
+                            "url": "https://openlibrary.org/subjects/judges"
+                        },
+                        {
+                            "name": "Women, biography, juvenile literature",
+                            "url": "https://openlibrary.org/subjects/women,_biography,_juvenile_literature"
+                        },
+                        {
+                            "name": "Women, suffrage",
+                            "url": "https://openlibrary.org/subjects/women,_suffrage"
+                        }
+                    ],
+                    "subject_places": [
+                        {
+                            "name": "Wyoming",
+                            "url": "https://openlibrary.org/subjects/place:wyoming"
+                        }
+                    ],
+                    "subject_people": [
+                        {
+                            "name": "Esther Hobart Morris (1814-1902)",
+                            "url": "https://openlibrary.org/subjects/person:esther_hobart_morris_(1814-1902)"
+                        }
+                    ],
+                    "subject_times": [
+                        {
+                            "name": "19th century",
+                            "url": "https://openlibrary.org/subjects/time:19th_century"
+                        }
+                    ],
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/icoulddothatesth0000whit",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL7423511M/I_Could_Do_That!/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/223899-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/223899-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/223899-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL7423511M",
+                    "info_url": "https://openlibrary.org/books/OL7423511M/I_Could_Do_That!",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/icoulddothatesth0000whit",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/223899-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "Farrar, Straus and Giroux (BYR)"
+                        ],
+                        "identifiers": {
+                            "librarything": [
+                                "403451"
+                            ],
+                            "goodreads": [
+                                "450372"
+                            ]
+                        },
+                        "subtitle": "Esther Morris Gets Women the Vote (Melanie Kroupa Books)",
+                        "isbn_10": [
+                            "0374335273"
+                        ],
+                        "covers": [
+                            223899
+                        ],
+                        "lc_classifications": [
+                            "JK1899.M67M55 2005",
+                            "JK1899.M67 M55 2005"
+                        ],
+                        "key": "/books/OL7423511M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL239265A",
+                                "name": "Linda Arms White"
+                            }
+                        ],
+                        "ocaid": "icoulddothatesth0000whit",
+                        "contributions": [
+                            "Nancy Carpenter (Illustrator)"
+                        ],
+                        "isbn_13": [
+                            "9780374335274"
+                        ],
+                        "source_records": [
+                            "amazon:0374335273:18:1210707550:227146",
+                            "marc:marc_loc_updates/v37.i07.records.utf8:1904120:1472",
+                            "marc:CollingswoodLibraryMarcDump10-27-2008/Collingswood.out:67427320:2216",
+                            "marc:marc_openlibraries_sanfranciscopubliclibrary/sfpl_chq_2018_12_24_run03.mrc:137896211:4527",
+                            "marc:marc_marygrove/marygrovecollegelibrary.full.D20191108.T213022.internetarchive2nd_REPACK.mrc:152414599:4430",
+                            "ia:icoulddothatesth0000whit",
+                            "bwb:9780374335274",
+                            "marc:marc_loc_2016/BooksAll.2016.part30.utf8:191549873:1472"
+                        ],
+                        "title": "I Could Do That!",
+                        "number_of_pages": 40,
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "local_id": [
+                            "urn:sfpl:31223070300927",
+                            "urn:sfpl:31223070300901",
+                            "urn:sfpl:31223070336970",
+                            "urn:sfpl:31223070300877",
+                            "urn:sfpl:31223070300869",
+                            "urn:sfpl:31223070300984",
+                            "urn:sfpl:31223070300950",
+                            "urn:sfpl:31223070300885",
+                            "urn:sfpl:31223070300802",
+                            "urn:sfpl:31223070300935",
+                            "urn:sfpl:31223070300844",
+                            "urn:sfpl:31223070300851",
+                            "urn:mgc:31927000614922"
+                        ],
+                        "publish_date": "August 11, 2005",
+                        "works": [
+                            {
+                                "key": "/works/OL1987987W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "lccn": [
+                            "2003051417"
+                        ],
+                        "latest_revision": 16,
+                        "revision": 16,
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2008-04-29T13:35:46.876380"
+                        },
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2020-12-08T01:50:52.188519"
+                        }
+                    }
+                }
+            }
+        },
+        "items": []
+    },
+    {
+        "records": {
+            "/books/OL28512646M": {
+                "isbns": [
+                    "9780857084804"
+                ],
+                "issns": [],
+                "lccns": [
+                    "2013047981",
+                    "2013050089"
+                ],
+                "oclcs": [],
+                "olids": [
+                    "OL28512646M"
+                ],
+                "publishDates": [
+                    "2014"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL28512646M/Could_I_Do_That",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL28512646M/Could_I_Do_That",
+                    "key": "/books/OL28512646M",
+                    "title": "Could I Do That?",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL5633650A/Simon_Hartley",
+                            "name": "Simon Hartley"
+                        }
+                    ],
+                    "number_of_pages": 192,
+                    "identifiers": {
+                        "isbn_13": [
+                            "9780857084804"
+                        ],
+                        "lccn": [
+                            "2013047981",
+                            "2013050089"
+                        ],
+                        "openlibrary": [
+                            "OL28512646M"
+                        ]
+                    },
+                    "classifications": {
+                        "lc_classifications": [
+                            "BF503",
+                            "BF503 .H375 2014"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "Wiley & Sons, Limited, John"
+                        }
+                    ],
+                    "publish_date": "2014",
+                    "subjects": [
+                        {
+                            "name": "Self-actualization (psychology)",
+                            "url": "https://openlibrary.org/subjects/self-actualization_(psychology)"
+                        },
+                        {
+                            "name": "Achievement motivation",
+                            "url": "https://openlibrary.org/subjects/achievement_motivation"
+                        },
+                        {
+                            "name": "Success, psychological aspects",
+                            "url": "https://openlibrary.org/subjects/success,_psychological_aspects"
+                        },
+                        {
+                            "name": "Motivation (Psychology)",
+                            "url": "https://openlibrary.org/subjects/motivation_(psychology)"
+                        },
+                        {
+                            "name": "Ability",
+                            "url": "https://openlibrary.org/subjects/ability"
+                        },
+                        {
+                            "name": "Psychological aspects",
+                            "url": "https://openlibrary.org/subjects/psychological_aspects"
+                        },
+                        {
+                            "name": "Success",
+                            "url": "https://openlibrary.org/subjects/success"
+                        }
+                    ],
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/couldidothat0000hart",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL28512646M/Could_I_Do_That/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/11382116-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/11382116-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/11382116-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL28512646M",
+                    "info_url": "https://openlibrary.org/books/OL28512646M/Could_I_Do_That",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/couldidothat0000hart",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/11382116-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "Wiley & Sons, Limited, John"
+                        ],
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "source_records": [
+                            "bwb:9780857084804",
+                            "marc:marc_loc_2016/BooksAll.2016.part40.utf8:266643526:1252",
+                            "marc:marc_loc_2016/BooksAll.2016.part40.utf8:270110358:1456",
+                            "ia:couldidothat0000hart"
+                        ],
+                        "title": "Could I Do That?",
+                        "lccn": [
+                            "2013047981",
+                            "2013050089"
+                        ],
+                        "number_of_pages": 192,
+                        "isbn_13": [
+                            "9780857084804"
+                        ],
+                        "lc_classifications": [
+                            "BF503",
+                            "BF503 .H375 2014"
+                        ],
+                        "publish_date": "2014",
+                        "key": "/books/OL28512646M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL5633650A",
+                                "name": "Simon Hartley"
+                            }
+                        ],
+                        "works": [
+                            {
+                                "key": "/works/OL21062361W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "subjects": [
+                            "Self-actualization (psychology)",
+                            "Achievement motivation",
+                            "Success, psychological aspects"
+                        ],
+                        "covers": [
+                            11382116
+                        ],
+                        "ocaid": "couldidothat0000hart",
+                        "latest_revision": 4,
+                        "revision": 4,
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2020-08-03T14:20:22.841193"
+                        },
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2021-07-08T04:56:19.596714"
+                        }
+                    }
+                }
+            }
+        },
+        "items": []
+    },
+    {
+        "records": {
+            "/books/OL25033526M": {
+                "isbns": [
+                    "9780803737471"
+                ],
+                "issns": [],
+                "lccns": [
+                    "2011038198"
+                ],
+                "oclcs": [],
+                "olids": [
+                    "OL25033526M"
+                ],
+                "publishDates": [
+                    "2012"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL25033526M/Hands_around_the_library",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL25033526M/Hands_around_the_library",
+                    "key": "/books/OL25033526M",
+                    "title": "Hands around the library",
+                    "subtitle": "protecting Egypt's treasured books",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL73181A/Susan_L._Roth",
+                            "name": "Susan L. Roth"
+                        }
+                    ],
+                    "pagination": "p. cm.",
+                    "by_statement": "by Susan L. Roth and Karen Leggett Abouraya ; collages by Susan L. Roth",
+                    "identifiers": {
+                        "isbn_13": [
+                            "9780803737471"
+                        ],
+                        "lccn": [
+                            "2011038198"
+                        ],
+                        "openlibrary": [
+                            "OL25033526M"
+                        ]
+                    },
+                    "classifications": {
+                        "lc_classifications": [
+                            "Z858.A48 R68 2012",
+                            "Z858.A48R68 2012"
+                        ],
+                        "dewey_decimal_class": [
+                            "962.055"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "Dial Books for Young Readers"
+                        }
+                    ],
+                    "publish_places": [
+                        {
+                            "name": "New York"
+                        }
+                    ],
+                    "publish_date": "2012",
+                    "subjects": [
+                        {
+                            "name": "Libraries",
+                            "url": "https://openlibrary.org/subjects/libraries"
+                        },
+                        {
+                            "name": "Protection",
+                            "url": "https://openlibrary.org/subjects/protection"
+                        },
+                        {
+                            "name": "Cultural property",
+                            "url": "https://openlibrary.org/subjects/cultural_property"
+                        },
+                        {
+                            "name": "Destruction and pillage",
+                            "url": "https://openlibrary.org/subjects/destruction_and_pillage"
+                        },
+                        {
+                            "name": "Aliks\u0101ndr\u012bn\u0101 (Library)",
+                            "url": "https://openlibrary.org/subjects/aliks\u0101ndr\u012bn\u0101_(library)"
+                        },
+                        {
+                            "name": "Juvenile literature",
+                            "url": "https://openlibrary.org/subjects/juvenile_literature"
+                        },
+                        {
+                            "name": "History",
+                            "url": "https://openlibrary.org/subjects/history"
+                        },
+                        {
+                            "name": "Libraries, juvenile literature",
+                            "url": "https://openlibrary.org/subjects/libraries,_juvenile_literature"
+                        },
+                        {
+                            "name": "Egypt, history",
+                            "url": "https://openlibrary.org/subjects/egypt,_history"
+                        },
+                        {
+                            "name": "Egypt, juvenile literature",
+                            "url": "https://openlibrary.org/subjects/egypt,_juvenile_literature"
+                        }
+                    ],
+                    "subject_places": [
+                        {
+                            "name": "Egypt",
+                            "url": "https://openlibrary.org/subjects/place:egypt"
+                        },
+                        {
+                            "name": "Alexandria",
+                            "url": "https://openlibrary.org/subjects/place:alexandria"
+                        }
+                    ],
+                    "subject_times": [
+                        {
+                            "name": "21st century",
+                            "url": "https://openlibrary.org/subjects/time:21st_century"
+                        }
+                    ],
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/handsaroundlibra0000roth",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL25033526M/Hands_around_the_library/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/8623389-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/8623389-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/8623389-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL25033526M",
+                    "info_url": "https://openlibrary.org/books/OL25033526M/Hands_around_the_library",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/handsaroundlibra0000roth",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/8623389-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "Dial Books for Young Readers"
+                        ],
+                        "subtitle": "protecting Egypt's treasured books",
+                        "covers": [
+                            8623389
+                        ],
+                        "local_id": [
+                            "urn:sfpl:31223118119156",
+                            "urn:sfpl:31223118119107",
+                            "urn:sfpl:31223118119149",
+                            "urn:sfpl:31223118119164",
+                            "urn:sfpl:31223118119131",
+                            "urn:sfpl:31223118119123",
+                            "urn:sfpl:31223118119115"
+                        ],
+                        "full_title": "Hands around the library protecting Egypt's treasured books",
+                        "lc_classifications": [
+                            "Z858.A48 R68 2012",
+                            "Z858.A48R68 2012"
+                        ],
+                        "key": "/books/OL25033526M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL73181A",
+                                "name": "Susan L. Roth"
+                            }
+                        ],
+                        "publish_places": [
+                            "New York"
+                        ],
+                        "contributions": [
+                            "Abouraya, Karen Leggett"
+                        ],
+                        "isbn_13": [
+                            "9780803737471"
+                        ],
+                        "pagination": "p. cm.",
+                        "source_records": [
+                            "marc:marc_loc_updates/v39.i38.records.utf8:10974041:1062",
+                            "amazon:0803737475",
+                            "marc:marc_openlibraries_sanfranciscopubliclibrary/sfpl_chq_2018_12_24_run05.mrc:350038081:3699",
+                            "bwb:9780803737471",
+                            "marc:marc_loc_2016/BooksAll.2016.part38.utf8:207698349:1082",
+                            "ia:handsaroundlibra0000roth"
+                        ],
+                        "title": "Hands around the library",
+                        "dewey_decimal_class": [
+                            "962.055"
+                        ],
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "lccn": [
+                            "2011038198"
+                        ],
+                        "subject_places": [
+                            "Egypt",
+                            "Alexandria"
+                        ],
+                        "subjects": [
+                            "Libraries",
+                            "Protection",
+                            "Cultural property",
+                            "Destruction and pillage",
+                            "Aliks\u0101ndr\u012bn\u0101 (Library)",
+                            "Juvenile literature",
+                            "History"
+                        ],
+                        "publish_date": "2012",
+                        "publish_country": "ilu",
+                        "by_statement": "by Susan L. Roth and Karen Leggett Abouraya ; collages by Susan L. Roth",
+                        "subject_times": [
+                            "21st century"
+                        ],
+                        "works": [
+                            {
+                                "key": "/works/OL16152814W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "ocaid": "handsaroundlibra0000roth",
+                        "latest_revision": 7,
+                        "revision": 7,
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2011-10-22T09:35:58.894455"
+                        },
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2021-02-02T09:22:20.825887"
+                        }
+                    }
+                }
+            }
+        },
+        "items": []
+    },
+    {
+        "records": {
+            "/books/OL7729372M": {
+                "isbns": [
+                    "0689832133",
+                    "9780689832130"
+                ],
+                "issns": [],
+                "lccns": [
+                    "97029718"
+                ],
+                "oclcs": [],
+                "olids": [
+                    "OL7729372M"
+                ],
+                "publishDates": [
+                    "February 1, 2000"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL7729372M/Click_Clack_Moo",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL7729372M/Click_Clack_Moo",
+                    "key": "/books/OL7729372M",
+                    "title": "Click, Clack, Moo",
+                    "subtitle": "Cows That Type",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL1388005A/Doreen_Cronin",
+                            "name": "Doreen Cronin"
+                        }
+                    ],
+                    "number_of_pages": 32,
+                    "weight": "1 pounds",
+                    "identifiers": {
+                        "librarything": [
+                            "70811"
+                        ],
+                        "goodreads": [
+                            "766955"
+                        ],
+                        "isbn_10": [
+                            "0689832133"
+                        ],
+                        "isbn_13": [
+                            "9780689832130"
+                        ],
+                        "lccn": [
+                            "97029718"
+                        ],
+                        "openlibrary": [
+                            "OL7729372M"
+                        ]
+                    },
+                    "classifications": {
+                        "lc_classifications": [
+                            "PZ7.C88135Cl 2000",
+                            "PZ7.C88135 Cl 2000"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "Simon & Schuster Children's Publishing"
+                        }
+                    ],
+                    "publish_date": "February 1, 2000",
+                    "subjects": [
+                        {
+                            "name": "Oversize books",
+                            "url": "https://openlibrary.org/subjects/oversize_books"
+                        },
+                        {
+                            "name": "Strikes and lockouts",
+                            "url": "https://openlibrary.org/subjects/strikes_and_lockouts"
+                        },
+                        {
+                            "name": "Typewriters",
+                            "url": "https://openlibrary.org/subjects/typewriters"
+                        },
+                        {
+                            "name": "Fiction",
+                            "url": "https://openlibrary.org/subjects/fiction"
+                        },
+                        {
+                            "name": "Cows",
+                            "url": "https://openlibrary.org/subjects/cows"
+                        },
+                        {
+                            "name": "Domestic animals",
+                            "url": "https://openlibrary.org/subjects/domestic_animals"
+                        },
+                        {
+                            "name": "Juvenile fiction",
+                            "url": "https://openlibrary.org/subjects/juvenile_fiction"
+                        },
+                        {
+                            "name": "Phonics",
+                            "url": "https://openlibrary.org/subjects/phonics"
+                        },
+                        {
+                            "name": "Humorous Stories",
+                            "url": "https://openlibrary.org/subjects/humorous_stories"
+                        },
+                        {
+                            "name": "Animals",
+                            "url": "https://openlibrary.org/subjects/animals"
+                        },
+                        {
+                            "name": "Farm Animals",
+                            "url": "https://openlibrary.org/subjects/farm_animals"
+                        },
+                        {
+                            "name": "Ducks",
+                            "url": "https://openlibrary.org/subjects/ducks"
+                        },
+                        {
+                            "name": "Cattle",
+                            "url": "https://openlibrary.org/subjects/cattle"
+                        },
+                        {
+                            "name": "JUVENILE FICTION",
+                            "url": "https://openlibrary.org/subjects/juvenile_fiction"
+                        },
+                        {
+                            "name": "Pictorial works",
+                            "url": "https://openlibrary.org/subjects/pictorial_works"
+                        },
+                        {
+                            "name": "Children's fiction",
+                            "url": "https://openlibrary.org/subjects/children's_fiction"
+                        },
+                        {
+                            "name": "Cows, fiction",
+                            "url": "https://openlibrary.org/subjects/cows,_fiction"
+                        },
+                        {
+                            "name": "Typewriters, fiction",
+                            "url": "https://openlibrary.org/subjects/typewriters,_fiction"
+                        },
+                        {
+                            "name": "Domestic animals, fiction",
+                            "url": "https://openlibrary.org/subjects/domestic_animals,_fiction"
+                        }
+                    ],
+                    "excerpts": [
+                        {
+                            "text": "Farmer Brown has a problem.",
+                            "comment": "",
+                            "first_sentence": true
+                        }
+                    ],
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/clickclackmoocow00cron_0",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL7729372M/Click_Clack_Moo/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/435646-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/435646-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/435646-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL7729372M",
+                    "info_url": "https://openlibrary.org/books/OL7729372M/Click_Clack_Moo",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/clickclackmoocow00cron_0",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/435646-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "Simon & Schuster Children's Publishing"
+                        ],
+                        "number_of_pages": 32,
+                        "subtitle": "Cows That Type",
+                        "ia_box_id": [
+                            "IA178701"
+                        ],
+                        "weight": "1 pounds",
+                        "isbn_10": [
+                            "0689832133"
+                        ],
+                        "covers": [
+                            435646
+                        ],
+                        "physical_format": "Hardcover",
+                        "ia_loaded_id": [
+                            "clickclackmoocow00cron_0"
+                        ],
+                        "lc_classifications": [
+                            "PZ7.C88135Cl 2000",
+                            "PZ7.C88135 Cl 2000"
+                        ],
+                        "latest_revision": 17,
+                        "key": "/books/OL7729372M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL1388005A",
+                                "name": "Doreen Cronin"
+                            }
+                        ],
+                        "ocaid": "clickclackmoocow00cron_0",
+                        "contributions": [
+                            "Betsy Lewin (Illustrator)"
+                        ],
+                        "subjects": [
+                            "Picture books",
+                            "Typewriters",
+                            "Domestic animals",
+                            "Children's Books/Ages 4-8 Fiction",
+                            "Juvenile Fiction",
+                            "Lifestyles - Farm Life & Ranch Life",
+                            "Children: Preschool",
+                            "Fiction",
+                            "Animals - Farm Animals",
+                            "Humorous Stories",
+                            "Juvenile Fiction / Animals / Farm Animals",
+                            "Cattle",
+                            "Cows"
+                        ],
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "first_sentence": {
+                            "type": "/type/text",
+                            "value": "Farmer Brown has a problem."
+                        },
+                        "source_records": [
+                            "amazon:0689832133:ci:3441173844:262624",
+                            "marc:marc_loc_updates/v36.i49.records.utf8:3079634:1111",
+                            "marc:CollingswoodLibraryMarcDump10-27-2008/Collingswood.out:24374976:3255",
+                            "ia:clickclackmoocow00cron_0",
+                            "marc:marc_openlibraries_phillipsacademy/PANO_FOR_IA_05072019.mrc:84784461:1587",
+                            "marc:marc_openlibraries_sanfranciscopubliclibrary/sfpl_chq_2018_12_24_run02.mrc:210033842:8439",
+                            "bwb:9780689832130",
+                            "marc:marc_loc_2016/BooksAll.2016.part26.utf8:59451714:1111"
+                        ],
+                        "title": "Click, Clack, Moo",
+                        "lccn": [
+                            "97029718"
+                        ],
+                        "identifiers": {
+                            "librarything": [
+                                "70811"
+                            ],
+                            "goodreads": [
+                                "766955"
+                            ]
+                        },
+                        "isbn_13": [
+                            "9780689832130"
+                        ],
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2008-04-29T15:03:11.581851"
+                        },
+                        "edition_name": "Library Binding edition",
+                        "local_id": [
+                            "urn:phillips:31867003083776",
+                            "urn:sfpl:31223089915699",
+                            "urn:sfpl:31223089915707",
+                            "urn:sfpl:31223057532625",
+                            "urn:sfpl:31223089915715",
+                            "urn:sfpl:31223075985268",
+                            "urn:sfpl:31223075991225",
+                            "urn:sfpl:31223089915723",
+                            "urn:sfpl:31223057957558",
+                            "urn:sfpl:31223106892046",
+                            "urn:sfpl:31223075991357",
+                            "urn:sfpl:31223075985714",
+                            "urn:sfpl:31223075985615",
+                            "urn:sfpl:31223075947987",
+                            "urn:sfpl:31223057956667",
+                            "urn:sfpl:31223075947995",
+                            "urn:sfpl:31223075991340",
+                            "urn:sfpl:31223075059486",
+                            "urn:sfpl:31223106892020",
+                            "urn:sfpl:31223098252860",
+                            "urn:sfpl:31223061536034",
+                            "urn:sfpl:31223119294305",
+                            "urn:sfpl:31223106892061",
+                            "urn:sfpl:31223075991324",
+                            "urn:sfpl:31223091777988",
+                            "urn:sfpl:31223106892079",
+                            "urn:sfpl:31223075991472",
+                            "urn:sfpl:31223106892038",
+                            "urn:sfpl:31223119597178",
+                            "urn:sfpl:31223075985243",
+                            "urn:sfpl:31223098252886",
+                            "urn:sfpl:31223075947938",
+                            "urn:sfpl:31223075991498",
+                            "urn:sfpl:31223106892012",
+                            "urn:sfpl:31223075985383",
+                            "urn:sfpl:31223075946070"
+                        ],
+                        "publish_date": "February 1, 2000",
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2020-11-26T00:18:13.494477"
+                        },
+                        "works": [
+                            {
+                                "key": "/works/OL5703663W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "physical_dimensions": "10.2 x 8 x 0.5 inches",
+                        "revision": 17
+                    }
+                }
+            }
+        },
+        "items": []
+    },
+    {
+        "records": {
+            "/books/OL20962459M": {
+                "isbns": [
+                    "0375833358",
+                    "0375933352",
+                    "9780375833359",
+                    "9780375933356"
+                ],
+                "issns": [],
+                "lccns": [
+                    "2007042279"
+                ],
+                "oclcs": [],
+                "olids": [
+                    "OL20962459M"
+                ],
+                "publishDates": [
+                    "2008"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL20962459M/As_good_as_anybody",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL20962459M/As_good_as_anybody",
+                    "key": "/books/OL20962459M",
+                    "title": "As good as anybody",
+                    "subtitle": "Martin Luther King Jr. and Abraham Joshua Heschel's amazing march toward freedom",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL239137A/Richard_Michelson",
+                            "name": "Richard Michelson"
+                        }
+                    ],
+                    "pagination": "1 v. (unpaged) :",
+                    "by_statement": "by Richard Michelson ; illustrated by Raul Col\u00f3n.",
+                    "identifiers": {
+                        "goodreads": [
+                            "5818253",
+                            "2909656"
+                        ],
+                        "librarything": [
+                            "4990974"
+                        ],
+                        "isbn_10": [
+                            "0375833358",
+                            "0375933352"
+                        ],
+                        "isbn_13": [
+                            "9780375833359",
+                            "9780375933356"
+                        ],
+                        "lccn": [
+                            "2007042279"
+                        ],
+                        "openlibrary": [
+                            "OL20962459M"
+                        ]
+                    },
+                    "classifications": {
+                        "lc_classifications": [
+                            "E185.97.K5 M44 2008"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "A.A. Knopf"
+                        }
+                    ],
+                    "publish_places": [
+                        {
+                            "name": "New York"
+                        }
+                    ],
+                    "publish_date": "2008",
+                    "subjects": [
+                        {
+                            "name": "Juvenile literature",
+                            "url": "https://openlibrary.org/subjects/juvenile_literature"
+                        },
+                        {
+                            "name": "African Americans",
+                            "url": "https://openlibrary.org/subjects/african_americans"
+                        },
+                        {
+                            "name": "Biography",
+                            "url": "https://openlibrary.org/subjects/biography"
+                        },
+                        {
+                            "name": "History",
+                            "url": "https://openlibrary.org/subjects/history"
+                        },
+                        {
+                            "name": "Race relations",
+                            "url": "https://openlibrary.org/subjects/race_relations"
+                        },
+                        {
+                            "name": "Jews",
+                            "url": "https://openlibrary.org/subjects/jews"
+                        },
+                        {
+                            "name": "Civil rights",
+                            "url": "https://openlibrary.org/subjects/civil_rights"
+                        },
+                        {
+                            "name": "Relations with Jews",
+                            "url": "https://openlibrary.org/subjects/relations_with_jews"
+                        },
+                        {
+                            "name": "Civil rights movements",
+                            "url": "https://openlibrary.org/subjects/civil_rights_movements"
+                        },
+                        {
+                            "name": "Case studies",
+                            "url": "https://openlibrary.org/subjects/case_studies"
+                        },
+                        {
+                            "name": "Civil rights workers",
+                            "url": "https://openlibrary.org/subjects/civil_rights_workers"
+                        },
+                        {
+                            "name": "Friendship",
+                            "url": "https://openlibrary.org/subjects/friendship"
+                        }
+                    ],
+                    "subject_places": [
+                        {
+                            "name": "United States",
+                            "url": "https://openlibrary.org/subjects/place:united_states"
+                        }
+                    ],
+                    "subject_people": [
+                        {
+                            "name": "Martin Luther King Jr. (1929-1968)",
+                            "url": "https://openlibrary.org/subjects/person:martin_luther_king_jr._(1929-1968)"
+                        },
+                        {
+                            "name": "Abraham Joshua Heschel (1907-1972)",
+                            "url": "https://openlibrary.org/subjects/person:abraham_joshua_heschel_(1907-1972)"
+                        }
+                    ],
+                    "subject_times": [
+                        {
+                            "name": "20th century",
+                            "url": "https://openlibrary.org/subjects/time:20th_century"
+                        }
+                    ],
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/asgoodasanybodym00mich",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL20962459M/As_good_as_anybody/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/9712682-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/9712682-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/9712682-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL20962459M",
+                    "info_url": "https://openlibrary.org/books/OL20962459M/As_good_as_anybody",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/asgoodasanybodym00mich",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/9712682-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "A.A. Knopf"
+                        ],
+                        "subtitle": "Martin Luther King Jr. and Abraham Joshua Heschel's amazing march toward freedom",
+                        "isbn_10": [
+                            "0375833358",
+                            "0375933352"
+                        ],
+                        "pagination": "1 v. (unpaged) :",
+                        "covers": [
+                            9712682
+                        ],
+                        "lc_classifications": [
+                            "E185.97.K5 M44 2008"
+                        ],
+                        "latest_revision": 8,
+                        "key": "/books/OL20962459M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL239137A",
+                                "name": "Richard Michelson"
+                            }
+                        ],
+                        "ocaid": "asgoodasanybodym00mich",
+                        "publish_places": [
+                            "New York"
+                        ],
+                        "contributions": [
+                            "Col\u00f3n, Ra\u00fal."
+                        ],
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "genres": [
+                            "Juvenile literature.",
+                            "Biography",
+                            "Case studies"
+                        ],
+                        "source_records": [
+                            "ia:asgoodasanybodym00mich"
+                        ],
+                        "title": "As good as anybody",
+                        "lccn": [
+                            "2007042279"
+                        ],
+                        "oclc_number": [
+                            "177058959"
+                        ],
+                        "identifiers": {
+                            "goodreads": [
+                                "5818253",
+                                "2909656"
+                            ],
+                            "librarything": [
+                                "4990974"
+                            ]
+                        },
+                        "isbn_13": [
+                            "9780375833359",
+                            "9780375933356"
+                        ],
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2008-10-31T07:41:14.040189"
+                        },
+                        "edition_name": "1st ed.",
+                        "subjects": [
+                            "King, Martin Luther, -- Jr., -- 1929-1968 -- Juvenile literature.",
+                            "Heschel, Abraham Joshua, -- 1907-1972 -- Juvenile literature.",
+                            "Civil rights workers -- United States -- Biography -- Juvenile literature.",
+                            "African Americans -- Biography -- Juvenile literature.",
+                            "Jews -- United States -- Biography -- Juvenile literature.",
+                            "Friendship -- United States -- Case studies -- Juvenile literature.",
+                            "African Americans -- Relations with Jews -- Juvenile literature.",
+                            "African Americans -- Civil rights -- History -- 20th century -- Juvenile literature.",
+                            "Civil rights movements -- United States -- History -- 20th century -- Juvenile literature.",
+                            "United States -- Race relations -- History -- 20th century -- Juvenile literature."
+                        ],
+                        "publish_date": "2008",
+                        "publish_country": "nyu",
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2020-05-18T19:36:29.779994"
+                        },
+                        "by_statement": "by Richard Michelson ; illustrated by Raul Col\u00f3n.",
+                        "works": [
+                            {
+                                "key": "/works/OL1987333W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "revision": 8
+                    }
+                }
+            }
+        },
+        "items": []
+    },
+    {
+        "records": {
+            "/books/OL7729382M": {
+                "isbns": [
+                    "0689832524",
+                    "9780689832529"
+                ],
+                "issns": [],
+                "lccns": [],
+                "oclcs": [],
+                "olids": [
+                    "OL7729382M"
+                ],
+                "publishDates": [
+                    "November 30, 2004"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL7729382M/A_Sweet_Smell_of_Roses",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL7729382M/A_Sweet_Smell_of_Roses",
+                    "key": "/books/OL7729382M",
+                    "title": "A Sweet Smell of Roses",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL29397A/Angela_Johnson",
+                            "name": "Angela Johnson"
+                        }
+                    ],
+                    "number_of_pages": 32,
+                    "weight": "1 pounds",
+                    "identifiers": {
+                        "librarything": [
+                            "446655"
+                        ],
+                        "goodreads": [
+                            "272412"
+                        ],
+                        "isbn_10": [
+                            "0689832524"
+                        ],
+                        "isbn_13": [
+                            "9780689832529"
+                        ],
+                        "openlibrary": [
+                            "OL7729382M"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "Simon & Schuster Children's Publishing"
+                        }
+                    ],
+                    "publish_date": "November 30, 2004",
+                    "subjects": [
+                        {
+                            "name": "Fiction",
+                            "url": "https://openlibrary.org/subjects/fiction"
+                        },
+                        {
+                            "name": "African Americans",
+                            "url": "https://openlibrary.org/subjects/african_americans"
+                        },
+                        {
+                            "name": "Civil rights movements",
+                            "url": "https://openlibrary.org/subjects/civil_rights_movements"
+                        },
+                        {
+                            "name": "History",
+                            "url": "https://openlibrary.org/subjects/history"
+                        },
+                        {
+                            "name": "Civil rights",
+                            "url": "https://openlibrary.org/subjects/civil_rights"
+                        },
+                        {
+                            "name": "Stories",
+                            "url": "https://openlibrary.org/subjects/stories"
+                        },
+                        {
+                            "name": "Juvenile fiction",
+                            "url": "https://openlibrary.org/subjects/juvenile_fiction"
+                        },
+                        {
+                            "name": "1000blackgirlbooks",
+                            "url": "https://openlibrary.org/subjects/1000blackgirlbooks"
+                        },
+                        {
+                            "name": "Civil rights movements, fiction",
+                            "url": "https://openlibrary.org/subjects/civil_rights_movements,_fiction"
+                        },
+                        {
+                            "name": "African americans, fiction",
+                            "url": "https://openlibrary.org/subjects/african_americans,_fiction"
+                        },
+                        {
+                            "name": "United states, history, 20th century, fiction",
+                            "url": "https://openlibrary.org/subjects/united_states,_history,_20th_century,_fiction"
+                        },
+                        {
+                            "name": "Children's fiction",
+                            "url": "https://openlibrary.org/subjects/children's_fiction"
+                        }
+                    ],
+                    "subject_places": [
+                        {
+                            "name": "United States",
+                            "url": "https://openlibrary.org/subjects/place:united_states"
+                        }
+                    ],
+                    "subject_times": [
+                        {
+                            "name": "20th century",
+                            "url": "https://openlibrary.org/subjects/time:20th_century"
+                        }
+                    ],
+                    "excerpts": [
+                        {
+                            "text": "After a night of soft rain there is a sweet smell of roses as my sister, Minnie, and I slip past Mama's door and out of the house down Charlotte Street.",
+                            "comment": "",
+                            "first_sentence": true
+                        }
+                    ],
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/sweetsmellofrose00john",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL7729382M/A_Sweet_Smell_of_Roses/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/435677-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/435677-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/435677-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL7729382M",
+                    "info_url": "https://openlibrary.org/books/OL7729382M/A_Sweet_Smell_of_Roses",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/sweetsmellofrose00john",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/435677-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "Simon & Schuster Children's Publishing"
+                        ],
+                        "identifiers": {
+                            "librarything": [
+                                "446655"
+                            ],
+                            "goodreads": [
+                                "272412"
+                            ]
+                        },
+                        "ia_box_id": [
+                            "IA106811"
+                        ],
+                        "weight": "1 pounds",
+                        "isbn_10": [
+                            "0689832524"
+                        ],
+                        "covers": [
+                            435677
+                        ],
+                        "physical_format": "Hardcover",
+                        "ia_loaded_id": [
+                            "sweetsmellofrose00john"
+                        ],
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2012-08-09T12:32:43.545664"
+                        },
+                        "latest_revision": 10,
+                        "key": "/books/OL7729382M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL29397A",
+                                "name": "Angela Johnson"
+                            }
+                        ],
+                        "ocaid": "sweetsmellofrose00john",
+                        "contributions": [
+                            "Eric Velasquez (Illustrator)"
+                        ],
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "source_records": [
+                            "amazon:0689832524:ci:3447102880:212823",
+                            "ia:sweetsmellofrose00john"
+                        ],
+                        "title": "A Sweet Smell of Roses",
+                        "number_of_pages": 32,
+                        "isbn_13": [
+                            "9780689832529"
+                        ],
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2008-04-29T15:03:11.581851"
+                        },
+                        "first_sentence": {
+                            "type": "/type/text",
+                            "value": "After a night of soft rain there is a sweet smell of roses as my sister, Minnie, and I slip past Mama's door and out of the house down Charlotte Street."
+                        },
+                        "subjects": [
+                            "Historical - United States - 20th Century",
+                            "Social Issues - Prejudice & Racism",
+                            "Civil rights movements",
+                            "Children's Books/Ages 4-8 Fiction",
+                            "Juvenile Fiction",
+                            "People & Places - United States - African-American",
+                            "Children: Grades 1-2",
+                            "Children: Grades 3-4",
+                            "Fiction",
+                            "Juvenile Fiction / Historical / United States / 20th Century",
+                            "Children's 4-8 - Picturebooks",
+                            "African Americans"
+                        ],
+                        "publish_date": "November 30, 2004",
+                        "works": [
+                            {
+                                "key": "/works/OL861837W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "physical_dimensions": "11.1 x 10.1 x 0.5 inches",
+                        "revision": 10
+                    }
+                }
+            }
+        },
+        "items": []
+    },
+    {
+        "records": {
+            "/books/OL3407784M": {
+                "isbns": [
+                    "9780938317777"
+                ],
+                "issns": [],
+                "lccns": [
+                    "2005023612",
+                    "2003004426"
+                ],
+                "oclcs": [],
+                "olids": [
+                    "OL3407784M"
+                ],
+                "publishDates": [
+                    "2006"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL3407784M/Crossing_Bok_Chitto",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL3407784M/Crossing_Bok_Chitto",
+                    "key": "/books/OL3407784M",
+                    "title": "Crossing Bok Chitto",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL1425996A/Tim_Tingle",
+                            "name": "Tim Tingle"
+                        }
+                    ],
+                    "pagination": "p. cm.",
+                    "by_statement": "by Tim Tingle ; with illustrations by Jeanne Rorex Bridges.",
+                    "identifiers": {
+                        "librarything": [
+                            "1452756"
+                        ],
+                        "goodreads": [
+                            "199870"
+                        ],
+                        "isbn_13": [
+                            "9780938317777"
+                        ],
+                        "lccn": [
+                            "2005023612",
+                            "2003004426"
+                        ],
+                        "openlibrary": [
+                            "OL3407784M"
+                        ]
+                    },
+                    "classifications": {
+                        "lc_classifications": [
+                            "PZ7.T489 Cro 2006",
+                            "PZ8.1.H323 Day 2003",
+                            "GR74 .H39 2003"
+                        ],
+                        "dewey_decimal_class": [
+                            "[Fic]"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "Cinco Puntos Press"
+                        }
+                    ],
+                    "publish_places": [
+                        {
+                            "name": "El Paso, TX"
+                        }
+                    ],
+                    "publish_date": "2006",
+                    "subjects": [
+                        {
+                            "name": "Folklore",
+                            "url": "https://openlibrary.org/subjects/folklore"
+                        },
+                        {
+                            "name": "Indians of North America",
+                            "url": "https://openlibrary.org/subjects/indians_of_north_america"
+                        },
+                        {
+                            "name": "Juvenile fiction",
+                            "url": "https://openlibrary.org/subjects/juvenile_fiction"
+                        },
+                        {
+                            "name": "Slavery",
+                            "url": "https://openlibrary.org/subjects/slavery"
+                        },
+                        {
+                            "name": "Choctaw Indians",
+                            "url": "https://openlibrary.org/subjects/choctaw_indians"
+                        },
+                        {
+                            "name": "Fiction",
+                            "url": "https://openlibrary.org/subjects/fiction"
+                        },
+                        {
+                            "name": "Spanish language materials",
+                            "url": "https://openlibrary.org/subjects/spanish_language_materials"
+                        },
+                        {
+                            "name": "Bilingual",
+                            "url": "https://openlibrary.org/subjects/bilingual"
+                        },
+                        {
+                            "name": "Friendship",
+                            "url": "https://openlibrary.org/subjects/friendship"
+                        },
+                        {
+                            "name": "Tales",
+                            "url": "https://openlibrary.org/subjects/tales"
+                        },
+                        {
+                            "name": "History",
+                            "url": "https://openlibrary.org/subjects/history"
+                        },
+                        {
+                            "name": "Choctaw Indians -- Juvenile fiction.",
+                            "url": "https://openlibrary.org/subjects/choctaw_indians_--_juvenile_fiction."
+                        },
+                        {
+                            "name": "Choctaw Indians -- Fiction.",
+                            "url": "https://openlibrary.org/subjects/choctaw_indians_--_fiction."
+                        },
+                        {
+                            "name": "Slavery -- Fiction.",
+                            "url": "https://openlibrary.org/subjects/slavery_--_fiction."
+                        },
+                        {
+                            "name": "Friendship -- Fiction.",
+                            "url": "https://openlibrary.org/subjects/friendship_--_fiction."
+                        },
+                        {
+                            "name": "Indians of North America -- Mississippi -- Fiction.",
+                            "url": "https://openlibrary.org/subjects/indians_of_north_america_--_mississippi_--_fiction."
+                        },
+                        {
+                            "name": "Mississippi -- History -- 19th century -- Fiction.",
+                            "url": "https://openlibrary.org/subjects/mississippi_--_history_--_19th_century_--_fiction."
+                        },
+                        {
+                            "name": "Children's fiction",
+                            "url": "https://openlibrary.org/subjects/children's_fiction"
+                        },
+                        {
+                            "name": "Indians of north america, fiction",
+                            "url": "https://openlibrary.org/subjects/indians_of_north_america,_fiction"
+                        },
+                        {
+                            "name": "Friendship, fiction",
+                            "url": "https://openlibrary.org/subjects/friendship,_fiction"
+                        },
+                        {
+                            "name": "Mississippi, fiction",
+                            "url": "https://openlibrary.org/subjects/mississippi,_fiction"
+                        },
+                        {
+                            "name": "Slavery, fiction",
+                            "url": "https://openlibrary.org/subjects/slavery,_fiction"
+                        }
+                    ],
+                    "subject_places": [
+                        {
+                            "name": "Mississippi",
+                            "url": "https://openlibrary.org/subjects/place:mississippi"
+                        }
+                    ],
+                    "subject_times": [
+                        {
+                            "name": "19th century",
+                            "url": "https://openlibrary.org/subjects/time:19th_century"
+                        }
+                    ],
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/crossingbokchitt00ting",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL3407784M/Crossing_Bok_Chitto/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/11656544-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/11656544-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/11656544-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL3407784M",
+                    "info_url": "https://openlibrary.org/books/OL3407784M/Crossing_Bok_Chitto",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/crossingbokchitt00ting",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/11656544-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "Cinco Puntos Press"
+                        ],
+                        "description": "In the 1800s, a Choctaw girl becomes friends with a slave boy from a plantation across the great river, and when she learns that his family is in trouble, she helps them cross to freedom.",
+                        "subject_place": [
+                            "Mississippi"
+                        ],
+                        "pagination": "p. cm.",
+                        "covers": [
+                            11656544
+                        ],
+                        "local_id": [
+                            "urn:sfpl:31223075497264",
+                            "urn:sfpl:31223075179177",
+                            "urn:sfpl:31223075497447",
+                            "urn:sfpl:31223075497256"
+                        ],
+                        "lc_classifications": [
+                            "PZ7.T489 Cro 2006",
+                            "PZ8.1.H323 Day 2003",
+                            "GR74 .H39 2003"
+                        ],
+                        "key": "/books/OL3407784M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL1425996A",
+                                "name": "Tim Tingle"
+                            }
+                        ],
+                        "ocaid": "crossingbokchitt00ting",
+                        "publish_places": [
+                            "El Paso, TX"
+                        ],
+                        "contributions": [
+                            "Bridges, Jeanne Rorex, ill."
+                        ],
+                        "subject_time": [
+                            "19th century"
+                        ],
+                        "isbn_13": [
+                            "9780938317777"
+                        ],
+                        "genres": [
+                            "Juvenile fiction.",
+                            "Fiction."
+                        ],
+                        "classifications": {},
+                        "source_records": [
+                            "marc:marc_loc_updates/v40.i07.records.utf8:2824172:1345",
+                            "ia:isbn_9780938317760",
+                            "ia:crossingbokchitt00ting",
+                            "marc:marc_openlibraries_sanfranciscopubliclibrary/sfpl_chq_2018_12_24_run03.mrc:182668329:3150",
+                            "bwb:9780938317777",
+                            "marc:marc_loc_2016/BooksAll.2016.part30.utf8:155371604:1845",
+                            "marc:marc_loc_2016/BooksAll.2016.part32.utf8:145552398:1345"
+                        ],
+                        "title": "Crossing Bok Chitto",
+                        "lccn": [
+                            "2005023612",
+                            "2003004426"
+                        ],
+                        "identifiers": {
+                            "librarything": [
+                                "1452756"
+                            ],
+                            "goodreads": [
+                                "199870"
+                            ]
+                        },
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "dewey_decimal_class": [
+                            "[Fic]"
+                        ],
+                        "subjects": [
+                            "Choctaw Indians -- Juvenile fiction.",
+                            "Choctaw Indians -- Fiction.",
+                            "Slavery -- Fiction.",
+                            "Friendship -- Fiction.",
+                            "Indians of North America -- Mississippi -- Fiction.",
+                            "Mississippi -- History -- 19th century -- Fiction."
+                        ],
+                        "publish_date": "2006",
+                        "publish_country": "txu",
+                        "by_statement": "by Tim Tingle ; with illustrations by Jeanne Rorex Bridges.",
+                        "works": [
+                            {
+                                "key": "/works/OL5820029W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "latest_revision": 14,
+                        "revision": 14,
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2008-04-01T03:28:50.625462"
+                        },
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2021-08-16T12:11:26.227437"
+                        }
+                    }
+                }
+            }
+        },
+        "items": []
+    },
+    {
+        "records": {
+            "/books/OL24822730M": {
+                "isbns": [
+                    "9780375845697",
+                    "9780375945694",
+                    "9780375987281"
+                ],
+                "issns": [],
+                "lccns": [
+                    "2011001117"
+                ],
+                "oclcs": [],
+                "olids": [
+                    "OL24822730M"
+                ],
+                "publishDates": [
+                    "2012"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL24822730M/My_heart_will_not_sit_down",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL24822730M/My_heart_will_not_sit_down",
+                    "key": "/books/OL24822730M",
+                    "title": "My heart will not sit down",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL1515305A/Mara_Rockliff",
+                            "name": "Mara Rockliff"
+                        }
+                    ],
+                    "pagination": "p. cm.",
+                    "by_statement": "by Mara Rockliff ; illustrations by Ann Tanksley",
+                    "identifiers": {
+                        "isbn_13": [
+                            "9780375845697",
+                            "9780375945694",
+                            "9780375987281"
+                        ],
+                        "lccn": [
+                            "2011001117"
+                        ],
+                        "openlibrary": [
+                            "OL24822730M"
+                        ]
+                    },
+                    "classifications": {
+                        "lc_classifications": [
+                            "PZ7.R5887 My 2012"
+                        ],
+                        "dewey_decimal_class": [
+                            "[E]"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "Alfred A. Knopf"
+                        }
+                    ],
+                    "publish_places": [
+                        {
+                            "name": "New York"
+                        }
+                    ],
+                    "publish_date": "2012",
+                    "subjects": [
+                        {
+                            "name": "Depressions",
+                            "url": "https://openlibrary.org/subjects/depressions"
+                        },
+                        {
+                            "name": "Fiction",
+                            "url": "https://openlibrary.org/subjects/fiction"
+                        },
+                        {
+                            "name": "Charity",
+                            "url": "https://openlibrary.org/subjects/charity"
+                        },
+                        {
+                            "name": "Schools",
+                            "url": "https://openlibrary.org/subjects/schools"
+                        },
+                        {
+                            "name": "History",
+                            "url": "https://openlibrary.org/subjects/history"
+                        },
+                        {
+                            "name": "Juvenile fiction",
+                            "url": "https://openlibrary.org/subjects/juvenile_fiction"
+                        }
+                    ],
+                    "subject_places": [
+                        {
+                            "name": "Cameroon",
+                            "url": "https://openlibrary.org/subjects/place:cameroon"
+                        },
+                        {
+                            "name": "New York (State)",
+                            "url": "https://openlibrary.org/subjects/place:new_york_(state)"
+                        },
+                        {
+                            "name": "New York (N.Y.)",
+                            "url": "https://openlibrary.org/subjects/place:new_york_(n.y.)"
+                        }
+                    ],
+                    "subject_times": [
+                        {
+                            "name": "1929",
+                            "url": "https://openlibrary.org/subjects/time:1929"
+                        },
+                        {
+                            "name": "20th century",
+                            "url": "https://openlibrary.org/subjects/time:20th_century"
+                        },
+                        {
+                            "name": "1898-1951",
+                            "url": "https://openlibrary.org/subjects/time:1898-1951"
+                        }
+                    ],
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/myheartwillnotsi0000rock",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL24822730M/My_heart_will_not_sit_down/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/9738216-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/9738216-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/9738216-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL24822730M",
+                    "info_url": "https://openlibrary.org/books/OL24822730M/My_heart_will_not_sit_down",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/myheartwillnotsi0000rock",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/9738216-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "Alfred A. Knopf"
+                        ],
+                        "description": {
+                            "type": "/type/text",
+                            "value": "In 1931 Cameroon, young Kedi is upset to learn that children in her American teacher's village of New York are going hungry because of the Great Depression, and she asks her mother, neighbors, and even the headman for money to help. Includes historical notes."
+                        },
+                        "covers": [
+                            9738216
+                        ],
+                        "local_id": [
+                            "urn:sfpl:31223097942057",
+                            "urn:sfpl:31223097942065",
+                            "urn:sfpl:31223097941968",
+                            "urn:sfpl:31223097941984",
+                            "urn:sfpl:31223097942008",
+                            "urn:sfpl:31223097942040"
+                        ],
+                        "full_title": "My heart will not sit down",
+                        "lc_classifications": [
+                            "PZ7.R5887 My 2012"
+                        ],
+                        "latest_revision": 6,
+                        "key": "/books/OL24822730M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL1515305A",
+                                "name": "Mara Rockliff"
+                            }
+                        ],
+                        "ocaid": "myheartwillnotsi0000rock",
+                        "publish_places": [
+                            "New York"
+                        ],
+                        "contributions": [
+                            "Tanksley, Ann, ill"
+                        ],
+                        "edition_name": "1st ed.",
+                        "pagination": "p. cm.",
+                        "source_records": [
+                            "marc:marc_loc_updates/v39.i10.records.utf8:11893250:1227",
+                            "marc:marc_loc_updates/v40.i08.records.utf8:13110634:1241",
+                            "marc:marc_openlibraries_sanfranciscopubliclibrary/sfpl_chq_2018_12_24_run04.mrc:199847525:3547",
+                            "ia:myheartwillnotsi0000rock",
+                            "marc:marc_loc_2016/BooksAll.2016.part38.utf8:159899294:1241"
+                        ],
+                        "title": "My heart will not sit down",
+                        "dewey_decimal_class": [
+                            "[E]"
+                        ],
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2011-07-25T15:34:45.871872"
+                        },
+                        "isbn_13": [
+                            "9780375845697",
+                            "9780375945694",
+                            "9780375987281"
+                        ],
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "lccn": [
+                            "2011001117"
+                        ],
+                        "subject_places": [
+                            "Cameroon",
+                            "New York (State)",
+                            "New York (N.Y.)"
+                        ],
+                        "subjects": [
+                            "Schools",
+                            "Charity",
+                            "Fiction",
+                            "Depressions",
+                            "History"
+                        ],
+                        "publish_date": "2012",
+                        "publish_country": "nyu",
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2020-09-25T07:41:14.669701"
+                        },
+                        "by_statement": "by Mara Rockliff ; illustrations by Ann Tanksley",
+                        "subject_times": [
+                            "1929",
+                            "20th century",
+                            "1898-1951"
+                        ],
+                        "works": [
+                            {
+                                "key": "/works/OL15916331W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "revision": 6
+                    }
+                }
+            }
+        },
+        "items": []
+    },
+    {
+        "records": {
+            "/books/OL3690143M": {
+                "isbns": [
+                    "0316835315"
+                ],
+                "issns": [],
+                "lccns": [
+                    "2003058914"
+                ],
+                "oclcs": [],
+                "olids": [
+                    "OL3690143M"
+                ],
+                "publishDates": [
+                    "2004"
+                ],
+                "recordURL": "https://openlibrary.org/books/OL3690143M/The_peace_book",
+                "data": {
+                    "url": "https://openlibrary.org/books/OL3690143M/The_peace_book",
+                    "key": "/books/OL3690143M",
+                    "title": "The peace book",
+                    "authors": [
+                        {
+                            "url": "https://openlibrary.org/authors/OL29883A/Todd_Parr",
+                            "name": "Todd Parr"
+                        }
+                    ],
+                    "pagination": "1 v. (unpaged) :",
+                    "by_statement": "Todd Parr.",
+                    "identifiers": {
+                        "librarything": [
+                            "358694"
+                        ],
+                        "goodreads": [
+                            "2125627"
+                        ],
+                        "isbn_10": [
+                            "0316835315"
+                        ],
+                        "lccn": [
+                            "2003058914"
+                        ],
+                        "openlibrary": [
+                            "OL3690143M"
+                        ]
+                    },
+                    "classifications": {
+                        "lc_classifications": [
+                            "PZ7.P2447 Pe 2004",
+                            "PZ7.P2447Pe 2003"
+                        ],
+                        "dewey_decimal_class": [
+                            "[E]"
+                        ]
+                    },
+                    "publishers": [
+                        {
+                            "name": "Little, Brown"
+                        }
+                    ],
+                    "publish_places": [
+                        {
+                            "name": "New York"
+                        }
+                    ],
+                    "publish_date": "2004",
+                    "subjects": [
+                        {
+                            "name": "Juvenile Fiction",
+                            "url": "https://openlibrary.org/subjects/juvenile_fiction"
+                        },
+                        {
+                            "name": "Peace",
+                            "url": "https://openlibrary.org/subjects/peace"
+                        },
+                        {
+                            "name": "Fiction",
+                            "url": "https://openlibrary.org/subjects/fiction"
+                        },
+                        {
+                            "name": "Children's fiction",
+                            "url": "https://openlibrary.org/subjects/children's_fiction"
+                        },
+                        {
+                            "name": "Peace, fiction",
+                            "url": "https://openlibrary.org/subjects/peace,_fiction"
+                        }
+                    ],
+                    "notes": "\"Megan Tingley Books.\"",
+                    "ebooks": [
+                        {
+                            "preview_url": "https://archive.org/details/peacebook00parr",
+                            "availability": "borrow",
+                            "formats": {},
+                            "borrow_url": "https://openlibrary.org/books/OL3690143M/The_peace_book/borrow",
+                            "checkedout": false
+                        }
+                    ],
+                    "cover": {
+                        "small": "https://covers.openlibrary.org/b/id/190507-S.jpg",
+                        "medium": "https://covers.openlibrary.org/b/id/190507-M.jpg",
+                        "large": "https://covers.openlibrary.org/b/id/190507-L.jpg"
+                    }
+                },
+                "details": {
+                    "bib_key": "olid:OL3690143M",
+                    "info_url": "https://openlibrary.org/books/OL3690143M/The_peace_book",
+                    "preview": "borrow",
+                    "preview_url": "https://archive.org/details/peacebook00parr",
+                    "thumbnail_url": "https://covers.openlibrary.org/b/id/190507-S.jpg",
+                    "details": {
+                        "publishers": [
+                            "Little, Brown"
+                        ],
+                        "description": {
+                            "type": "/type/text",
+                            "value": "Describes peace as making new friends, sharing a meal, feeling good about yourself, and more."
+                        },
+                        "pagination": "1 v. (unpaged) :",
+                        "covers": [
+                            190507
+                        ],
+                        "local_id": [
+                            "urn:sfpl:31223124464133",
+                            "urn:sfpl:31223099732308",
+                            "urn:sfpl:31223124464125",
+                            "urn:sfpl:31223126317206",
+                            "urn:sfpl:31223124464117",
+                            "urn:sfpl:31223124463861",
+                            "urn:sfpl:31223124464158",
+                            "urn:sfpl:31223106899033",
+                            "urn:sfpl:31223124464109",
+                            "urn:sfpl:31223124464091",
+                            "urn:sfpl:31223106898977",
+                            "urn:sfpl:31223124464083",
+                            "urn:sfpl:31223124464067",
+                            "urn:sfpl:31223124464059",
+                            "urn:sfpl:31223124463853",
+                            "urn:sfpl:31223124464141",
+                            "urn:sfpl:31223126317180",
+                            "urn:sfpl:31223068989137",
+                            "urn:sfpl:31223099732373",
+                            "urn:sfpl:31223124464042",
+                            "urn:sfpl:31223126317172",
+                            "urn:sfpl:31223099732423",
+                            "urn:sfpl:31223124464034",
+                            "urn:sfpl:31223124464026",
+                            "urn:sfpl:31223124464018",
+                            "urn:sfpl:31223124464000",
+                            "urn:sfpl:31223106899025",
+                            "urn:sfpl:31223124463994",
+                            "urn:sfpl:31223124463986",
+                            "urn:sfpl:31223124463978",
+                            "urn:sfpl:31223124464174",
+                            "urn:sfpl:31223124463960",
+                            "urn:sfpl:31223124463952",
+                            "urn:sfpl:31223126317156",
+                            "urn:sfpl:31223106899017",
+                            "urn:sfpl:31223124463945",
+                            "urn:sfpl:31223124463937",
+                            "urn:sfpl:31223126317198",
+                            "urn:sfpl:31223124463929",
+                            "urn:sfpl:31223099732415",
+                            "urn:sfpl:31223124463911",
+                            "urn:sfpl:31223124464166",
+                            "urn:sfpl:31223106899009",
+                            "urn:sfpl:31223124463903",
+                            "urn:sfpl:31223126317164",
+                            "urn:sfpl:31223124463895",
+                            "urn:sfpl:31223124463887",
+                            "urn:sfpl:31223122413678",
+                            "urn:sfpl:31223124463879"
+                        ],
+                        "ia_loaded_id": [
+                            "peacebook00parr"
+                        ],
+                        "lc_classifications": [
+                            "PZ7.P2447 Pe 2004",
+                            "PZ7.P2447Pe 2003"
+                        ],
+                        "key": "/books/OL3690143M",
+                        "authors": [
+                            {
+                                "key": "/authors/OL29883A",
+                                "name": "Todd Parr"
+                            }
+                        ],
+                        "ocaid": "peacebook00parr",
+                        "publish_places": [
+                            "New York"
+                        ],
+                        "subjects": [
+                            "Peace -- Fiction"
+                        ],
+                        "ia_box_id": [
+                            "IA179201"
+                        ],
+                        "languages": [
+                            {
+                                "key": "/languages/eng"
+                            }
+                        ],
+                        "genres": [
+                            "Fiction."
+                        ],
+                        "source_records": [
+                            "marc:marc_records_scriblio_net/part14.dat:154334344:698",
+                            "marc:marc_loc_updates/v37.i31.records.utf8:4724325:919",
+                            "ia:peacebook00parr",
+                            "marc:marc_openlibraries_sanfranciscopubliclibrary/sfpl_chq_2018_12_24_run03.mrc:81126228:10374",
+                            "bwb:9780316835312",
+                            "marc:marc_loc_2016/BooksAll.2016.part30.utf8:198025683:919",
+                            "ia:peacebook0000parr_g1a1"
+                        ],
+                        "title": "The peace book",
+                        "dewey_decimal_class": [
+                            "[E]"
+                        ],
+                        "notes": {
+                            "type": "/type/text",
+                            "value": "\"Megan Tingley Books.\""
+                        },
+                        "identifiers": {
+                            "librarything": [
+                                "358694"
+                            ],
+                            "goodreads": [
+                                "2125627"
+                            ]
+                        },
+                        "edition_name": "1st ed.",
+                        "lccn": [
+                            "2003058914"
+                        ],
+                        "isbn_10": [
+                            "0316835315"
+                        ],
+                        "publish_date": "2004",
+                        "publish_country": "nyu",
+                        "by_statement": "Todd Parr.",
+                        "works": [
+                            {
+                                "key": "/works/OL476908W"
+                            }
+                        ],
+                        "type": {
+                            "key": "/type/edition"
+                        },
+                        "latest_revision": 13,
+                        "revision": 13,
+                        "created": {
+                            "type": "/type/datetime",
+                            "value": "2008-04-01T03:28:50.625462"
+                        },
+                        "last_modified": {
+                            "type": "/type/datetime",
+                            "value": "2021-09-29T02:39:31.845834"
+                        }
+                    }
+                }
+            }
+        },
+        "items": []
+    }
+]
