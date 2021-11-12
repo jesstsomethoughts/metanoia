@@ -5,11 +5,14 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Pagination from 'react-bootstrap/Pagination';
+import PageItem from 'react-bootstrap/PageItem';
 
 // images and other components
 import Banner from '../img/website-image.png';
 import Placeholder from '../img/metanoia_newlogo.png';
 import BookList from './olFriendshipBookList.json';
+import { Container } from 'react-bootstrap';
 
 
 const BookCard = ({ cover, title, author, url}) => {
@@ -68,7 +71,26 @@ function friendshipCatalog() {
                     }
                 </Row>
             </div>
+            
+            {/* <Pagination>
+                <Pagination.Item>{Diversity}</Pagination.Item>
+            </Pagination> */}
 
+            <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item">
+                <a class="page-link" href="/catalog">Miscellaneous</a>
+                </li>
+                <li class="page-item active">
+                <span class="page-link">
+                    Friendship
+                </span>
+                </li>
+                <li class="page-item">
+                <a class="page-link" href="/diversityCatalog">Diversity</a>
+                </li>
+            </ul>
+            </nav>
         </>
     );
 }

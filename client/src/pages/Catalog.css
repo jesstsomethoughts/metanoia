@@ -17,3 +17,8 @@
     font-family: 'Acme';
     background-color: lavender;
 }
+
+.pagination {
+    justify-content: center;
+    font-family: 'Acme';
+}
