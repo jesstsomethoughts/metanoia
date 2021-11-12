@@ -84,7 +84,7 @@ function Landing() {
             
             <Container>
               {/* <Row className="justify-content-center text-center mb-lg"> */}
-              <h2>Recommended Topics</h2>
+              <h2 className="headerText">Recommended Topics</h2>
             </Container>
             <Container>
               <Row className="justify-content-center">

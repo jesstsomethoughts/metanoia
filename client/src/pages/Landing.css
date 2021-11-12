@@ -28,11 +28,48 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#mainTitle {
+  font-family: "Acme";
 }
+
+#secondaryText {
+  font-family: "Acme";
+}
+
+.button {
+  font-family: "Acme";
+}
+
+.headerText {
+  font-family: "Acme";
+}
+
+.text-primary {
+  font-family: "Acme";
+}
+
+.text-success {
+  font-family: "Acme";
+}
+
+.text-warning {
+  font-family: "Acme";
+}
+
+.mr-1 {
+  font-family: "Acme";
+}
+
+.mt-4 {
+  font-family: "Acme";
+}
+
+#sectionHeading {
+  font-family: "Acme";
+}
+
+#beliefs {
+  font-family: "Acme";
+}
+
