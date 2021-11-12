@@ -13,7 +13,6 @@ import AccessibilityIcon from "../img/accessibility_icon.png";
 import ImpactIcon from "../img/impact_icon.png";
 import BiasPreventionIcon from "../img/bias_prevention_icon.png";
 
-// Icons
 
 // Testimonial Images
 import Testimonial1 from "../img/testimonial1.03958d1d.svg";
@@ -58,8 +57,6 @@ function Landing() {
                   </Row>
                 </div>
               </Container>
-              {/* SVG separator */}
-              
             </section>
           </div>
         </div>
@@ -326,22 +323,6 @@ function Landing() {
               </Carousel>
               {/* </Row> */}
             </Container>
-            {/* SVG separator */}
-            <div className="separator separator-bottom separator-skew zindex-100">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-                version="1.1"
-                viewBox="0 0 2560 100"
-                x="0"
-                y="0"
-              >
-                <polygon
-                  className="fill-white"
-                  points="2560 0 2560 100 0 100"
-                />
-              </svg>
-            </div>
           </section>
 
           <section>
