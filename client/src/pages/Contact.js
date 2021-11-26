@@ -20,8 +20,11 @@ import ContactComp from './ContactComponent';
 function Contact() {
   return (
     <>
+    <div id = "contactBackground">
+    <h2 id ="contactText">Contact Us</h2>
+    </div>
     <div className="Contact">
-      <h2 className="mainText">Contact Us</h2>
+      <h2 className="mainText"></h2>
         {/* modal section */}
     <Container>
 
