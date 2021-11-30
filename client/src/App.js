@@ -10,6 +10,7 @@ import Subscribe from './pages/Subscribe.js';
 import Catalog from './pages/Catalog.js';
 import friendshipCatalog from './pages/friendshipCatalog.js';
 import diversityCatalog from './pages/diversityCatalog.js';
+import blog from './pages/Blog.js'
 
 function App () {
   return ( 
@@ -23,6 +24,7 @@ function App () {
         <Route path="/catalog" component={Catalog} />
         <Route path="/friendshipCatalog" component={friendshipCatalog} />
         <Route path="/diversityCatalog" component={diversityCatalog} />
+        <Route path="/blog" component={blog} />
       </Switch>
     </div>
   );
