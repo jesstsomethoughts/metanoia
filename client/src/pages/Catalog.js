@@ -84,21 +84,6 @@ function Catalog() {
                 </Row>
             </div>
 
-            <nav aria-label="...">
-            <ul class="pagination">
-                <li class="page-item">
-                <a class="page-link" href="/catalog">Diversity</a>
-                </li>
-                <li class="page-item active">
-                <span class="page-link">
-                Miscellaneous
-                </span>
-                </li>
-                <li class="page-item">
-                <a class="page-link" href="/diversityCatalog">Friendship</a>
-                </li>
-            </ul>
-            </nav>
         </>
     );
 }

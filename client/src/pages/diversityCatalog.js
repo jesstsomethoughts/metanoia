@@ -61,22 +61,6 @@ function diversityCatalog() {
                     }
             </Row>
             </div>
-
-            <nav aria-label="...">
-            <ul class="pagination">
-                <li class="page-item">
-                <a class="page-link" href="/catalog">Friendship</a>
-                </li>
-                <li class="page-item active">
-                <span class="page-link">
-                    Diversity
-                </span>
-                </li>
-                <li class="page-item">
-                <a class="page-link" href="/diversityCatalog">Miscellaneous</a>
-                </li>
-            </ul>
-            </nav>
         </>
     );
 }
