@@ -7,8 +7,6 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 // images and other components
-import Banner from '../img/website-image.png';
-import Placeholder from '../img/metanoia_newlogo.png';
 import BookList from './olDiversityBookList.json';
 
 
