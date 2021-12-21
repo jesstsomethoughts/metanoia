@@ -1,38 +1,22 @@
 .Landing {
   text-align: center;
+  font-family: Acme;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-Title {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner {
+  background-image: url('../img/website-image.png');
 }
 
-.App-header {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+.problem {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.newsletter {
+  margin-bottom: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

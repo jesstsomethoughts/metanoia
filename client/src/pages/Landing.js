@@ -42,7 +42,7 @@ function Landing() {
                 <div className="col px-0">
                   <Row>
                     <Col lg="6">
-                      <h1 id="mainTitle" className="display-3 ">
+                      <h1 id="mainTitle" className="display-3">
                         Metanoia{" "}
                       </h1>
                       <p id="secondaryText" className="lead">
@@ -61,7 +61,7 @@ function Landing() {
           </div>
         </div>
 
-        <section>
+        <section className='topics'>
             <br></br>
             
             <Container>
@@ -173,7 +173,7 @@ function Landing() {
         
         <section
             // style={{ backgroundColor: "#FCFAD9" }}
-            className="section section-lg"
+            className="problem"
           >
             <Container>
               <Row className="justify-content-center text-center mb-lg">
@@ -242,7 +242,7 @@ function Landing() {
 
         <section
             style={{ backgroundColor: "#FFFEF5" }}
-            className="section section-lg"
+            className="newsletter"
           >
             <Container>
               <Row className="row-grid align-items-center">
