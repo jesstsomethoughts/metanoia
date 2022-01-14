@@ -1,18 +1,16 @@
-import logo from '../img/metanoia_newlogo.png';
-import '../pages/Landing.css';
+import logo from "../img/metanoia_newlogo.png";
+import "../pages/Landing.css";
 
-import ContactComp from './ContactComponent';
+import ContactComp from "../components/ContactComponent";
 
-
-import linkedin from '../img/social-icons/linkedin.png';
-import facebook from '../img/social-icons/facebook.png';
-import gmail from '../img/social-icons/gmail.png';
-import Banner from '../img/website-image.png';
+import linkedin from "../img/social-icons/linkedin.png";
+import facebook from "../img/social-icons/facebook.png";
+import gmail from "../img/social-icons/gmail.png";
+import Banner from "../img/website-image.png";
 import NewsletterImage from "../img/newsletter.png";
 import AccessibilityIcon from "../img/accessibility_icon.png";
 import ImpactIcon from "../img/impact_icon.png";
 import BiasPreventionIcon from "../img/bias_prevention_icon.png";
-
 
 // Testimonial Images
 import Testimonial1 from "../img/testimonial1.03958d1d.svg";
@@ -20,50 +18,57 @@ import Testimonial2 from "../img/testimonial2.5df9c9c3.svg";
 import Testimonial3 from "../img/testimonial3.8d1ddce2.svg";
 
 import Card from "react-bootstrap/Card";
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Form from 'react-bootstrap/Form';
-import Carousel from 'react-bootstrap/Carousel'
-import { Button, Col, Container, Row, Badge, Modal, FormGroup, } from 'react-bootstrap';
-
+import FloatingLabel from "react-bootstrap/FloatingLabel";
+import Form from "react-bootstrap/Form";
+import Carousel from "react-bootstrap/Carousel";
+import {
+  Button,
+  Col,
+  Container,
+  Row,
+  Badge,
+  Modal,
+  FormGroup,
+} from "react-bootstrap";
 
 function Landing() {
   return (
     <>
-    <div className="Landing">
-      <header className="App-header">
-        <div>
-        <div className="position-relative">
-            {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-300">
-              <div className="shape shape-style-1 shape-default cont">
-                <img alt="..." src={Banner} className="bannerStyles" />
-              </div>
-              <Container className="py-lg-md d-flex">
-                <div className="col px-0">
-                  <Row>
-                    <Col lg="6">
-                      <h1 id="mainTitle" className="display-3 ">
-                        Metanoia{" "}
-                      </h1>
-                      <p id="secondaryText" className="lead">
-                        THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
-                      </p>
-                      <div className="btn-wrapper">
-                        <Button className="button" href="subscribe">
-                          Get Started
-                        </Button>
-                      </div>
-                    </Col>
-                  </Row>
+      <div className="Landing">
+        <header className="App-header">
+          <div>
+            <div className="position-relative">
+              {/* shape Hero */}
+              <section className="section section-lg section-shaped pb-300">
+                <div className="shape shape-style-1 shape-default cont">
+                  <img alt="..." src={Banner} className="bannerStyles" />
                 </div>
-              </Container>
-            </section>
+                <Container className="py-lg-md d-flex">
+                  <div className="col px-0">
+                    <Row>
+                      <Col lg="6">
+                        <h1 id="mainTitle" className="display-3 ">
+                          Metanoia{" "}
+                        </h1>
+                        <p id="secondaryText" className="lead">
+                          THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
+                        </p>
+                        <div className="btn-wrapper">
+                          <Button className="button" href="subscribe">
+                            Get Started
+                          </Button>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                </Container>
+              </section>
+            </div>
           </div>
-        </div>
 
-        <section>
+          <section>
             <br></br>
-            
+
             <Container>
               {/* <Row className="justify-content-center text-center mb-lg"> */}
               <h2>Recommended Topics</h2>
@@ -96,7 +101,9 @@ function Landing() {
                             className="mt-4 "
                             color="primary"
                             href=""
-                            onClick={() => window.location.href = "friendshipCatalog"}
+                            onClick={() =>
+                              (window.location.href = "friendshipCatalog")
+                            }
                           >
                             Explore
                           </Button>
@@ -127,7 +134,9 @@ function Landing() {
                             className="mt-4"
                             color="success"
                             href=""
-                            onClick={() => window.location.href = "diversityCatalog"}
+                            onClick={() =>
+                              (window.location.href = "diversityCatalog")
+                            }
                           >
                             Explore
                           </Button>
@@ -158,7 +167,7 @@ function Landing() {
                             className="mt-4"
                             color="warning"
                             href=""
-                            onClick={() => window.location.href = "catalog"}
+                            onClick={() => (window.location.href = "catalog")}
                           >
                             Explore
                           </Button>
@@ -170,8 +179,8 @@ function Landing() {
               </Row>
             </Container>
           </section>
-        
-        <section
+
+          <section
             // style={{ backgroundColor: "#FCFAD9" }}
             className="section section-lg"
           >
@@ -240,7 +249,7 @@ function Landing() {
             </Container>
           </section>
 
-        <section
+          <section
             style={{ backgroundColor: "#FFFEF5" }}
             className="section section-lg"
           >
@@ -280,7 +289,7 @@ function Landing() {
               </Row>
             </Container>
           </section>
-          
+
           <section
             style={{ backgroundColor: "#FFFEF5" }}
             className="section section-lg "
@@ -302,7 +311,7 @@ function Landing() {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src= {Testimonial1}
+                    src={Testimonial1}
                     alt="First slide"
                   />
                 </Carousel.Item>
@@ -327,53 +336,49 @@ function Landing() {
 
           <section>
             <div className="Contact">
-            <h2 className="mainText">Contact Us</h2>
-            {/* modal section */}
-            <Container>
-             <ContactComp />
-      <Col>
-      <h4 className="contactMethod">
-                      <a href="https://www.gmail.com" target="_blank">
-                        <div>
-                          <img src={gmail} className="imageStyles"></img>
-                          <span className="methodLabel">
-                            metanoiabooks.co@gmail.com
-                          </span>
-                        </div>
-                      </a>
-                    </h4>
-                    <h4 className="contactMethod">
-                      <a
-                        href="https://www.linkedin.com/company/metanoiabooks/"
-                        target="_blank"
-                      >
-                        <div>
-                          <img src={linkedin} className="imageStyles"></img>
-                          <span className="methodLabel">@MetanoiaBooks</span>
-                        </div>
-                      </a>
-                    </h4>
-                    <h4 className="contactMethod">
-                      <a
-                        href="https://www.facebook.com/MetanoiaLibrary/"
-                        target="_blank"
-                      >
-                        <div>
-                          <img src={facebook} className="imageStyles"></img>
-                          <span className="methodLabel">
-                            {" "}
-                            @MetanoiaLibrary{" "}
-                          </span>
-                        </div>
-                      </a>
-                    </h4>
-        </Col>
-      </Container>
-    </div>
-      </section>
-          
-      </header>
-    </div>
+              <h2 className="mainText">Contact Us</h2>
+              {/* modal section */}
+              <Container>
+                <ContactComp />
+                <Col>
+                  <h4 className="contactMethod">
+                    <a href="https://www.gmail.com" target="_blank">
+                      <div>
+                        <img src={gmail} className="imageStyles"></img>
+                        <span className="methodLabel">
+                          metanoiabooks.co@gmail.com
+                        </span>
+                      </div>
+                    </a>
+                  </h4>
+                  <h4 className="contactMethod">
+                    <a
+                      href="https://www.linkedin.com/company/metanoiabooks/"
+                      target="_blank"
+                    >
+                      <div>
+                        <img src={linkedin} className="imageStyles"></img>
+                        <span className="methodLabel">@MetanoiaBooks</span>
+                      </div>
+                    </a>
+                  </h4>
+                  <h4 className="contactMethod">
+                    <a
+                      href="https://www.facebook.com/MetanoiaLibrary/"
+                      target="_blank"
+                    >
+                      <div>
+                        <img src={facebook} className="imageStyles"></img>
+                        <span className="methodLabel"> @MetanoiaLibrary </span>
+                      </div>
+                    </a>
+                  </h4>
+                </Col>
+              </Container>
+            </div>
+          </section>
+        </header>
+      </div>
     </>
   );
 }
