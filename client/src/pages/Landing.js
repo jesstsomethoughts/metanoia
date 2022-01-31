@@ -1,26 +1,26 @@
-import logo from "../img/metanoia_newlogo.png";
-import "../pages/Landing.css";
+import logo from '../assets/img/metanoia_newlogo.png';
+import '../assets/css/Landing.css';
 
-import ContactComp from "../components/ContactComponent";
+import ContactComp from '../components/ContactComponent';
 
-import linkedin from "../img/social-icons/linkedin.png";
-import facebook from "../img/social-icons/facebook.png";
-import gmail from "../img/social-icons/gmail.png";
-import Banner from "../img/website-image.png";
-import NewsletterImage from "../img/newsletter.png";
-import AccessibilityIcon from "../img/accessibility_icon.png";
-import ImpactIcon from "../img/impact_icon.png";
-import BiasPreventionIcon from "../img/bias_prevention_icon.png";
+import linkedin from '../assets/img/social-icons/linkedin.png';
+import facebook from '../assets/img/social-icons/facebook.png';
+import gmail from '../assets/img/social-icons/gmail.png';
+import Banner from '../assets/img/website-image.png';
+import NewsletterImage from '../assets/img/newsletter.png';
+import AccessibilityIcon from '../assets/img/accessibility_icon.png';
+import ImpactIcon from '../assets/img/impact_icon.png';
+import BiasPreventionIcon from '../assets/img/bias_prevention_icon.png';
 
 // Testimonial Images
-import Testimonial1 from "../img/testimonial1.03958d1d.svg";
-import Testimonial2 from "../img/testimonial2.5df9c9c3.svg";
-import Testimonial3 from "../img/testimonial3.8d1ddce2.svg";
+import Testimonial1 from '../assets/img/testimonial1.03958d1d.svg';
+import Testimonial2 from '../assets/img/testimonial2.5df9c9c3.svg';
+import Testimonial3 from '../assets/img/testimonial3.8d1ddce2.svg';
 
-import Card from "react-bootstrap/Card";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import Form from "react-bootstrap/Form";
-import Carousel from "react-bootstrap/Carousel";
+import Card from 'react-bootstrap/Card';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+import Carousel from 'react-bootstrap/Carousel';
 import {
   Button,
   Col,
@@ -29,7 +29,7 @@ import {
   Badge,
   Modal,
   FormGroup,
-} from "react-bootstrap";
+} from 'react-bootstrap';
 
 function Landing() {
   return (
@@ -48,7 +48,7 @@ function Landing() {
                     <Row>
                       <Col lg="6">
                         <h1 id="mainTitle" className="display-3 ">
-                          Metanoia{" "}
+                          Metanoia{' '}
                         </h1>
                         <p id="secondaryText" className="lead">
                           THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
@@ -102,7 +102,7 @@ function Landing() {
                             color="primary"
                             href=""
                             onClick={() =>
-                              (window.location.href = "friendshipCatalog")
+                              (window.location.href = 'friendshipCatalog')
                             }
                           >
                             Explore
@@ -135,7 +135,7 @@ function Landing() {
                             color="success"
                             href=""
                             onClick={() =>
-                              (window.location.href = "diversityCatalog")
+                              (window.location.href = 'diversityCatalog')
                             }
                           >
                             Explore
@@ -167,7 +167,7 @@ function Landing() {
                             className="mt-4"
                             color="warning"
                             href=""
-                            onClick={() => (window.location.href = "catalog")}
+                            onClick={() => (window.location.href = 'catalog')}
                           >
                             Explore
                           </Button>
@@ -199,7 +199,7 @@ function Landing() {
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                       src={AccessibilityIcon}
-                      style={{ width: "300px" }}
+                      style={{ width: '300px' }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
@@ -216,7 +216,7 @@ function Landing() {
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                       src={ImpactIcon}
-                      style={{ width: "300px" }}
+                      style={{ width: '300px' }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
@@ -234,7 +234,7 @@ function Landing() {
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                       src={BiasPreventionIcon}
-                      style={{ width: "300px" }}
+                      style={{ width: '300px' }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
@@ -250,7 +250,7 @@ function Landing() {
           </section>
 
           <section
-            style={{ backgroundColor: "#FFFEF5" }}
+            style={{ backgroundColor: '#FFFEF5' }}
             className="section section-lg"
           >
             <Container>
@@ -291,7 +291,7 @@ function Landing() {
           </section>
 
           <section
-            style={{ backgroundColor: "#FFFEF5" }}
+            style={{ backgroundColor: '#FFFEF5' }}
             className="section section-lg "
           >
             {/* section section-lg bg-gradient-default */}
