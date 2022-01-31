@@ -49,7 +49,7 @@ const Blog = ({ blogs }) => {
       <h1 class="header">Blog</h1>
       <Row xs={1} md={4} className="g-4 m-4">
         {blogs.map((blog) => (
-          <Col>
+          <Col key={selectPath(blog.path, blog.title)}>
             <BlogCard
               img={blog.image}
               title={blog.title}
