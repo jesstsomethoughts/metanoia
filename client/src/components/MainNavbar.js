@@ -1,27 +1,27 @@
-import "./Navbar.css";
-import Headroom from "headroom.js";
+import '../assets/css/Navbar.css';
+import Headroom from 'headroom.js';
 
-import React from "react";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-import Logo from "../img/header_logo.png";
+import Logo from '../assets/img/header_logo.png';
 // // import smallerLogo from "assets/img/brand/metanoia_newlogo.png"
 
 class MainNavbar extends React.Component {
   componentDidMount() {
-    let headroom = new Headroom(document.getElementById("navbar-main"));
+    let headroom = new Headroom(document.getElementById('navbar-main'));
     // initialise
     headroom.init();
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener('resize', this.handleResize);
   }
   componentDidMount() {
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener('resize', this.handleResize);
   }
   componentWillUnmount() {
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener('resize', this.handleResize);
   }
 
   handleResize = (e) => {
@@ -29,20 +29,20 @@ class MainNavbar extends React.Component {
   };
 
   state = {
-    collapseClasses: "",
+    collapseClasses: '',
     collapseOpen: false,
     windowWidth: window.innerWidth,
   };
 
   onExiting = () => {
     this.setState({
-      collapseClasses: "collapsing-out",
+      collapseClasses: 'collapsing-out',
     });
   };
 
   onExited = () => {
     this.setState({
-      collapseClasses: "",
+      collapseClasses: '',
     });
   };
 
@@ -56,7 +56,7 @@ class MainNavbar extends React.Component {
               activeClassName="nav-link-active"
               href="/"
             >
-              <img style={{ height: "60px" }} alt="..." src={Logo} />
+              <img style={{ height: '60px' }} alt="..." src={Logo} />
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle

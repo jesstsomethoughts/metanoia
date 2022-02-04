@@ -1,24 +1,24 @@
-import "./Catalog.css";
-import React from "react";
+import '../assets/css/Catalog.css';
+import React from 'react';
 
 // React components
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 // images and other components
-import BookList from "../data/olFriendshipBookList.json";
+import BookList from '../data/olFriendshipBookList.json';
 
 const BookCard = ({ cover, title, author, url }) => {
   const styleImg = {
-    width: "100%",
-    height: "40vh",
-    objectFit: "cover",
+    width: '100%',
+    height: '40vh',
+    objectFit: 'cover',
   };
 
   return (
     <Col class="col-3">
-      <Card className="book-card" onClick={() => window.open(url, "_blank")}>
+      <Card className="book-card" onClick={() => window.open(url, '_blank')}>
         <Card.Img style={styleImg} variant="top" src={cover} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
@@ -37,20 +37,20 @@ function friendshipCatalog() {
       ar.push(
         <BookCard
           cover={
-            "http://covers.openlibrary.org/b/olid/" +
-            BookList[0]["bookIds"][i] +
-            "-L.jpg"
+            'http://covers.openlibrary.org/b/olid/' +
+            BookList[0]['bookIds'][i] +
+            '-L.jpg'
           }
           title={
-            BookList[1 + i]["records"][`/books/${BookList[0]["bookIds"][i]}`]
+            BookList[1 + i]['records'][`/books/${BookList[0]['bookIds'][i]}`]
               .details.details.title
           }
           author={
-            BookList[1 + i]["records"][`/books/${BookList[0]["bookIds"][i]}`]
+            BookList[1 + i]['records'][`/books/${BookList[0]['bookIds'][i]}`]
               .details.details.authors[0].name
           }
           url={
-            BookList[1 + i]["records"][`/books/${BookList[0]["bookIds"][i]}`]
+            BookList[1 + i]['records'][`/books/${BookList[0]['bookIds'][i]}`]
               .details.preview_url
           }
         />
