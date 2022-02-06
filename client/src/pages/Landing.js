@@ -1,5 +1,6 @@
 import logo from '../assets/img/metanoia_newlogo.png';
 import '../assets/css/Landing.css';
+import '../assets/css/Theme.css';
 
 import ContactComp from '../components/ContactComponent';
 
