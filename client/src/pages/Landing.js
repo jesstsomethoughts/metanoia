@@ -1,13 +1,17 @@
 import logo from '../assets/img/metanoia_newlogo.png';
 import '../assets/css/Landing.css';
-import '../assets/css/Theme.css';
+import '../assets/css/Test.css';
 
 import ContactComp from '../components/ContactComponent';
 
 import linkedin from '../assets/img/social-icons/linkedin.png';
 import facebook from '../assets/img/social-icons/facebook.png';
 import gmail from '../assets/img/social-icons/gmail.png';
-import Banner from '../assets/img/website-image.png';
+import Banner from '../assets/img/bannervideo.mp4';
+
+// topic icons (add)
+
+// problem + newsletter
 import NewsletterImage from '../assets/img/newsletter.png';
 import AccessibilityIcon from '../assets/img/accessibility_icon.png';
 import ImpactIcon from '../assets/img/impact_icon.png';
@@ -35,16 +39,20 @@ import {
 function Landing() {
   return (
     <>
+      {/* <video controls autoplay className="bannerStyles">
+        <source src={Banner} type="video/mp4"/>
+      </video> */}
       <div className="Landing">
-        <header className="App-header">
           <div>
             <div className="position-relative">
               {/* shape Hero */}
               <section className="section section-lg section-shaped pb-300">
                 <div className="shape shape-style-1 shape-default cont">
-                  <img alt="..." src={Banner} className="bannerStyles" />
+                  <video controls autoplay className="bannerStyles">
+                    <source src={Banner} type="video/mp4"/>
+                  </video>
                 </div>
-                <Container className="py-lg-md d-flex">
+                <Container className="py-lg-md d-flex left">
                   <div className="col px-0">
                     <Row>
                       <Col lg="6">
@@ -52,10 +60,10 @@ function Landing() {
                           Metanoia{' '}
                         </h1>
                         <p id="secondaryText" className="lead">
-                          THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
+                          THE DIGITAL LIBRARY THAT INSPIRES MEANINGFUL CONVERSATIONS
                         </p>
                         <div className="btn-wrapper">
-                          <Button className="button" href="subscribe">
+                          <Button className="btn-light" href="subscribe">
                             Get Started
                           </Button>
                         </div>
@@ -63,6 +71,7 @@ function Landing() {
                     </Row>
                   </div>
                 </Container>
+
               </section>
             </div>
           </div>
@@ -70,9 +79,10 @@ function Landing() {
           <section>
             <br></br>
 
-            <Container>
-              {/* <Row className="justify-content-center text-center mb-lg"> */}
-              <h2>Recommended Topics</h2>
+            <Container className="pt-100"> 
+              <Row className="justify-content-center text-center mb-lg">
+              <h2 id="sectionHeading" className="display-3">Recommended Topics</h2>
+              </Row>
             </Container>
             <Container>
               <Row className="justify-content-center">
@@ -87,17 +97,6 @@ function Landing() {
                           <h6 className="text-primary text-uppercase">
                             Friendship
                           </h6>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              Pre-K
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              K-2
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              G3-5
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4 "
                             color="primary"
@@ -114,23 +113,12 @@ function Landing() {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0 roundEdges">
                         <Card.Body className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-world" />
                           </div>
-                          <h6 className="text-success text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Diversity
                           </h6>
-                          <div>
-                            <Badge color="success" pill className="mr-1">
-                              Pre-K
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              K-2
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              G3-5
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4"
                             color="success"
@@ -147,23 +135,12 @@ function Landing() {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0 roundEdges">
                         <Card.Body className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-tie-bow" />
                           </div>
-                          <h6 className="text-warning text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Miscellaneous
                           </h6>
-                          <div>
-                            <Badge color="warning" pill className="mr-1">
-                              Pre-K
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              K-2
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              G3-5
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4"
                             color="warning"
@@ -181,10 +158,7 @@ function Landing() {
             </Container>
           </section>
 
-          <section
-            // style={{ backgroundColor: "#FCFAD9" }}
-            className="section section-lg"
-          >
+          <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
@@ -251,7 +225,6 @@ function Landing() {
           </section>
 
           <section
-            style={{ backgroundColor: '#FFFEF5' }}
             className="section section-lg"
           >
             <Container>
@@ -292,11 +265,9 @@ function Landing() {
           </section>
 
           <section
-            style={{ backgroundColor: '#FFFEF5' }}
             className="section section-lg "
           >
-            {/* section section-lg bg-gradient-default */}
-            <Container className="pb-300">
+            <Container>
               <Row className="text-center justify-content-center">
                 <Col lg="10">
                   <h2 id="sectionHeading" className="display-3 text">
@@ -337,11 +308,12 @@ function Landing() {
 
           <section>
             <div className="Contact">
-              <h2 className="mainText">Contact Us</h2>
+              <h2 id="sectionHeading" className="display-3 text">Contact Us</h2>
               {/* modal section */}
               <Container>
                 <ContactComp />
-                <Col>
+                <Row>
+                  <Col>
                   <h4 className="contactMethod">
                     <a href="https://www.gmail.com" target="_blank">
                       <div>
@@ -352,6 +324,8 @@ function Landing() {
                       </div>
                     </a>
                   </h4>
+                  </Col>
+                  <Col>
                   <h4 className="contactMethod">
                     <a
                       href="https://www.linkedin.com/company/metanoiabooks/"
@@ -363,6 +337,8 @@ function Landing() {
                       </div>
                     </a>
                   </h4>
+                  </Col>
+                  <Col>
                   <h4 className="contactMethod">
                     <a
                       href="https://www.facebook.com/MetanoiaLibrary/"
@@ -375,10 +351,10 @@ function Landing() {
                     </a>
                   </h4>
                 </Col>
+                </Row>
               </Container>
             </div>
           </section>
-        </header>
       </div>
     </>
   );
