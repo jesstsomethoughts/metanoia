@@ -7,8 +7,11 @@ import ContactComp from '../components/ContactComponent';
 import linkedin from '../assets/img/social-icons/linkedin.png';
 import facebook from '../assets/img/social-icons/facebook.png';
 import gmail from '../assets/img/social-icons/gmail.png';
-// import Banner from '../assets/img/website-image.png';
 import Banner from '../assets/img/bannervideo.mp4';
+
+// topic icons (add)
+
+// problem + newsletter
 import NewsletterImage from '../assets/img/newsletter.png';
 import AccessibilityIcon from '../assets/img/accessibility_icon.png';
 import ImpactIcon from '../assets/img/impact_icon.png';
@@ -94,17 +97,6 @@ function Landing() {
                           <h6 className="text-primary text-uppercase">
                             Friendship
                           </h6>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              Pre-K
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              K-2
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              G3-5
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4 "
                             color="primary"
@@ -121,23 +113,12 @@ function Landing() {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0 roundEdges">
                         <Card.Body className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-world" />
                           </div>
-                          <h6 className="text-success text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Diversity
                           </h6>
-                          <div>
-                            <Badge color="success" pill className="mr-1">
-                              Pre-K
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              K-2
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              G3-5
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4"
                             color="success"
@@ -154,23 +135,12 @@ function Landing() {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0 roundEdges">
                         <Card.Body className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-tie-bow" />
                           </div>
-                          <h6 className="text-warning text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Miscellaneous
                           </h6>
-                          <div>
-                            <Badge color="warning" pill className="mr-1">
-                              Pre-K
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              K-2
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              G3-5
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4"
                             color="warning"
@@ -297,8 +267,7 @@ function Landing() {
           <section
             className="section section-lg "
           >
-            {/* section section-lg bg-gradient-default */}
-            <Container className="pb-300">
+            <Container>
               <Row className="text-center justify-content-center">
                 <Col lg="10">
                   <h2 id="sectionHeading" className="display-3 text">
@@ -339,11 +308,12 @@ function Landing() {
 
           <section>
             <div className="Contact">
-              <h2 className="mainText">Contact Us</h2>
+              <h2 id="sectionHeading" className="display-3 text">Contact Us</h2>
               {/* modal section */}
               <Container>
                 <ContactComp />
-                <Col>
+                <Row>
+                  <Col>
                   <h4 className="contactMethod">
                     <a href="https://www.gmail.com" target="_blank">
                       <div>
@@ -354,6 +324,8 @@ function Landing() {
                       </div>
                     </a>
                   </h4>
+                  </Col>
+                  <Col>
                   <h4 className="contactMethod">
                     <a
                       href="https://www.linkedin.com/company/metanoiabooks/"
@@ -365,6 +337,8 @@ function Landing() {
                       </div>
                     </a>
                   </h4>
+                  </Col>
+                  <Col>
                   <h4 className="contactMethod">
                     <a
                       href="https://www.facebook.com/MetanoiaLibrary/"
@@ -377,6 +351,7 @@ function Landing() {
                     </a>
                   </h4>
                 </Col>
+                </Row>
               </Container>
             </div>
           </section>
