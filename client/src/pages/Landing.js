@@ -1,13 +1,14 @@
 import logo from '../assets/img/metanoia_newlogo.png';
 import '../assets/css/Landing.css';
-import '../assets/css/Theme.css';
+import '../assets/css/Test.css';
 
 import ContactComp from '../components/ContactComponent';
 
 import linkedin from '../assets/img/social-icons/linkedin.png';
 import facebook from '../assets/img/social-icons/facebook.png';
 import gmail from '../assets/img/social-icons/gmail.png';
-import Banner from '../assets/img/website-image.png';
+// import Banner from '../assets/img/website-image.png';
+import Banner from '../assets/img/bannervideo.mp4';
 import NewsletterImage from '../assets/img/newsletter.png';
 import AccessibilityIcon from '../assets/img/accessibility_icon.png';
 import ImpactIcon from '../assets/img/impact_icon.png';
@@ -35,16 +36,20 @@ import {
 function Landing() {
   return (
     <>
+      {/* <video controls autoplay className="bannerStyles">
+        <source src={Banner} type="video/mp4"/>
+      </video> */}
       <div className="Landing">
-        <header className="App-header">
           <div>
             <div className="position-relative">
               {/* shape Hero */}
               <section className="section section-lg section-shaped pb-300">
                 <div className="shape shape-style-1 shape-default cont">
-                  <img alt="..." src={Banner} className="bannerStyles" />
+                  <video controls autoplay className="bannerStyles">
+                    <source src={Banner} type="video/mp4"/>
+                  </video>
                 </div>
-                <Container className="py-lg-md d-flex">
+                <Container className="py-lg-md d-flex left">
                   <div className="col px-0">
                     <Row>
                       <Col lg="6">
@@ -52,10 +57,10 @@ function Landing() {
                           Metanoia{' '}
                         </h1>
                         <p id="secondaryText" className="lead">
-                          THE DIGITAL LIBRARY THAT INSPIRES CONVERSATIONS
+                          THE DIGITAL LIBRARY THAT INSPIRES MEANINGFUL CONVERSATIONS
                         </p>
                         <div className="btn-wrapper">
-                          <Button className="button" href="subscribe">
+                          <Button className="btn-light" href="subscribe">
                             Get Started
                           </Button>
                         </div>
@@ -63,6 +68,7 @@ function Landing() {
                     </Row>
                   </div>
                 </Container>
+
               </section>
             </div>
           </div>
@@ -70,9 +76,10 @@ function Landing() {
           <section>
             <br></br>
 
-            <Container>
-              {/* <Row className="justify-content-center text-center mb-lg"> */}
-              <h2>Recommended Topics</h2>
+            <Container className="pt-100"> 
+              <Row className="justify-content-center text-center mb-lg">
+              <h2 id="sectionHeading" className="display-3">Recommended Topics</h2>
+              </Row>
             </Container>
             <Container>
               <Row className="justify-content-center">
@@ -181,10 +188,7 @@ function Landing() {
             </Container>
           </section>
 
-          <section
-            // style={{ backgroundColor: "#FCFAD9" }}
-            className="section section-lg"
-          >
+          <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
@@ -251,7 +255,6 @@ function Landing() {
           </section>
 
           <section
-            style={{ backgroundColor: '#FFFEF5' }}
             className="section section-lg"
           >
             <Container>
@@ -292,7 +295,6 @@ function Landing() {
           </section>
 
           <section
-            style={{ backgroundColor: '#FFFEF5' }}
             className="section section-lg "
           >
             {/* section section-lg bg-gradient-default */}
@@ -378,7 +380,6 @@ function Landing() {
               </Container>
             </div>
           </section>
-        </header>
       </div>
     </>
   );
