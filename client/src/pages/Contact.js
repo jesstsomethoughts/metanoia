@@ -21,7 +21,7 @@ function Contact() {
   return (
     <>
     <div id = "contactBackground">
-    <h2 id ="contactText">Contact Us</h2>
+      <h2 id ="contactText">Contact Us</h2>
     </div>
     <div className="Contact">
       <h2 className="mainText"></h2>
@@ -31,14 +31,16 @@ function Contact() {
       <ContactComp />
 
       <Col>
-
+    <div className = "social_media">
       <h4 className="contactMethod">
                       <a href="https://www.gmail.com" target="_blank">
                         <div>
                           <img src={gmail} className="imageStyles"></img>
+                          {/*
                           <span className="methodLabel">
                             metanoiabooks.co@gmail.com
                           </span>
+                          */}
                         </div>
                       </a>
                     </h4>
@@ -49,7 +51,7 @@ function Contact() {
                       >
                         <div>
                           <img src={linkedin} className="imageStyles"></img>
-                          <span className="methodLabel">@MetanoiaBooks</span>
+                          {/*<span className="methodLabel">@MetanoiaBooks</span>*/}
                         </div>
                       </a>
                     </h4>
@@ -60,13 +62,14 @@ function Contact() {
                       >
                         <div>
                           <img src={facebook} className="imageStyles"></img>
-                          <span className="methodLabel">
+                          {/*<span className="methodLabel">
                             {" "}
                             @MetanoiaLibrary{" "}
-                          </span>
+                        </span>*/}
                         </div>
                       </a>
                     </h4>
+      </div>
       </Col>
       </Container>
     </div>

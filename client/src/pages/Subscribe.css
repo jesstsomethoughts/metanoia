@@ -40,7 +40,7 @@
 #subscribeHeader {
   font-family: Acme;
   text-align: center;
-  line-height: 3;
+  padding-top: 30px;
   color: white;
   margin-top: 0vh;
 }

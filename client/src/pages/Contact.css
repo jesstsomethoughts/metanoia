@@ -18,6 +18,8 @@
 
 .imageStyles {
   width: 5vh;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 @keyframes App-logo-spin {
@@ -65,5 +67,15 @@
   font-family: Acme;
   color: white;
   text-align: center;
-  line-height: 6;
+  padding-top: 70px;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.contactMethod {
+  margin-right: 40px;
 }
