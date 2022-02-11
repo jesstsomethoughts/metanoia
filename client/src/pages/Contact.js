@@ -1,10 +1,10 @@
-import './Contact.css';
+import '../assets/css/Contact.css';
 
 // additional images/files
-import logo from '../img/metanoia_newlogo.png';
-import linkedin from '../img/social-icons/linkedin.png';
-import facebook from '../img/social-icons/facebook.png';
-import gmail from '../img/social-icons/gmail.png';
+import logo from '../assets/img/metanoia_newlogo.png';
+import linkedin from '../assets/img/social-icons/linkedin.png';
+import facebook from '../assets/img/social-icons/facebook.png';
+import gmail from '../assets/img/social-icons/gmail.png';
 
 // react components
 import Button from 'react-bootstrap/Button';
@@ -15,7 +15,7 @@ import FormCheck from 'react-bootstrap/FormCheck';
 import FormControl from 'react-bootstrap/FormControl';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/esm/Container';
-import ContactComp from './ContactComponent';
+import ContactComp from '../components/ContactComponent';
 
 function Contact() {
   return (
@@ -26,7 +26,8 @@ function Contact() {
     <div className="Contact">
       <h2 className="mainText"></h2>
         {/* modal section */}
-    <Container>
+        <Container>
+          <ContactComp />
 
       <ContactComp />
 

@@ -1,0 +1,41 @@
+.header {
+  font-family: Acme;
+  text-align: center;
+  margin: 6vh;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.blogCardStyle {
+  margin: 10;
+}
+
+.cursorHover :hover {
+  cursor: pointer;
+}
+
+.article-body {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 6vh;
+}
+
+.article-img {
+  display: block;
+  height: max(40vh, 200px);
+  width: max(40vh, 200px);
+  margin: 0 auto;
+  margin-bottom: 6vh;
+}
+
+.article-body p {
+  white-space: pre-line;
+  word-wrap: break-word;
+  font-family: Helvetica, sans-serif, Acme;
+  width: min(60ch, 90%);
+  margin: 0 auto;
+}

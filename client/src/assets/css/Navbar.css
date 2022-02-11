@@ -1,0 +1,16 @@
+.navbar-main {
+  background-color: #AC3791;
+}
+
+.nav-link {
+  color: white !important;
+  text-decoration: none;
+  font-family: 'Acme' !important;
+  font-size: 3vh !important;
+}
+
+.nav-link-active {
+  color: white !important;
+  text-decoration: none;
+  font-family: 'Acme' !important;
+}

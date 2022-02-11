@@ -1,55 +1,88 @@
-import logo from '../img/metanoia_newlogo.png';
-import '../pages/Landing.css';
+import logo from '../assets/img/metanoia_newlogo.png';
+import '../assets/css/Landing.css';
+import '../assets/css/Test.css';
 
-import ContactComp from './ContactComponent';
+import ContactComp from '../components/ContactComponent';
 
+import linkedin from '../assets/img/social-icons/linkedin.png';
+import facebook from '../assets/img/social-icons/facebook.png';
+import gmail from '../assets/img/social-icons/gmail.png';
+import Banner from '../assets/img/bannervideo.mp4';
 
-import linkedin from '../img/social-icons/linkedin.png';
-import facebook from '../img/social-icons/facebook.png';
-import gmail from '../img/social-icons/gmail.png';
-import NewsletterImage from "../img/newsletter.png";
-import AccessibilityIcon from "../img/accessibility_icon.png";
-import ImpactIcon from "../img/impact_icon.png";
-import BiasPreventionIcon from "../img/bias_prevention_icon.png";
+// topic icons (add)
 
-// Icons
+// problem + newsletter
+import NewsletterImage from '../assets/img/newsletter.png';
+import AccessibilityIcon from '../assets/img/accessibility_icon.png';
+import ImpactIcon from '../assets/img/impact_icon.png';
+import BiasPreventionIcon from '../assets/img/bias_prevention_icon.png';
 
 // Testimonial Images
-import Testimonial1 from "../img/testimonial1.03958d1d.svg";
-import Testimonial2 from "../img/testimonial2.5df9c9c3.svg";
-import Testimonial3 from "../img/testimonial3.8d1ddce2.svg";
+import Testimonial1 from '../assets/img/testimonial1.03958d1d.svg';
+import Testimonial2 from '../assets/img/testimonial2.5df9c9c3.svg';
+import Testimonial3 from '../assets/img/testimonial3.8d1ddce2.svg';
 
-import Card from "react-bootstrap/Card";
+import Card from 'react-bootstrap/Card';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-import { Button, Col, Container, Row, Badge, Modal, FormGroup, } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
+import {
+  Button,
+  Col,
+  Container,
+  Row,
+  Badge,
+  Modal,
+  FormGroup,
+} from 'react-bootstrap';
 
 function Landing() {
   return (
     <>
-    <div className="Landing">
-      <header className="App-header">
-        <div>
-          <section>
-            <Container>
-              <Row>
-                <Col>
-                  <img src={logo} className="App-logo" alt="logo" />
-                  <h1>Metanoia</h1>
-                  <p>THE DIGITAL LIBRARY THAT INSPIRES CONVERSATION</p>
-                  <Button className="button" href="subscribe">Get Started</Button>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-        </div>
+      {/* <video controls autoplay className="bannerStyles">
+        <source src={Banner} type="video/mp4"/>
+      </video> */}
+      <div className="Landing">
+          <div>
+            <div className="position-relative">
+              {/* shape Hero */}
+              <section className="section section-lg section-shaped pb-300">
+                <div className="shape shape-style-1 shape-default cont">
+                  <video controls autoplay className="bannerStyles">
+                    <source src={Banner} type="video/mp4"/>
+                  </video>
+                </div>
+                <Container className="py-lg-md d-flex left">
+                  <div className="col px-0">
+                    <Row>
+                      <Col lg="6">
+                        <h1 id="mainTitle" className="display-3 ">
+                          Metanoia{' '}
+                        </h1>
+                        <p id="secondaryText" className="lead">
+                          THE DIGITAL LIBRARY THAT INSPIRES MEANINGFUL CONVERSATIONS
+                        </p>
+                        <div className="btn-wrapper">
+                          <Button className="btn-light" href="subscribe">
+                            Get Started
+                          </Button>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                </Container>
 
-        <section>
+              </section>
+            </div>
+          </div>
+
+          <section>
             <br></br>
-            
-            <Container>
-              {/* <Row className="justify-content-center text-center mb-lg"> */}
-              <h2>Recommended Topics</h2>
+
+            <Container className="pt-100"> 
+              <Row className="justify-content-center text-center mb-lg">
+              <h2 id="sectionHeading" className="display-3">Recommended Topics</h2>
+              </Row>
             </Container>
             <Container>
               <Row className="justify-content-center">
@@ -64,22 +97,13 @@ function Landing() {
                           <h6 className="text-primary text-uppercase">
                             Friendship
                           </h6>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              Pre-K
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              K-2
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              G3-5
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4 "
                             color="primary"
                             href=""
-                            onClick={() => window.location.href = "friendshipCatalog"}
+                            onClick={() =>
+                              (window.location.href = 'friendshipCatalog')
+                            }
                           >
                             Explore
                           </Button>
@@ -89,28 +113,19 @@ function Landing() {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0 roundEdges">
                         <Card.Body className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-world" />
                           </div>
-                          <h6 className="text-success text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Diversity
                           </h6>
-                          <div>
-                            <Badge color="success" pill className="mr-1">
-                              Pre-K
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              K-2
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              G3-5
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4"
                             color="success"
                             href=""
-                            onClick={() => window.location.href = "diversityCatalog"}
+                            onClick={() =>
+                              (window.location.href = 'diversityCatalog')
+                            }
                           >
                             Explore
                           </Button>
@@ -120,28 +135,17 @@ function Landing() {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0 roundEdges">
                         <Card.Body className="py-5">
-                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-tie-bow" />
                           </div>
-                          <h6 className="text-warning text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Miscellaneous
                           </h6>
-                          <div>
-                            <Badge color="warning" pill className="mr-1">
-                              Pre-K
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              K-2
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              G3-5
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4"
                             color="warning"
                             href=""
-                            onClick={() => window.location.href = "catalog"}
+                            onClick={() => (window.location.href = 'catalog')}
                           >
                             Explore
                           </Button>
@@ -153,11 +157,8 @@ function Landing() {
               </Row>
             </Container>
           </section>
-        
-        <section
-            // style={{ backgroundColor: "#FCFAD9" }}
-            className="section section-lg"
-          >
+
+          <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
@@ -173,7 +174,7 @@ function Landing() {
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                       src={AccessibilityIcon}
-                      style={{ width: "300px" }}
+                      style={{ width: '300px' }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
@@ -190,7 +191,7 @@ function Landing() {
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                       src={ImpactIcon}
-                      style={{ width: "300px" }}
+                      style={{ width: '300px' }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
@@ -208,7 +209,7 @@ function Landing() {
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                       src={BiasPreventionIcon}
-                      style={{ width: "300px" }}
+                      style={{ width: '300px' }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
@@ -223,8 +224,7 @@ function Landing() {
             </Container>
           </section>
 
-        <section
-            style={{ backgroundColor: "#FFFEF5" }}
+          <section
             className="section section-lg"
           >
             <Container>
@@ -264,55 +264,98 @@ function Landing() {
             </Container>
           </section>
 
+          <section
+            className="section section-lg "
+          >
+            <Container>
+              <Row className="text-center justify-content-center">
+                <Col lg="10">
+                  <h2 id="sectionHeading" className="display-3 text">
+                    Testimonials
+                  </h2>
+                  <p id="beliefs" className="lead text">
+                    Read below for what our customers had to say.
+                  </p>
+                </Col>
+              </Row>
+              {/* <Row className="row-grid mt-5"> */}
+              <Carousel>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={Testimonial1}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={Testimonial2}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={Testimonial3}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+              {/* </Row> */}
+            </Container>
+          </section>
+
           <section>
             <div className="Contact">
-            <h2 className="mainText">Contact Us</h2>
-            {/* modal section */}
-            <Container>
-             <ContactComp />
-      <Col>
-      <h4 className="contactMethod">
-                      <a href="https://www.gmail.com" target="_blank">
-                        <div>
-                          <img src={gmail} className="imageStyles"></img>
-                          <span className="methodLabel">
-                            metanoiabooks.co@gmail.com
-                          </span>
-                        </div>
-                      </a>
-                    </h4>
-                    <h4 className="contactMethod">
-                      <a
-                        href="https://www.linkedin.com/company/metanoiabooks/"
-                        target="_blank"
-                      >
-                        <div>
-                          <img src={linkedin} className="imageStyles"></img>
-                          <span className="methodLabel">@MetanoiaBooks</span>
-                        </div>
-                      </a>
-                    </h4>
-                    <h4 className="contactMethod">
-                      <a
-                        href="https://www.facebook.com/MetanoiaLibrary/"
-                        target="_blank"
-                      >
-                        <div>
-                          <img src={facebook} className="imageStyles"></img>
-                          <span className="methodLabel">
-                            {" "}
-                            @MetanoiaLibrary{" "}
-                          </span>
-                        </div>
-                      </a>
-                    </h4>
-        </Col>
-      </Container>
-    </div>
-      </section>
-          
-      </header>
-    </div>
+              <h2 id="sectionHeading" className="display-3 text">Contact Us</h2>
+              {/* modal section */}
+              <Container>
+                <ContactComp />
+                <Row>
+                  <Col>
+                  <h4 className="contactMethod">
+                    <a href="https://www.gmail.com" target="_blank">
+                      <div>
+                        <img src={gmail} className="imageStyles"></img>
+                        <span className="methodLabel">
+                          metanoiabooks.co@gmail.com
+                        </span>
+                      </div>
+                    </a>
+                  </h4>
+                  </Col>
+                  <Col>
+                  <h4 className="contactMethod">
+                    <a
+                      href="https://www.linkedin.com/company/metanoiabooks/"
+                      target="_blank"
+                    >
+                      <div>
+                        <img src={linkedin} className="imageStyles"></img>
+                        <span className="methodLabel">@MetanoiaBooks</span>
+                      </div>
+                    </a>
+                  </h4>
+                  </Col>
+                  <Col>
+                  <h4 className="contactMethod">
+                    <a
+                      href="https://www.facebook.com/MetanoiaLibrary/"
+                      target="_blank"
+                    >
+                      <div>
+                        <img src={facebook} className="imageStyles"></img>
+                        <span className="methodLabel"> @MetanoiaLibrary </span>
+                      </div>
+                    </a>
+                  </h4>
+                </Col>
+                </Row>
+              </Container>
+            </div>
+          </section>
+      </div>
     </>
   );
 }
