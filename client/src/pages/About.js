@@ -17,16 +17,22 @@ import Row from 'react-bootstrap/Row';
 function About() {
   return (
     <>
-      <div className="About">
-        <h2 className="about-para">About Us</h2>
-        <p className="about-para">
-          Metanoia is an upcoming EdTech startup that seeks to put social issues
-          at the forefront of children’s lives through our virtual interactive
-          library. Our website bridges the communication gap between
-          parents/teachers and students by tailoring personalized book
-          recommendations that foster meaningful discussions. K-5 students will
-          be able to enrich their knowledge whenever and wherever they go!
+    <div className="About">
+      <div id = "about-background">
+        <h2 id = "header_text">About Us</h2>
+      </div>
+      <div className="about-para">
+        <p>
+          Metanoia is an upcoming EdTech startup that seeks to put
+          social issues at the forefront of children’s lives
+          through our virtual interactive library. Our website
+          bridges the communication gap between parents/teachers
+          and students by tailoring personalized book
+          recommendations that foster meaningful discussions. K-5
+          students will be able to enrich their knowledge whenever
+          and wherever they go!
         </p>
+      </div>
 
         {/* Team Intros */}
         <Container className="team-pictures">

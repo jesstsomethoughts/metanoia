@@ -21,8 +21,11 @@ import ContactComp from '../components/ContactComponent';
 function Contact() {
   return (
     <>
-      <div className="Contact">
-        <h2 className="mainText">Contact Us</h2>
+    <div id = "contactBackground">
+      <h2 id ="contactText">Contact Us</h2>
+    </div>
+    <div className="Contact">
+      <h2 className="mainText"></h2>
         {/* modal section */}
         <Container>
           <ContactComp />

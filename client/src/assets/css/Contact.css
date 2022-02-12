@@ -18,6 +18,8 @@
 
 .imageStyles {
   width: 5vh;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 @keyframes App-logo-spin {
@@ -52,4 +54,28 @@
 #modal {
   margin-bottom: 10vh;
   font-family: 'Acme';
+}
+
+#contactBackground {
+  background-image: url("../img/website-image.png");
+  background-position: center;
+  margin-top: 0vh;
+  height: 170px;
+}
+
+#contactText {
+  font-family: Acme;
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.contactMethod {
+  margin-right: 40px;
 }
