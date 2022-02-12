@@ -12,8 +12,6 @@ import friendshipCatalog from './pages/friendshipCatalog.js';
 import diversityCatalog from './pages/diversityCatalog.js';
 import Blog_Article_Merge from './pages/Blog.js';
 
-console.log(process.env.REACT_APP_FIREBASE_API_KEY);
-
 function App() {
   return (
     <div className="App">
