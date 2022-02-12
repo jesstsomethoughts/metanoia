@@ -1,11 +1,23 @@
 .Landing {
   text-align: center;
 }
+ 
+#about-background {
+  background-image: url("../img/website-image.png");
+  background-position: center;
+  font-family: 'Acme';
+  text-align: center;
+  margin-top: 0vh;
+  height: 170px;
+  text-align: center;
+}
 
-.about-para {
+.about-para p{
   font-family: 'Acme';
   margin: 10vh;
   text-align: center;
+  font-size: large;
+  word-spacing: 3px;
 }
 
 #header {
@@ -18,6 +30,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+#header_text {
+  color: white;
+  padding-top: 70px;
 }
 
 @keyframes App-logo-spin {

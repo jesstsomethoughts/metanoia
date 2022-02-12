@@ -20,48 +20,60 @@ import ContactComp from '../components/ContactComponent';
 function Contact() {
   return (
     <>
-      <div className="Contact">
-        <h2 className="mainText">Contact Us</h2>
+    <div id = "contactBackground">
+      <h2 id ="contactText">Contact Us</h2>
+    </div>
+    <div className="Contact">
+      <h2 className="mainText"></h2>
         {/* modal section */}
         <Container>
           <ContactComp />
 
-          <Col>
-            <h4 className="contactMethod">
-              <a href="https://www.gmail.com" target="_blank">
-                <div>
-                  <img src={gmail} className="imageStyles"></img>
-                  <span className="methodLabel">
-                    metanoiabooks.co@gmail.com
-                  </span>
-                </div>
-              </a>
-            </h4>
-            <h4 className="contactMethod">
-              <a
-                href="https://www.linkedin.com/company/metanoiabooks/"
-                target="_blank"
-              >
-                <div>
-                  <img src={linkedin} className="imageStyles"></img>
-                  <span className="methodLabel">@MetanoiaBooks</span>
-                </div>
-              </a>
-            </h4>
-            <h4 className="contactMethod">
-              <a
-                href="https://www.facebook.com/MetanoiaLibrary/"
-                target="_blank"
-              >
-                <div>
-                  <img src={facebook} className="imageStyles"></img>
-                  <span className="methodLabel"> @MetanoiaLibrary </span>
-                </div>
-              </a>
-            </h4>
-          </Col>
-        </Container>
+      <ContactComp />
+
+      <Col>
+    <div className = "social_media">
+      <h4 className="contactMethod">
+                      <a href="https://www.gmail.com" target="_blank">
+                        <div>
+                          <img src={gmail} className="imageStyles"></img>
+                          {/*
+                          <span className="methodLabel">
+                            metanoiabooks.co@gmail.com
+                          </span>
+                          */}
+                        </div>
+                      </a>
+                    </h4>
+                    <h4 className="contactMethod">
+                      <a
+                        href="https://www.linkedin.com/company/metanoiabooks/"
+                        target="_blank"
+                      >
+                        <div>
+                          <img src={linkedin} className="imageStyles"></img>
+                          {/*<span className="methodLabel">@MetanoiaBooks</span>*/}
+                        </div>
+                      </a>
+                    </h4>
+                    <h4 className="contactMethod">
+                      <a
+                        href="https://www.facebook.com/MetanoiaLibrary/"
+                        target="_blank"
+                      >
+                        <div>
+                          <img src={facebook} className="imageStyles"></img>
+                          {/*<span className="methodLabel">
+                            {" "}
+                            @MetanoiaLibrary{" "}
+                        </span>*/}
+                        </div>
+                      </a>
+                    </h4>
       </div>
+      </Col>
+      </Container>
+    </div>
     </>
   );
 }
