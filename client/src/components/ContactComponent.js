@@ -58,7 +58,7 @@ function ContactComp() {
             required
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button className="btn-dark" variant="primary" type="submit">
           Send Message
         </Button>
       </Form>
