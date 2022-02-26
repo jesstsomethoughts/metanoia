@@ -56,7 +56,7 @@ class MainNavbar extends React.Component {
               activeClassName="nav-link-active"
               href="/"
             >
-              <img style={{ height: '60px' }} alt="..." src={Logo} />
+              <img className="logo" style={{ height: '60px' }} alt="..." src={Logo} />
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle
