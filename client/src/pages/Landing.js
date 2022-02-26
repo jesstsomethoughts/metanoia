@@ -55,11 +55,6 @@ function Landing() {
               {/* shape Hero */}
               <section className="section section-lg section-shaped">
                 <div className="shape shape-style-1 shape-default cont">
-                  {/* shape Hero 
-                  <video controls autoplay className="bannerStyles">
-                    <source src={Banner} type="video/mp4"/>
-                  </video>
-                  */}
                   <img className="bannerStyles" src={Banner}/>
                 </div>
                 <Container className="py-lg-md d-flex left">
