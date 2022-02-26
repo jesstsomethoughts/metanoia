@@ -1,16 +1,22 @@
 import logo from '../assets/img/metanoia_newlogo.png';
 import '../assets/css/Landing.css';
-import '../assets/css/Test.css';
+import '../assets/css/Theme.css';
 
 import ContactComp from '../components/ContactComponent';
 
 import linkedin from '../assets/img/social-icons/linkedin.png';
 import facebook from '../assets/img/social-icons/facebook.png';
 import gmail from '../assets/img/social-icons/gmail.png';
-//import Banner from '../assets/img/bannervideo.mp4';
 import Banner from '../assets/img/family_reading.gif';
 
-// topic icons (add)
+// icons (add)
+import { BsFacebook, BsLinkedin } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
+import { FaUserFriends } from "react-icons/fa";
+import { CgCommunity } from "react-icons/cg";
+import { BiDotsHorizontalRounded } from "react-icons/bi";
+import { IoNewspaperOutline } from "react-icons/io5";
+
 
 // problem + newsletter
 import NewsletterImage from '../assets/img/newsletter.png';
@@ -47,7 +53,7 @@ function Landing() {
           <div>
             <div className="position-relative">
               {/* shape Hero */}
-              <section className="section section-lg section-shaped pb-300">
+              <section className="section section-lg section-shaped">
                 <div className="shape shape-style-1 shape-default cont">
                   {/* shape Hero 
                   <video controls autoplay className="bannerStyles">
@@ -84,8 +90,8 @@ function Landing() {
             <br></br>
 
             <Container className="pt-100"> 
-              <Row className="justify-content-center text-center mb-lg">
-              <h2 id="sectionHeading" className="display-3">Recommended Topics</h2>
+              <Row>
+              <h2 id="sectionHeading" className="display-3 pb-50">Recommended Topics</h2>
               </Row>
             </Container>
             <Container>
@@ -93,17 +99,16 @@ function Landing() {
                 <Col lg="12">
                   <Row className="row-grid">
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0 roundEdges">
+                      <Card className="card-lift--hover shadow border-0">
                         <Card.Body className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-single-02" />
+                          <div className="icon icon-shape icon-shape-primary mb-4">
+                            <FaUserFriends size={40} />
                           </div>
                           <h6 className="text-primary text-uppercase">
                             Friendship
                           </h6>
                           <Button
-                            className="mt-4 "
-                            color="primary"
+                            className="mt-4 btn-dark"
                             href=""
                             onClick={() =>
                               (window.location.href = 'friendshipCatalog')
@@ -115,17 +120,16 @@ function Landing() {
                       </Card>
                     </Col>
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0 roundEdges">
+                      <Card className="card-lift--hover shadow border-0">
                         <Card.Body className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-world" />
+                          <div className="icon icon-shape icon-shape-primary mb-4">
+                            <CgCommunity size={40} />
                           </div>
                           <h6 className="text-primary text-uppercase">
                             Diversity
                           </h6>
                           <Button
-                            className="mt-4"
-                            color="success"
+                            className="mt-4 btn-dark"
                             href=""
                             onClick={() =>
                               (window.location.href = 'diversityCatalog')
@@ -137,17 +141,16 @@ function Landing() {
                       </Card>
                     </Col>
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0 roundEdges">
+                      <Card className="card-lift--hover shadow border-0">
                         <Card.Body className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-tie-bow" />
+                          <div className="icon icon-shape icon-shape-primary mb-4">
+                            <BiDotsHorizontalRounded size={40} />
                           </div>
                           <h6 className="text-primary text-uppercase">
                             Miscellaneous
                           </h6>
                           <Button
-                            className="mt-4"
-                            color="warning"
+                            className="mt-4 btn-dark"
                             href=""
                             onClick={() => (window.location.href = 'catalog')}
                           >
@@ -162,10 +165,10 @@ function Landing() {
             </Container>
           </section>
 
-          <section className="section section-lg">
+          <section className="section section-lg pt-100">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
-                <Col lg="8">
+                <Col lg="8" className="pb-50">
                   <h2 id="sectionHeading" className="display-3">
                     The Problem
                   </h2>
@@ -229,7 +232,7 @@ function Landing() {
           </section>
 
           <section
-            className="section section-lg"
+            className="section section-lg pt-100"
           >
             <Container>
               <Row className="row-grid align-items-center">
@@ -243,7 +246,7 @@ function Landing() {
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
                     <div className="icon icon-lg icon-shape icon-shape-danger shadow rounded-circle mb-5">
-                      <i className="ni ni-settings-gear-65" />
+                      <IoNewspaperOutline size={40} />
                     </div>
                     <h3 id="signUpTitle">
                       Sign up for our personalized newsletter!
@@ -253,8 +256,7 @@ function Landing() {
                       your preferences, just for you!
                     </p>
                     <Button
-                      className="btn-icon"
-                      // className="button"
+                      className="btn-icon btn-dark"
                       href="subscribe"
                       id="subscribeBtn"
                     >
@@ -269,7 +271,7 @@ function Landing() {
           </section>
 
           <section
-            className="section section-lg "
+            className="section section-lg pt-100"
           >
             <Container>
               <Row className="text-center justify-content-center">
@@ -310,7 +312,7 @@ function Landing() {
             </Container>
           </section>
 
-          <section>
+          <section className="pt-100 pb-100">
             <div className="Contact">
               <h2 id="sectionHeading" className="display-3 text">Contact Us</h2>
               {/* modal section */}
@@ -321,7 +323,7 @@ function Landing() {
                   <h4 className="contactMethod">
                     <a href="https://www.gmail.com" target="_blank">
                       <div>
-                        <img src={gmail} className="imageStyles"></img>
+                        <SiGmail size={40} color="red"/>
                         <span className="methodLabel">
                           metanoiabooks.co@gmail.com
                         </span>
@@ -336,7 +338,7 @@ function Landing() {
                       target="_blank"
                     >
                       <div>
-                        <img src={linkedin} className="imageStyles"></img>
+                        <BsLinkedin size={40}/>
                         <span className="methodLabel">@MetanoiaBooks</span>
                       </div>
                     </a>
@@ -349,7 +351,7 @@ function Landing() {
                       target="_blank"
                     >
                       <div>
-                        <img src={facebook} className="imageStyles"></img>
+                        <BsFacebook size={40}/>
                         <span className="methodLabel"> @MetanoiaLibrary </span>
                       </div>
                     </a>

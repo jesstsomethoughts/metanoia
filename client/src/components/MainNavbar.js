@@ -75,28 +75,28 @@ class MainNavbar extends React.Component {
               <Nav.Link
                 className="nav-link mx-3"
                 activeClassName="nav-link-active"
-                href="blog"
+                href="/blog"
               >
                 Blog
               </Nav.Link>
               <Nav.Link
                 className="nav-link mx-3"
                 activeClassName="nav-link-active"
-                href="about"
+                href="/about"
               >
                 About
               </Nav.Link>
               <Nav.Link
                 className="nav-link mx-3"
                 activeClassName="nav-link-active"
-                href="contact"
+                href="/contact"
               >
                 Contact
               </Nav.Link>
             </Nav>
             <Button
               className="btn-light btn-icon mx-3"
-              href="subscribe"
+              href="/subscribe"
               id="subscribe"
             >
               SUBSCRIBE
