@@ -7,7 +7,8 @@ import ContactComp from '../components/ContactComponent';
 import linkedin from '../assets/img/social-icons/linkedin.png';
 import facebook from '../assets/img/social-icons/facebook.png';
 import gmail from '../assets/img/social-icons/gmail.png';
-import Banner from '../assets/img/bannervideo.mp4';
+//import Banner from '../assets/img/bannervideo.mp4';
+import Banner from '../assets/img/family_reading.gif';
 
 // topic icons (add)
 
@@ -48,9 +49,12 @@ function Landing() {
               {/* shape Hero */}
               <section className="section section-lg section-shaped pb-300">
                 <div className="shape shape-style-1 shape-default cont">
+                  {/* shape Hero 
                   <video controls autoplay className="bannerStyles">
                     <source src={Banner} type="video/mp4"/>
                   </video>
+                  */}
+                  <img className="bannerStyles" src={Banner}/>
                 </div>
                 <Container className="py-lg-md d-flex left">
                   <div className="col px-0">
@@ -63,7 +67,7 @@ function Landing() {
                           THE DIGITAL LIBRARY THAT INSPIRES MEANINGFUL CONVERSATIONS
                         </p>
                         <div className="btn-wrapper">
-                          <Button className="btn-light" href="subscribe">
+                          <Button className="button" href="subscribe">
                             Get Started
                           </Button>
                         </div>
