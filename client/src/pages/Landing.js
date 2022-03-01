@@ -4,10 +4,7 @@ import '../assets/css/Theme.css';
 
 import ContactComp from '../components/ContactComponent';
 
-import linkedin from '../assets/img/social-icons/linkedin.png';
-import facebook from '../assets/img/social-icons/facebook.png';
-import gmail from '../assets/img/social-icons/gmail.png';
-import Banner from '../assets/img/family_reading.gif';
+import Banner from '../assets/img/bannervideo.gif';
 
 // icons (add)
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
