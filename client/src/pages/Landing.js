@@ -52,7 +52,8 @@ function Landing() {
               {/* shape Hero */}
               <section className="section section-lg section-shaped">
                 <div className="shape shape-style-1 shape-default cont">
-                  <img className="bannerStyles" src={Banner}/>
+                  {/* <img className="bannerStyles" src={Banner}/> */}
+                  <div className="backgroundBanner" ></div>
                 </div>
                 <Container className="py-lg-md d-flex left">
                   <div className="col px-0">
@@ -313,7 +314,7 @@ function Landing() {
                 <Row>
                   <Col>
                   <h4 className="contactMethod">
-                    <a href="https://www.gmail.com" target="_blank">
+                    <a href="https://www.gmail.com" target="_blank" rel="noreferrer">
                       <div>
                         <SiGmail size={40} color="red"/>
                         <span className="methodLabel">
@@ -327,7 +328,7 @@ function Landing() {
                   <h4 className="contactMethod">
                     <a
                       href="https://www.linkedin.com/company/metanoiabooks/"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                     >
                       <div>
                         <BsLinkedin size={40}/>
@@ -340,7 +341,7 @@ function Landing() {
                   <h4 className="contactMethod">
                     <a
                       href="https://www.facebook.com/MetanoiaLibrary/"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                     >
                       <div>
                         <BsFacebook size={40}/>
