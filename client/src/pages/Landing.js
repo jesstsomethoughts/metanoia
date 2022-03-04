@@ -51,8 +51,9 @@ function Landing() {
             <div className="position-relative">
               {/* shape Hero */}
               <section className="section section-lg section-shaped">
-                <div className="shape shape-style-1 shape-default cont">
+                <div className="shape">
                   {/* <img className="bannerStyles" src={Banner}/> */}
+                  <div className="landing-overlay shape shape-style-1 shape-default cont" ></div>
                   <div className="backgroundBanner" ></div>
                 </div>
                 <Container className="py-lg-md d-flex left">
