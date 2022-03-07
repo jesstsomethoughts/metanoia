@@ -28,11 +28,6 @@
   opacity: 75%;
 }
 
-.landing-overlay{
-  width:600px;
-  height:811px;
-}
-
 .backgroundBanner{
 
   background-image:url("../img/bannervideo.gif") !important;

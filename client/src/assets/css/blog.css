@@ -39,3 +39,13 @@
   width: min(60ch, 90%);
   margin: 0 auto;
 }
+
+.btn-blog-card-custom {
+  color: #ac3791;
+  border-color: #ac3791;
+}
+
+.btn-blog-card-custom:hover {
+  border-color: #ac3791;
+  background-color: #ac3791;
+}
