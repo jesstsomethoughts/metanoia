@@ -30,17 +30,17 @@
 
 .backgroundBanner{
 
-  background-image:url("../img/bannervideo.gif") !important;
-  background-size:contain !important;
+  background-image:url("../img/bannervideo.gif");
+  background-size:contain ;
   width:1440px;
   height:811px;
-  background-position-x: 100vw !important;
+  background-position-x: 100vw;
   opacity:75%;
 }
 
 @media only screen and (min-width:1440px){
   .backgroundBanner{
-    background-position-x: 0 !important;
+    background-position-x: 0;
   }
 }
 
