@@ -82,6 +82,13 @@ class MainNavbar extends React.Component {
               <Nav.Link
                 className="nav-link mx-3"
                 activeClassName="nav-link-active"
+                href="/catalog"
+              >
+                Catalog
+              </Nav.Link>
+              <Nav.Link
+                className="nav-link mx-3"
+                activeClassName="nav-link-active"
                 href="/about"
               >
                 About
