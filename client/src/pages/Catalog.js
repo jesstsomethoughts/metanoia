@@ -95,7 +95,7 @@ function Catalog() {
       <nav aria-label="...">
         <ul class="pagination">
           <li class="page-item">
-            <a class="page-link" href="/catalog">
+            <a class="page-link" href="/diversityCatalog">
               Diversity
             </a>
           </li>
@@ -103,7 +103,7 @@ function Catalog() {
             <span class="page-link">Miscellaneous</span>
           </li>
           <li class="page-item">
-            <a class="page-link" href="/diversityCatalog">
+            <a class="page-link" href="/friendshipCatalog">
               Friendship
             </a>
           </li>
