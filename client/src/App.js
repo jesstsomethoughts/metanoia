@@ -11,6 +11,7 @@ import Catalog from './pages/Catalog.js';
 import friendshipCatalog from './pages/friendshipCatalog.js';
 import diversityCatalog from './pages/diversityCatalog.js';
 import Blog_Article_Merge from './pages/Blog.js';
+import Footer from './components/Footer.js';
 
 console.log(process.env.REACT_APP_FIREBASE_API_KEY);
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/diversityCatalog" component={diversityCatalog} />
         <Blog_Article_Merge />
       </Switch>
+      <Footer />
     </div>
   );
 }

@@ -9,6 +9,7 @@ import facebook from '../assets/img/social-icons/facebook.png';
 import gmail from '../assets/img/social-icons/gmail.png';
 //import Banner from '../assets/img/bannervideo.mp4';
 import Banner from '../assets/img/family_reading.gif';
+import BackPicture from '../assets/img/website-image.png';
 
 // topic icons (add)
 
@@ -48,7 +49,7 @@ function Landing() {
             <div className="position-relative">
               {/* shape Hero */}
               <section className="section section-lg section-shaped pb-300">
-                <div className="shape shape-style-1 shape-default cont">
+                <div id="background_container" className="shape shape-style-1 shape-default cont">
                   {/* shape Hero 
                   <video controls autoplay className="bannerStyles">
                     <source src={Banner} type="video/mp4"/>
@@ -309,7 +310,7 @@ function Landing() {
               {/* </Row> */}
             </Container>
           </section>
-
+                          
           <section>
             <div className="Contact">
               <h2 id="sectionHeading" className="display-3 text">Contact Us</h2>
