@@ -75,7 +75,7 @@ function diversityCatalog() {
       <nav aria-label="...">
         <ul class="pagination">
           <li class="page-item">
-            <a class="page-link" href="/catalog">
+            <a class="page-link" href="/friendshipCatalog">
               Friendship
             </a>
           </li>
@@ -83,7 +83,7 @@ function diversityCatalog() {
             <span class="page-link">Diversity</span>
           </li>
           <li class="page-item">
-            <a class="page-link" href="/diversityCatalog">
+            <a class="page-link" href="/catalog">
               Miscellaneous
             </a>
           </li>
