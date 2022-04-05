@@ -4,11 +4,7 @@ import '../assets/css/Theme.css';
 
 import ContactComp from '../components/ContactComponent';
 
-import linkedin from '../assets/img/social-icons/linkedin.png';
-import facebook from '../assets/img/social-icons/facebook.png';
-import gmail from '../assets/img/social-icons/gmail.png';
-import Banner from '../assets/img/family_reading.gif';
-import BackPicture from '../assets/img/website-image.png';
+import Banner from '../assets/img/bannervideo.gif';
 
 // icons (add)
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
@@ -55,13 +51,8 @@ function Landing() {
             <div className="position-relative">
               {/* shape Hero */}
               <section className="section section-lg section-shaped">
-                <div className="shape shape-style-1 shape-default cont">
-                  {/* shape Hero 
-                  <video controls autoplay className="bannerStyles">
-                    <source src={Banner} type="video/mp4"/>
-                  </video>
-                  */}
-                  <img className="bannerStyles" src={Banner}/>
+                <div className="shape">
+                  <div className="backgroundBanner" ></div>
                 </div>
                 <Container className="py-lg-md d-flex left">
                   <div className="col px-0">
@@ -322,7 +313,7 @@ function Landing() {
                 <Row>
                   <Col>
                   <h4 className="contactMethod">
-                    <a href="https://www.gmail.com" target="_blank">
+                    <a href="https://www.gmail.com" target="_blank" rel="noreferrer">
                       <div>
                         <SiGmail size={40} color="red"/>
                         <span className="methodLabel">
@@ -336,7 +327,7 @@ function Landing() {
                   <h4 className="contactMethod">
                     <a
                       href="https://www.linkedin.com/company/metanoiabooks/"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                     >
                       <div>
                         <BsLinkedin size={40}/>
@@ -349,7 +340,7 @@ function Landing() {
                   <h4 className="contactMethod">
                     <a
                       href="https://www.facebook.com/MetanoiaLibrary/"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                     >
                       <div>
                         <BsFacebook size={40}/>

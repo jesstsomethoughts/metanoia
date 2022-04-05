@@ -28,7 +28,7 @@ const BlogCard = ({ img, title, about, link }) => {
         <Card.Text>{about}</Card.Text>
         <Button
           size="sm"
-          className="w-100"
+          className="w-100 btn-blog-card-custom"
           variant="outline-primary"
           onClick={() => history.push('/blog/' + link)}
         >

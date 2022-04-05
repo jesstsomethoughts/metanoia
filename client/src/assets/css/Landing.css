@@ -18,11 +18,12 @@
 
 #secondaryText {
   color: white;
+  margin-bottom: 30px;
 }
 
 .bannerStyles {
   flex-shrink: 0;
-  width: 100%;
+  width:240%;
   overflow: hidden;
   opacity: 75%;
   height: auto;
@@ -41,7 +42,21 @@
   background-color: white !important;
   color: #ac3791 !important;
   border: none;
+}
 
+.backgroundBanner{
+  background-image:url("../img/bannervideo.gif");
+  background-size:contain ;
+  width:1440px;
+  height:811px;
+  background-position-x: 100vw;
+  opacity:75%;
+}
+
+@media only screen and (min-width:1440px){
+  .backgroundBanner{
+    background-position-x: 0;
+  }
 }
 
 .left {
@@ -58,7 +73,7 @@
 }
 
 
-/*
+
 .button {
   font-family: Acme;
   color: white;
