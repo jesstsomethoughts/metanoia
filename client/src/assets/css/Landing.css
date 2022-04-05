@@ -24,7 +24,6 @@
   flex-shrink: 0;
   width: 100%;
   overflow: hidden;
-  
   opacity: 75%;
   height: auto;
   background-size: cover;
@@ -130,4 +129,11 @@
   width: 10%;
   height: 10%;
 }
-*/
+
+.methodLabel {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}

@@ -13,8 +13,6 @@ import diversityCatalog from './pages/diversityCatalog.js';
 import Blog_Article_Merge from './pages/Blog.js';
 import Footer from './components/Footer.js';
 
-console.log(process.env.REACT_APP_FIREBASE_API_KEY);
-
 function App() {
   return (
     <div className="App">

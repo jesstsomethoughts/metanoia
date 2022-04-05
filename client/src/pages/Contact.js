@@ -2,9 +2,10 @@ import '../assets/css/Contact.css';
 
 // additional images/files
 import logo from '../assets/img/metanoia_newlogo.png';
-import linkedin from '../assets/img/social-icons/linkedin.png';
-import facebook from '../assets/img/social-icons/facebook.png';
-import gmail from '../assets/img/social-icons/gmail.png';
+
+// icons
+import { BsFacebook, BsLinkedin } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
 
 // react components
 import Button from 'react-bootstrap/Button';
@@ -28,52 +29,48 @@ function Contact() {
         {/* modal section */}
         <Container>
           <ContactComp />
-
-      <ContactComp />
-
-      <Col>
-    <div className = "social_media">
-      <h4 className="contactMethod">
-                      <a href="https://www.gmail.com" target="_blank">
-                        <div>
-                          <img src={gmail} className="imageStyles"></img>
-                          {/*
-                          <span className="methodLabel">
-                            metanoiabooks.co@gmail.com
-                          </span>
-                          */}
-                        </div>
-                      </a>
-                    </h4>
-                    <h4 className="contactMethod">
-                      <a
-                        href="https://www.linkedin.com/company/metanoiabooks/"
-                        target="_blank"
-                      >
-                        <div>
-                          <img src={linkedin} className="imageStyles"></img>
-                          {/*<span className="methodLabel">@MetanoiaBooks</span>*/}
-                        </div>
-                      </a>
-                    </h4>
-                    <h4 className="contactMethod">
-                      <a
-                        href="https://www.facebook.com/MetanoiaLibrary/"
-                        target="_blank"
-                      >
-                        <div>
-                          <img src={facebook} className="imageStyles"></img>
-                          {/*<span className="methodLabel">
-                            {" "}
-                            @MetanoiaLibrary{" "}
-                        </span>*/}
-                        </div>
-                      </a>
-                    </h4>
+          <Row>
+            <Col>
+            <h4 className="contactMethod">
+              <a href="https://www.gmail.com" target="_blank">
+                <div>
+                  <SiGmail size={40} color="red"/>
+                  <span className="methodLabel">
+                    metanoiabooks.co@gmail.com
+                  </span>
+                </div>
+              </a>
+            </h4>
+            </Col>
+            <Col>
+            <h4 className="contactMethod">
+              <a
+                href="https://www.linkedin.com/company/metanoiabooks/"
+                target="_blank"
+              >
+                <div>
+                  <BsLinkedin size={40}/>
+                  <span className="methodLabel">@MetanoiaBooks</span>
+                </div>
+              </a>
+            </h4>
+            </Col>
+            <Col>
+            <h4 className="contactMethod">
+              <a
+                href="https://www.facebook.com/MetanoiaLibrary/"
+                target="_blank"
+              >
+                <div>
+                  <BsFacebook size={40}/>
+                  <span className="methodLabel"> @MetanoiaLibrary </span>
+                </div>
+              </a>
+            </h4>
+          </Col>
+          </Row>
+        </Container>
       </div>
-      </Col>
-      </Container>
-    </div>
     </>
   );
 }
