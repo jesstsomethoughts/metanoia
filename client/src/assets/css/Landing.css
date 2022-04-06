@@ -59,6 +59,36 @@
   }
 }
 
+@media only screen and (min-width: 2000px) {
+  .backgroundBanner {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .backgroundBanner {
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  .backgroundBanner {
+    margin-left: 55%;
+  }
+}
+
+@media only screen and (min-width: 3500px) {
+  .backgroundBanner {
+    margin-left: 70%;
+  }
+}
+
+@media only screen and (min-width: 4000px) {
+  .backgroundBanner {
+    margin-left: 90%;
+  }
+}
+
 .left {
   display: flex;
   text-align: left;
