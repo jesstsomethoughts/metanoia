@@ -1,0 +1,30 @@
+.pageTitleBackground {
+  background-image: url('../img/website-image-edit.png');
+  background-position: center;
+  padding-top: -10px;
+  margin-top: 0vh;
+  height: 170px;
+}
+
+.titleText {
+  color: white;
+  padding-top: 70px;
+  font-family: Acme;
+  text-align: center;
+  margin-top: 0vh;
+}
+
+.titleTextWithSubText {
+  font-family: Acme;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  margin-top: 0vh;
+}
+
+.subtitleText {
+  font-family: Acme;
+  text-align: center;
+  line-height: 3.5;
+  color: white;
+}
