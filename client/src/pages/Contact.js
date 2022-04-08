@@ -17,13 +17,12 @@ import FormControl from 'react-bootstrap/FormControl';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/esm/Container';
 import ContactComp from '../components/ContactComponent';
+import PageTitle from "../components/PageTitle";
 
 function Contact() {
   return (
     <>
-    <div id = "contactBackground">
-      <h2 id ="contactText">Contact Us</h2>
-    </div>
+      <PageTitle titleText={"Contact Us"} />
     <div className="Contact">
       <h2 className="mainText"></h2>
         {/* modal section */}

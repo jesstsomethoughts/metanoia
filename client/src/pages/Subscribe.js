@@ -1,17 +1,17 @@
 import logo from '../assets/img/metanoia_newlogo.png';
-import '../assets/css/Subscribe.css';
+import PageTitle from "../components/PageTitle";
+import "../assets/css/Subscribe.css";
 
 function Subscribe() {
   return (
     <>
-      <div  className="Subscribe">
-        <div className="background">
-          <h1 id="subscribeHeader">Subscribe to Our Newsletter!</h1>
-          <h4 id="description">
-            Fill out the form below to receive personalized book
-            recommendations!
-          </h4>
-        </div>
+      <div className="Subscribe">
+        <PageTitle
+          titleText={"Subscribe to Our Newsletter!"}
+          subtitleText={
+            "Fill out the form below to receive personalized book recommendations!"
+          }
+        />
         <div className="text-center mt-2 icont">
           <div className="iframe-container">
             <iframe
