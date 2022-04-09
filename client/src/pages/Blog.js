@@ -4,8 +4,7 @@ import { Route, useHistory } from 'react-router-dom';
 // React components
 import '../assets/css/blog.css';
 import { Card, Button, Row, Col } from 'react-bootstrap';
-
-//react dom
+import PageTitle from "../components/PageTitle";
 
 //firebase
 import { db } from '../firebase.js';
@@ -46,9 +45,7 @@ const Blog = ({ blogs }) => {
 
   return (
     <>
-      <div className = "blog_background">
-        <h2 class="header">Blog</h2>
-      </div>
+      <PageTitle titleText="Blog" />
       <Row xs={1} md={4} className="g-4 m-4">
         {blogs.map((blog) => (
           <Col key={selectPath(blog.path, blog.title)}>

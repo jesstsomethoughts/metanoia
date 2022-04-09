@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 
 // images and other components
 import BookList from '../data/olDiversityBookList.json';
+import PageTitle from "../components/PageTitle";
 
 const BookCard = ({ cover, title, author, url }) => {
   const styleImg = {
@@ -61,10 +62,7 @@ function diversityCatalog() {
 
   return (
     <>
-      {/* <div>
-        <img alt="..." src={Banner} className="MainBanner" />
-    </div> */}
-      <h1 className="header">Diversity</h1>
+      <PageTitle titleText="Diversity" />
       <div className="section">
         <h2 className="section-header">Grades Pre-K - 5</h2>
         <Row className="book-row" class="flew-row flex-nowrap">

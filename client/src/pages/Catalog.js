@@ -10,6 +10,7 @@ import Row from 'react-bootstrap/Row'
 import Banner from '../assets/img/website-image-edit.png'
 import Placeholder from '../assets/img/metanoia_newlogo.png'
 import BookList from '../data/olBookList.json'
+import PageTitle from "../components/PageTitle";
 
 const BookCard = ({ cover, title, author, url }) => {
   const styleImg = {
@@ -69,10 +70,7 @@ function Catalog() {
 
   return (
     <>
-      {/* <div>
-        <img alt="..." src={Banner} className="MainBanner" />
-    </div> */}
-      <h1 className='header'>Miscellaneous</h1>
+      <PageTitle titleText="Miscellaneous" />
       <div className='section'>
         <h2 className='section-header'>Grades K-2</h2>
         <Row className='book-row' class='flew-row flex-nowrap'>

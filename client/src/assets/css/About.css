@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-#about-background {
-  background-image: url("../img/website-image-edit.png");
-  background-position: center;
-  font-family: 'Acme';
-  text-align: center;
-  margin-top: 0vh;
-  height: 170px;
-  text-align: center;
-}
-
 .about-para p{
   font-family: 'Acme';
   margin: 10vh;
@@ -20,21 +10,8 @@
   word-spacing: 3px;
 }
 
-#header {
-  color:#AC3791;
-}
-
-#main-description {
-  font-family: 'Acme';
-}
-
 .App-link {
   color: #61dafb;
-}
-
-#header_text {
-  color: white;
-  padding-top: 70px;
 }
 
 @keyframes App-logo-spin {
