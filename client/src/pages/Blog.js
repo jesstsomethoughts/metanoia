@@ -69,6 +69,8 @@ const Blog = ({ blogs }) => {
 
 const Article = ({ author, date, img, title, body }) => {
   body = body.replaceAll(`\\`, "\n");
+
+  // Firebase stores dates with seconds, but JS needs milliseconds.
   const dateToMilliseconds = date.seconds * 1000;
   const newDate = new Date(dateToMilliseconds);
   const strDate = new Date(newDate).toLocaleDateString(
