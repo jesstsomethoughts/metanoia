@@ -71,17 +71,17 @@ const Article = ({ author, date, img, title, body }) => {
   body = body.replaceAll(`\\`, "\n");
   const dateToMilliseconds = date.seconds * 1000;
   const newDate = new Date(dateToMilliseconds);
-  const strDate = new Date(newDate).toDateString();
+  const strDate = new Date(newDate).toLocaleDateString(
+    "en-US"
+  );
   date = strDate;
   return (
     <>
       <img className="article-img" src={img} />
       <h1 className="article-header">{title}</h1>
       <div className="article-body">
-        <div className="article-author-date">
-          By {author}
-        </div>
-        <div className="article-author-date">On {date}</div>
+        <div className="article-author-date">{author}</div>
+        <div className="article-author-date">{date}</div>
         <ReactMarkdown children={body} />
       </div>
     </>
