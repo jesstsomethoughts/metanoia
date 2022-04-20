@@ -1,7 +1,16 @@
-.header {
+ul {
+  display: table;
+  margin: 0 auto;
+}
+
+li {
+  text-align: left;
+}
+
+.article-header {
   font-family: Acme;
   text-align: center;
-  margin: 6vh;
+  margin: 2vh;
 }
 
 .card-img-top {
@@ -18,6 +27,14 @@
   cursor: pointer;
 }
 
+.article-author-date {
+  white-space: pre-line;
+  word-wrap: break-word;
+  font-family: Helvetica, sans-serif, Acme;
+  width: min(60ch, 90%);
+  margin: 0 auto;
+}
+
 .article-body {
   text-align: center;
   font-size: 1.2em;
@@ -28,7 +45,7 @@
   display: block;
   height: max(40vh, 200px);
   width: max(40vh, 200px);
-  margin: 0 auto;
+  margin: 20px auto;
   margin-bottom: 6vh;
 }
 
@@ -37,7 +54,7 @@
   word-wrap: break-word;
   font-family: Helvetica, sans-serif, Acme;
   width: min(60ch, 90%);
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .blog_background {
@@ -52,6 +69,7 @@
   color: white;
   padding-top: 4.5rem;
 }
+
 .btn-blog-card-custom {
   color: #ac3791;
   border-color: #ac3791;

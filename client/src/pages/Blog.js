@@ -10,16 +10,18 @@ import PageTitle from "../components/PageTitle";
 import { db } from '../firebase.js';
 import { collection, getDocs } from 'firebase/firestore';
 
+import ReactMarkdown from "react-markdown";
+
 const BlogCard = ({ img, title, about, link }) => {
   const history = useHistory();
 
   return (
     <Card className="blogCardStyle">
-      <div class="cursorHover">
+      <div className="cursorHover">
         <Card.Img
           variant="top"
           src={img}
-          onClick={() => history.push('/blog/' + link)}
+          onClick={() => history.push("/blog/" + link)}
         />
       </div>
       <Card.Body>
@@ -29,7 +31,7 @@ const BlogCard = ({ img, title, about, link }) => {
           size="sm"
           className="w-100 btn-blog-card-custom"
           variant="outline-primary"
-          onClick={() => history.push('/blog/' + link)}
+          onClick={() => history.push("/blog/" + link)}
         >
           Read More
         </Button>
@@ -40,7 +42,9 @@ const BlogCard = ({ img, title, about, link }) => {
 
 const Blog = ({ blogs }) => {
   const selectPath = (path, articleTitle) => {
-    return path === '' ? articleTitle.replace(/[^0-9a-zA-Z]/g, '') : path;
+    return path === ""
+      ? articleTitle.replace(/[^0-9a-zA-Z]/g, "")
+      : path;
   };
 
   return (
@@ -63,13 +67,24 @@ const Blog = ({ blogs }) => {
   );
 };
 
-const Article = ({ img, title, body }) => {
+const Article = ({ author, date, img, title, body }) => {
+  body = body.replaceAll(`\\`, "\n");
+
+  // Firebase stores dates with seconds, but JS needs milliseconds.
+  const dateToMilliseconds = date.seconds * 1000;
+  const newDate = new Date(dateToMilliseconds);
+  const strDate = new Date(newDate).toLocaleDateString(
+    "en-US"
+  );
+  date = strDate;
   return (
     <>
-      <h1 class="header">{title}</h1>
-      <div class="article-body">
-        <img class="article-img" src={img} />
-        <p>{body}</p>
+      <img className="article-img" src={img} />
+      <h1 className="article-header">{title}</h1>
+      <div className="article-body">
+        <div className="article-author-date">{author}</div>
+        <div className="article-author-date">{date}</div>
+        <ReactMarkdown children={body} />
       </div>
     </>
   );
@@ -77,16 +92,29 @@ const Article = ({ img, title, body }) => {
 
 const Articles = ({ blogs }) => {
   const selectPath = (path, articleTitle) => {
-    return path === '' ? articleTitle.replace(/[^0-9a-zA-Z]/g, '') : path;
+    return path === ""
+      ? articleTitle.replace(/[^0-9a-zA-Z]/g, "")
+      : path;
   };
 
   return (
     <>
       {blogs.map((blog) => (
         <Route
-          path={`/blog/${selectPath(blog.path, blog.title)}`}
+          key={blog.id}
+          path={`/blog/${selectPath(
+            blog.path,
+            blog.title
+          )}`}
           component={() => (
-            <Article img={blog.image} title={blog.title} body={blog.body} />
+            <Article
+              id={blog.id}
+              author={blog.author}
+              date={blog.date}
+              img={blog.image}
+              title={blog.title}
+              body={blog.body}
+            />
           )}
         />
       ))}
@@ -97,7 +125,10 @@ const Articles = ({ blogs }) => {
 const Blog_Article_Merge = () => {
   const [blogs, setBlogs] = useState([]);
 
-  const blogCollectionRef = collection(db, 'blogs');
+  const blogCollectionRef = collection(
+    db,
+    "blogs-markdown"
+  );
   useEffect(() => {
     const getBlogs = async () => {
       const data = await getDocs(blogCollectionRef);
@@ -113,7 +144,11 @@ const Blog_Article_Merge = () => {
 
   return (
     <>
-      <Route path="/blog" component={() => <Blog blogs={blogs} />} exact />
+      <Route
+        path="/blog"
+        component={() => <Blog blogs={blogs} />}
+        exact
+      />
       <Articles blogs={blogs} />
     </>
   );
