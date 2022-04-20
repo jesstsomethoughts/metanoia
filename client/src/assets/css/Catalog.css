@@ -12,14 +12,15 @@
   justify-content: center;
   font-family: 'Acme';
 }
-.the-diversity {
+.pagination .page-item .the-diversity {
   color: #ac3971;
 }
 
-li .the-miscell {
+.pagination .page-item .the-miscell {
   background-color: #ac3971 !important;
+  border-color: #ac3971;
 }
 
-.the-friendship {
+.pagination .page-item .the-friendship {
   color: #ac3971;
 }

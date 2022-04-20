@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 .Landing {
   text-align: center;
   font-family: Acme;
 }
 
+.Recomm-topic{
+  width: 150px;
+  height: 150px;
+}
+.the-title{
+  font-family: 'Roboto', sans-serif ;
+  font-size:65px;
+  font-weight: bold;
+  color:#970065;
+}
+.title-paragraph{
+  font-family: 'Roboto', sans-serif ;
+  font-weight: 400;
+  color:white;
+  
+}
 #mainTitle {
   color: #ac3791;
   font-size: 60pt;
@@ -33,25 +50,85 @@
   height: 110%; 
 }
 
-.button {
-  border-radius: 1000px !important;
-  min-width: 150px !important;
+.container-landing-element{
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+
+  height: 50% ;
+  margin-left: 100px;
+  margin-top: 40px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   align-items: flex-start;
 }
 
+button {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif ;
+  font-weight: 400;
+  border-radius: 12px;
+  background-color: #ac2868;
+  border: solid .1px;
+  color: #ffeefbf6;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ }
+ button:hover{
+   background-color: rgb(184, 46, 180);
+ }
+ button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ 
+ button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+ 
+ button:hover span {
+  padding-right: 15px;
+ }
+ 
+ button:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
+
+
+/* .button {
+  border-radius: 1000px !important;
+  min-width: 150px !important;
+} */
+/* 
 .button:hover{
   background-color: white !important;
   color: #ac3791 !important;
   border: none;
-}
+} */
 
-.backgroundBanner {
+/* .backgroundBanner {
   background-image: url('../img/bannervideo.gif');
   background-size: contain;
   width: 1440px;
   height: 811px;
   background-position-x: 100vw;
   opacity: 75%;
-}
+} */
 
 @media only screen and (min-width: 1440px) {
   .backgroundBanner {
@@ -101,7 +178,7 @@
 .background_container {
   background-color: aqua !important;
 }
-
+/* 
 .button {
   padding: 10px;
 
@@ -168,7 +245,7 @@
 .button:focus::after {
   animation: none;
   display: none;
-}
+} */
 
 .imageStyles {
   width: 10%;

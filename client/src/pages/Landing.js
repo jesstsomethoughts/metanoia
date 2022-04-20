@@ -39,17 +39,47 @@ import {
   FormGroup,
 } from 'react-bootstrap'
 
+import Video from '../assets/img/bannervideo.mp4'
+import Equality from '../assets/img/equality.svg'
+import Diversity from '../assets/img/support.svg'
+import Miscell from '../assets/img/miscellanous.svg'
+
 function Landing() {
   return (
     <>
       {/* <video controls autoplay className="bannerStyles">
         <source src={Banner} type="video/mp4"/>
       </video> */}
+
       <div className='Landing'>
         <div>
           <div className='position-relative'>
             {/* shape Hero */}
-            <section className='section section-lg section-shaped'>
+            <div className='container-landing-element'>
+              <div>
+                <h1 className='the-title'>Metanoia</h1>
+              </div>
+
+              <div>
+                <p className='title-paragraph'>
+                  THE DIGITAL LIBRARY THAT INSPIRES MEANINGFUL CONVERSATIONS
+                </p>
+              </div>
+              <div>
+                <button>
+                  <span>GET STARTED </span>
+                </button>
+              </div>
+            </div>
+            <video autoPlay muted loop>
+              <source src={Video} type='video/mp4' />
+            </video>
+
+            <div className='gradient-overlay'></div>
+
+            {/* this is the begining of the landing page part ***************************/}
+
+            {/* <section className='section section-lg section-shaped'>
               <div className='shape'>
                 <div className='backgroundBanner'></div>
               </div>
@@ -73,7 +103,9 @@ function Landing() {
                   </Row>
                 </div>
               </Container>
-            </section>
+            </section> */}
+
+            {/* this is the ending of the landing page part ***************************/}
           </div>
         </div>
 
@@ -95,7 +127,8 @@ function Landing() {
                     <Card className='card-lift--hover shadow border-0'>
                       <Card.Body className='py-5'>
                         <div className='icon icon-shape icon-shape-primary mb-4'>
-                          <FaUserFriends size={40} />
+                          {/* <FaUserFriends size={40} /> */}
+                          <img src={Equality} className='Recomm-topic'></img>
                         </div>
                         <h6 className='text-primary text-uppercase'>
                           Friendship
@@ -116,7 +149,8 @@ function Landing() {
                     <Card className='card-lift--hover shadow border-0'>
                       <Card.Body className='py-5'>
                         <div className='icon icon-shape icon-shape-primary mb-4'>
-                          <CgCommunity size={40} />
+                          {/* <CgCommunity size={40} /> */}
+                          <img src={Diversity} className='Recomm-topic'></img>
                         </div>
                         <h6 className='text-primary text-uppercase'>
                           Diversity
@@ -137,7 +171,8 @@ function Landing() {
                     <Card className='card-lift--hover shadow border-0'>
                       <Card.Body className='py-5'>
                         <div className='icon icon-shape icon-shape-primary mb-4'>
-                          <BiDotsHorizontalRounded size={40} />
+                          {/* <BiDotsHorizontalRounded size={40} /> */}
+                          <img src={Miscell} className='Recomm-topic'></img>
                         </div>
                         <h6 className='text-primary text-uppercase'>
                           Miscellaneous

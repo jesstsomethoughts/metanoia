@@ -10,7 +10,7 @@ import Row from 'react-bootstrap/Row'
 import Banner from '../assets/img/website-image-edit.png'
 import Placeholder from '../assets/img/metanoia_newlogo.png'
 import BookList from '../data/olBookList.json'
-import PageTitle from "../components/PageTitle";
+import PageTitle from '../components/PageTitle'
 
 const BookCard = ({ cover, title, author, url }) => {
   const styleImg = {
@@ -70,7 +70,7 @@ function Catalog() {
 
   return (
     <>
-      <PageTitle titleText="Miscellaneous" />
+      <PageTitle titleText='Miscellaneous' />
       <div className='section'>
         <h2 className='section-header'>Grades K-2</h2>
         <Row className='book-row' class='flew-row flex-nowrap'>
@@ -91,19 +91,19 @@ function Catalog() {
       </div>
 
       <nav aria-label='...'>
-        <ul class='pagination'>
-          <li class='page-item'>
-            <a class='page-link the-diversity' href='/diversityCatalog'>
+        <ul className='pagination'>
+          <li className='page-item'>
+            <a className='page-link the-diversity' href='/diversityCatalog'>
               Diversity
             </a>
           </li>
-          <li class='page-item active  '>
-            <a class='page-link the-miscell' href='/miscellanousCatalog'>
+          <li className='page-item active  '>
+            <a className='page-link the-miscell' href='/miscellanousCatalog'>
               Miscellaneous
             </a>
           </li>
-          <li class='page-item'>
-            <a class='page-link the-friendship' href='/friendshipCatalog'>
+          <li className='page-item'>
+            <a className='page-link the-friendship' href='/friendshipCatalog'>
               Friendship
             </a>
           </li>
