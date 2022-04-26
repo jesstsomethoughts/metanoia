@@ -7,6 +7,10 @@ li {
   text-align: left;
 }
 
+img {
+  max-width: 600px;
+}
+
 .article-header {
   font-family: Acme;
   text-align: center;
