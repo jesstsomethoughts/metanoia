@@ -17,6 +17,7 @@ function Footer() {
                     <Link className="indiv_links" target="_top" to="/"> Home</Link>
                     <Link className="indiv_links" target="_top" to="/about"> About</Link>
                     <Link className="indiv_links" target="_top" to="/blog"> Blog</Link>
+                    <Link className="indiv_links" target="_top" to="/friendshipCatalog"> Catalog</Link>
                     <Link className="indiv_links" target="_top" to="/contact"> Contact</Link>
                     <Link className="indiv_links" target="_top" to="/subscribe"> Subscribe</Link>
                 </div>

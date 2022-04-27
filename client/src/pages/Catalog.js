@@ -72,7 +72,9 @@ function Catalog() {
       {/* <div>
         <img alt="..." src={Banner} className="MainBanner" />
     </div> */}
-      <h1 className='header'>Miscellaneous</h1>
+      <div className="main_banner">
+      <h1 className="header">Miscellaneous</h1>
+    </div>
       <div className='section'>
         <h2 className='section-header'>Grades K-2</h2>
         <Row className='book-row' class='flew-row flex-nowrap'>

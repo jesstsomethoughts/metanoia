@@ -47,7 +47,7 @@ const Blog = ({ blogs }) => {
   return (
     <>
       <div className = "blog_background">
-        <h2 class="header">Blog</h2>
+        <h1 class="header">Blog</h1>
       </div>
       <Row xs={1} md={4} className="g-4 m-4">
         {blogs.map((blog) => (

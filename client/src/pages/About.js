@@ -19,7 +19,7 @@ function About() {
     <>
     <div className="About">
       <div id = "about-background">
-        <h2 id = "header_text">About Us</h2>
+        <h1 id = "header_text">About Us</h1>
       </div>
       <div className="about-para">
         <p>

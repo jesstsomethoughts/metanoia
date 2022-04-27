@@ -22,7 +22,7 @@ function Contact() {
   return (
     <>
     <div id = "contactBackground">
-      <h2 id ="contactText">Contact Us</h2>
+      <h1 id ="contactText">Contact Us</h1>
     </div>
     <div className="Contact">
       <h2 className="mainText"></h2>

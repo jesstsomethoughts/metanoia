@@ -33,3 +33,17 @@ li .the-miscell {
 .the-friendship {
   color: #ac3971;
 }
+
+.main_banner {
+  background-image: url("../img/website-image-edit.png");
+  background-position: center;
+  margin-top: -6vh;
+  height: 170px;
+}
+
+#catalog_text {
+  font-family: Acme;
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+}

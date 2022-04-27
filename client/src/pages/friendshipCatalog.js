@@ -64,7 +64,9 @@ function friendshipCatalog() {
       {/* <div>
         <img alt="..." src={Banner} className="MainBanner" />
     </div> */}
+    <div className="main_banner">
       <h1 className="header">Friendship</h1>
+    </div>
       <div className="section">
         <h2 className="section-header">Grades Pre-K - 2</h2>
         <Row className="book-row" class="flew-row flex-nowrap">
