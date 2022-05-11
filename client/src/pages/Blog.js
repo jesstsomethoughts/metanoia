@@ -15,15 +15,22 @@ import ReactMarkdown from "react-markdown";
 const BlogCard = ({ img, title, about, link }) => {
   const history = useHistory();
 
+  const hasImg =
+    img !== "" && img !== undefined && img !== null;
+
   return (
     <Card className="blogCardStyle">
-      <div className="cursorHover">
-        <Card.Img
-          variant="top"
-          src={img}
-          onClick={() => history.push("/blog/" + link)}
-        />
-      </div>
+      {hasImg ? (
+        <div className="cursorHover">
+          <Card.Img
+            variant="top"
+            src={img}
+            onClick={() => history.push("/blog/" + link)}
+          />
+        </div>
+      ) : (
+        <></>
+      )}
       <Card.Body>
         <Card.Title> {title} </Card.Title>
         <Card.Text>{about}</Card.Text>
@@ -77,9 +84,15 @@ const Article = ({ author, date, img, title, body }) => {
     "en-US"
   );
   date = strDate;
+  const hasImg =
+    img !== "" && img !== undefined && img !== null;
   return (
     <>
-      <img className="article-img" src={img} />
+      {hasImg ? (
+        <img className="article-img" src={img} />
+      ) : (
+        <></>
+      )}
       <h1 className="article-header">{title}</h1>
       <div className="article-body">
         <div className="article-author-date">{author}</div>
