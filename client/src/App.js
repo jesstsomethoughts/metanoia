@@ -12,6 +12,8 @@ import friendshipCatalog from './pages/friendshipCatalog.js';
 import diversityCatalog from './pages/diversityCatalog.js';
 import Blog_Article_Merge from './pages/Blog.js';
 import Footer from './components/Footer.js';
+import SignIn from "./pages/SignIn.js";
+import Register from "./pages/Register.js";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" component={Landing} exact />
+        <Route path="/signin" component={SignIn} />
+        <Route path="/register" component={Register} />
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
         <Route path="/subscribe" component={Subscribe} />
