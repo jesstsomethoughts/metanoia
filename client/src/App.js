@@ -14,6 +14,7 @@ import Blog_Article_Merge from './pages/Blog.js';
 import Footer from './components/Footer.js';
 import SignIn from "./pages/SignIn.js";
 import Register from "./pages/Register.js";
+import Settings from "./pages/Settings.js";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" component={Landing} exact />
         <Route path="/signin" component={SignIn} />
         <Route path="/register" component={Register} />
+        <Route path="/settings" component={Settings} />
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
         <Route path="/subscribe" component={Subscribe} />
