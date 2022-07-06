@@ -1,4 +1,4 @@
-import "../assets/css/SignInRegister.css";
+import "../assets/css/Forms.css";
 import React, { useState, useEffect } from "react";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
@@ -51,10 +51,10 @@ function SignIn() {
 
   return (
     <>
-      <div className="sign-in-page">
+      <div className="form-page">
         <PageTitle titleText={"Sign In"} />
         {user ? <div>Hello {user.email}</div> : <></>}
-        <Form className="sign-in-form" onSubmit={loginUser}>
+        <Form className="form" onSubmit={loginUser}>
           <Form.Group
             className="mb-3"
             controlId="formBasicEmail"

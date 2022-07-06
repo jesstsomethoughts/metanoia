@@ -1,4 +1,4 @@
-import "../assets/css/SignInRegister.css";
+import "../assets/css/Forms.css";
 import React, { useState } from "react";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
@@ -48,10 +48,10 @@ function Settings() {
 
   return (
     <>
-      <div className="sign-in-page">
+      <div className="form-page">
         <PageTitle titleText={"Settings"} />
         <Form
-          className="sign-in-form"
+          className="form"
           onSubmit={submitUserSettings}
         >
           <Form.Group

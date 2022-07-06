@@ -1,4 +1,4 @@
-import "../assets/css/SignInRegister.css";
+import "../assets/css/Forms.css";
 import React, { useState, useEffect } from "react";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
@@ -51,11 +51,11 @@ function Register() {
 
   return (
     <>
-      <div className="sign-in-page">
+      <div className="form-page">
         <PageTitle titleText={"Register"} />
         {user ? <div>Hello {user.email}</div> : <></>}
         <Form
-          className="sign-in-form"
+          className="form"
           onSubmit={registerUser}
         >
           <Form.Group
