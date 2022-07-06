@@ -81,10 +81,6 @@ function Register() {
               onChange={updateUserInfo}
             />
           </Form.Group>
-          <Form.Group
-            className="mb-3"
-            controlId="formBasicCheckbox"
-          ></Form.Group>
           <Button variant="primary" type="submit">
             Register
           </Button>
