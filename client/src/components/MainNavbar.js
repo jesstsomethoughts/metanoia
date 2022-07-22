@@ -14,11 +14,16 @@ import { useSelector } from "react-redux";
 function MainNavbar() {
   const userData = useSelector((state) => state.userData);
 
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <Navbar variant="dark" className="navbar-main" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand className="mr-lg-5" to="/">
           <Nav.Link
+            onClick={scrollToTop}
             as={ Link }
             className="nav-link mx-3"
             activeClassName="nav-link-active"
@@ -34,6 +39,7 @@ function MainNavbar() {
         <Navbar.Collapse>
           <Nav className="ms-auto ml-5">
             <Nav.Link
+              onClick={scrollToTop}
               as={ Link }
               className="nav-link mx-3"
               activeClassName="nav-link-active"
@@ -42,6 +48,7 @@ function MainNavbar() {
               Home
             </Nav.Link>
             <Nav.Link
+              onClick={scrollToTop}
               as={ Link }
               className="nav-link mx-3"
               activeClassName="nav-link-active"
@@ -50,6 +57,7 @@ function MainNavbar() {
               Blog
             </Nav.Link>
             <Nav.Link
+              onClick={scrollToTop}
               as={ Link }
               className="nav-link mx-3"
               activeClassName="nav-link-active"
@@ -58,6 +66,7 @@ function MainNavbar() {
               Catalog
             </Nav.Link>
             <Nav.Link
+              onClick={scrollToTop}
               as={ Link }
               className="nav-link mx-3"
               activeClassName="nav-link-active"
@@ -66,6 +75,7 @@ function MainNavbar() {
               About
             </Nav.Link>
             <Nav.Link
+              onClick={scrollToTop}
               as={ Link }
               className="nav-link mx-3"
               activeClassName="nav-link-active"
@@ -75,6 +85,7 @@ function MainNavbar() {
             </Nav.Link>
             {userData.user ?
             <Nav.Link
+              onClick={scrollToTop}
               as={ Link }
               className="nav-link mx-3"
               activeClassName="nav-link-active"
@@ -87,6 +98,7 @@ function MainNavbar() {
             }
           </Nav>
           <Button
+            onClick={scrollToTop}
             as={ Link }
             className="btn-light btn-icon mx-3"
             to="/subscribe"
