@@ -9,10 +9,17 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../assets/img/header_logo.png';
 // // import smallerLogo from "assets/img/brand/metanoia_newlogo.png"
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { logoutUser } from '../state/userSlice';
 
 function MainNavbar() {
+  const dispatch = useDispatch();
   const userData = useSelector((state) => state.userData);
+
+  async function dispatchLogoutUser(e) {
+    e.preventDefault();
+    dispatch(logoutUser());
+  }
 
   function scrollToTop() {
     window.scrollTo(0, 0);
@@ -85,7 +92,7 @@ function MainNavbar() {
             </Nav.Link>
             {userData.user ?
             <Nav.Link
-              onClick={scrollToTop}
+              onClick={dispatchLogoutUser}
               as={ Link }
               className="nav-link mx-3"
               activeClassName="nav-link-active"
