@@ -2,8 +2,10 @@ import "../assets/css/Forms.css";
 import React, { useState } from "react";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 function Settings() {
+  const userData = useSelector((state) => state.userData);
   const [userSettings, setUserSettings] = useState({
     name: "",
     birthdate: "",
@@ -50,8 +52,9 @@ function Settings() {
     <>
       <div className="form-page">
         <PageTitle titleText={"Settings"} />
+        {userData && userData.user && userData.user.uid ?
         <Form
-          className="form"
+        className="form"
           onSubmit={submitUserSettings}
         >
           <Form.Group
@@ -63,7 +66,7 @@ function Settings() {
               type="text"
               placeholder="Enter name"
               onChange={updateUserInfo}
-            />
+              />
           </Form.Group>
           <Form.Group
             className="mb-3"
@@ -74,7 +77,7 @@ function Settings() {
               type="date"
               placeholder="Enter birthdate"
               onChange={updateUserInfo}
-            />
+              />
           </Form.Group>
           <Form.Group
             className="mb-3"
@@ -83,7 +86,7 @@ function Settings() {
             <Form.Select
               name="grade"
               onChange={updateUserInfo}
-            >
+              >
               <option value="Pre-kindergarten">Pre-kindergarten</option>
               <option value="Kindergarten">Kindergarten</option>
               <option value="1">1st Grade</option>
@@ -102,14 +105,14 @@ function Settings() {
           </Form.Group>
           <Form.Group
             className="mb-3"
-          >
+            >
             <Form.Label>School</Form.Label>
             <Form.Control
               name="school"
               type="text"
               placeholder="Enter school name"
               onChange={updateUserInfo}
-            />
+              />
           </Form.Group>
             {isTeacher ?
               <></>
@@ -117,7 +120,7 @@ function Settings() {
               <>
           <Form.Group
             className="mb-3"
-          >
+            >
           <Form.Label>Teacher</Form.Label>
           <Form.Control
             name="teacher"
@@ -135,6 +138,9 @@ function Settings() {
             Update Settings
           </Button>
         </Form>
+        :
+          <div className="need-login-message">Please log in or register to change settings.</div>
+        }
       </div>
     </>
   );
