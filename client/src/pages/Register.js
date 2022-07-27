@@ -1,5 +1,6 @@
 import "../assets/css/Forms.css";
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
 import { registerUser } from "../state/thunks/registerUser";
@@ -7,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 function Register() {
   const dispatch = useDispatch();
+  let history = useHistory();
   const userData = useSelector((state) => state.userData);
   const [errorMessage, setErrorMessage] = useState(null);
   const [userInfo, setUserInfo] = useState({
@@ -45,6 +47,11 @@ function Register() {
       } else if (userData.errorMsg.code) {
         setErrorMessage("Error: Check Email and Password and try again");
       }
+    }
+
+    if (userData && userData.user && userData.user.uid) {
+      // Successful registration, redirect to settings page.
+      history.push('/settings');
     }
   }, [userData]);
 
