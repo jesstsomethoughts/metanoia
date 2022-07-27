@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { loginUser } from "../state/userSlice";
+import { loginUser } from "../state/thunks/loginUser";
 
 function SignIn() {
   const userData = useSelector((state) => state.userData);

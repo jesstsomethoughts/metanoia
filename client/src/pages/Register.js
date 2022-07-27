@@ -2,35 +2,21 @@ import "../assets/css/Forms.css";
 import React, { useState, useEffect } from "react";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-} from "firebase/auth";
+import { registerUser } from "../state/thunks/registerUser";
+import { useDispatch, useSelector } from "react-redux";
 
 function Register() {
-  const [user, setUser] = useState();
+  const dispatch = useDispatch();
+  const userData = useSelector((state) => state.userData);
+  const [errorMessage, setErrorMessage] = useState(null);
   const [userInfo, setUserInfo] = useState({
     email: "",
     password: "",
   });
 
-  async function registerUser(e) {
+  async function dispatchRegisterUser(e) {
     e.preventDefault();
-    console.log("Attempting Register");
-    try {
-      const auth = getAuth();
-
-      const userCredential =
-        await createUserWithEmailAndPassword(
-          auth,
-          userInfo.email,
-          userInfo.password
-        );
-      // Signed in
-      setUser(userCredential.user);
-    } catch (error) {
-      console.log("Register error: ", error);
-    }
+    dispatch(registerUser(userInfo));
   }
 
   function updateUserInfo(e) {
@@ -49,14 +35,26 @@ function Register() {
     }
   }
 
+  useEffect(() => {
+    setErrorMessage(null);
+    if (userData && userData.errorMsg) {
+      if (userData.errorMsg.code === "auth/invalid-email") {
+        setErrorMessage("Error: Invalid email");
+      } else if (userData.errorMsg.code === "auth/weak-password") {
+        setErrorMessage("Error: Password too weak");
+      } else if (userData.errorMsg.code) {
+        setErrorMessage("Error: Check Email and Password and try again");
+      }
+    }
+  }, [userData]);
+
   return (
     <>
       <div className="form-page">
         <PageTitle titleText={"Register"} />
-        {user ? <div>Hello {user.email}</div> : <></>}
         <Form
           className="form"
-          onSubmit={registerUser}
+          onSubmit={dispatchRegisterUser}
         >
           <Form.Group
             className="mb-3"
@@ -84,6 +82,7 @@ function Register() {
           <Button variant="primary" type="submit">
             Register
           </Button>
+          {errorMessage ? <div className="error">{errorMessage}</div> : <></>}
         </Form>
       </div>
     </>

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../assets/img/header_logo.png';
 // // import smallerLogo from "assets/img/brand/metanoia_newlogo.png"
 import { useDispatch, useSelector } from "react-redux";
-import { logoutUser } from '../state/userSlice';
+import { logoutUser } from '../state/thunks/logoutUser';
 
 function MainNavbar() {
   const dispatch = useDispatch();
