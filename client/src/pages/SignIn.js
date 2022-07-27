@@ -2,35 +2,23 @@ import "../assets/css/Forms.css";
 import React, { useState, useEffect } from "react";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
+import { useDispatch, useSelector } from "react-redux";
+import { loginUser } from "../state/thunks/loginUser";
+import { useHistory } from "react-router-dom";
 
 function SignIn() {
-  const [user, setUser] = useState();
+  let history = useHistory();
+  const userData = useSelector((state) => state.userData);
+  const [errorMessage, setErrorMessage] = useState(null);
   const [userInfo, setUserInfo] = useState({
     email: "",
     password: "",
   });
+  const dispatch = useDispatch();
 
-  async function loginUser(e) {
+  async function dispatchLoginUser(e) {
     e.preventDefault();
-    console.log("Attempting signin");
-    try {
-      const auth = getAuth();
-
-      const userCredential =
-        await signInWithEmailAndPassword(
-          auth,
-          userInfo.email,
-          userInfo.password
-        );
-      // Signed in
-      setUser(userCredential.user);
-    } catch (error) {
-      console.log("SignIn error: ", error);
-    }
+    dispatch(loginUser(userInfo));
   }
 
   function updateUserInfo(e) {
@@ -49,12 +37,29 @@ function SignIn() {
     }
   }
 
+  useEffect(() => {
+    setErrorMessage(null);
+    if (userData && userData.errorMsg) {
+      if (userData.errorMsg.code === "auth/wrong-password") {
+        setErrorMessage("Error: Incorrect Password");
+      } else if (userData.errorMsg.code === "auth/user-not-found") {
+        setErrorMessage("Error: User not found");
+      } else if (userData.errorMsg.code) {
+        setErrorMessage("Error: Check Email and Password and try again");
+      }
+    }
+
+    if (userData && userData.user && userData.user.uid) {
+      // Successful sign in.
+      history.push("/");
+    }
+  }, [userData]);
+
   return (
     <>
       <div className="form-page">
         <PageTitle titleText={"Sign In"} />
-        {user ? <div>Hello {user.email}</div> : <></>}
-        <Form className="form" onSubmit={loginUser}>
+        <Form className="form" onSubmit={dispatchLoginUser}>
           <Form.Group
             className="mb-3"
             controlId="formBasicEmail"
@@ -64,23 +69,24 @@ function SignIn() {
               type="email"
               placeholder="Enter email"
               onChange={updateUserInfo}
-            />
+              />
           </Form.Group>
 
           <Form.Group
             className="mb-3"
             controlId="formBasicPassword"
-          >
+            >
             <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
               placeholder="Password"
               onChange={updateUserInfo}
-            />
+              />
           </Form.Group>
           <Button variant="primary" type="submit">
             Sign In
           </Button>
+          {errorMessage ? <div className="error">{errorMessage}</div> : <></>}
         </Form>
       </div>
     </>

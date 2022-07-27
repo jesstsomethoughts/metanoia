@@ -6,3 +6,12 @@
   margin: 100px auto;
   max-width: 350px;
 }
+
+.need-login-message {
+  margin: 100px auto;
+  max-width: 350px;
+}
+
+.error {
+  color: red;
+}
