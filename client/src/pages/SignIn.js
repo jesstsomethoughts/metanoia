@@ -46,6 +46,13 @@ function SignIn() {
         setErrorMessage("Error: Check Email and Password and try again");
       }
     }
+
+    // We *could* redirect users to the settings page on login.
+    // Only doing it on first registration for now.
+    // if (userData && userData.user && userData.user.uid) {
+      // Successful sign in.
+      // history.push("/settings");
+    // }
   }, [userData]);
 
   return (
