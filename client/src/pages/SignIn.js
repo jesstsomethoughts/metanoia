@@ -4,8 +4,10 @@ import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../state/thunks/loginUser";
+import { useHistory } from "react-router-dom";
 
 function SignIn() {
+  let history = useHistory();
   const userData = useSelector((state) => state.userData);
   const [errorMessage, setErrorMessage] = useState(null);
   const [userInfo, setUserInfo] = useState({
@@ -47,12 +49,10 @@ function SignIn() {
       }
     }
 
-    // We *could* redirect users to the settings page on login.
-    // Only doing it on first registration for now.
-    // if (userData && userData.user && userData.user.uid) {
+    if (userData && userData.user && userData.user.uid) {
       // Successful sign in.
-      // history.push("/settings");
-    // }
+      history.push("/");
+    }
   }, [userData]);
 
   return (
