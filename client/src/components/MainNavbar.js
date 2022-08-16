@@ -63,8 +63,8 @@ class MainNavbar extends React.Component {
             className="nav-toggle"
             aria-controls="basic-navbar-nav"
           />
-          <Navbar.Collapse>
-            <Nav className="ms-auto ml-5">
+          <Navbar.Collapse className='navbar-collapse'>
+            <Nav className="ms-auto ml-5" activeClassName="collapse-nav-container">
               <Nav.Link
                 className="nav-link mx-3"
                 activeClassName="nav-link-active"

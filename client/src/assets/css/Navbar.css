@@ -18,3 +18,38 @@
 .logo {
   margin-left: -1.8rem;
 }
+
+.navbar-collapse {
+  text-align: center;
+}
+
+@media screen and (max-width:575px){
+  .logo {
+      margin-left: 2rem;
+  }
+
+  .nav-toggle {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width:334px){
+  .nav-toggle {
+    margin-right: 0rem;
+  }
+}
+
+@media screen and (max-width:302px) {
+  .navbar-main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 4.5rem;
+  }
+
+  .nav-toggle {
+    margin-left: 11vh;
+  }
+}

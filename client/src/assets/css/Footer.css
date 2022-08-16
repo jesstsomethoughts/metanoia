@@ -2,7 +2,8 @@
     background-color: #AC3791;
     display: flex;
     align-items: center;
-    height: 180px;
+    height: 30vh;
+    font-family: 'Acme';
 }
 
 .content_container {
@@ -48,3 +49,13 @@
 /*.indiv_links:hover {
     color: #dcabb3 !important;
 }*/
+
+@media screen and (max-width:575px){
+    .footer_links {
+        flex-direction: column;
+    }
+
+    .footer_container {
+        height: 50vh;
+    }
+}

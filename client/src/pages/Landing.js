@@ -71,7 +71,7 @@ function Landing() {
                 </button>
               </div>
             </div>
-            <video autoPlay muted loop>
+            <video autoPlay muted loop className='video'>
               <source src={Video} type='video/mp4' />
             </video>
 
@@ -297,7 +297,7 @@ function Landing() {
         </section>
 
         <section className='section section-lg pt-100'>
-          <Container>
+          <Container id = 'testimonial-container'>
             <Row className='text-center justify-content-center'>
               <Col lg='10'>
                 <h2 id='sectionHeading' className='display-3 text'>
@@ -309,9 +309,9 @@ function Landing() {
               </Col>
             </Row>
             {/* <Row className="row-grid mt-5"> */}
-            <Carousel>
+            <Carousel className="carousel">
               <Carousel.Item>
-                <img
+                <img activeClassName = 'carousel-pic'
                   className='d-block w-100'
                   src={Testimonial1}
                   alt='First slide'
@@ -320,6 +320,7 @@ function Landing() {
               <Carousel.Item>
                 <img
                   className='d-block w-100'
+                  activeClassName = 'carousel-image'
                   src={Testimonial2}
                   alt='Second slide'
                 />
@@ -335,13 +336,14 @@ function Landing() {
             {/* </Row> */}
           </Container>
         </section>
-
+        
+        {/*
         <section className='pt-100 pb-100'>
           <div className='Contact'>
             <h2 id='sectionHeading' className='display-3 text'>
               Contact Us
             </h2>
-            {/* modal section */}
+           //modalsection
             <Container>
               <ContactComp />
               <Row>
@@ -393,6 +395,8 @@ function Landing() {
             </Container>
           </div>
         </section>
+      */}
+
       </div>
     </>
   )
