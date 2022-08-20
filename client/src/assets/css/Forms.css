@@ -1,10 +1,24 @@
 .form-page {
+  width: 100%;
   min-height: 800px;
 }
 
 .form {
-  margin: 100px auto;
+  margin: 10px auto;
   max-width: 350px;
+}
+
+.form-blog {
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+.markdown-container > .react-mde > .mde-header > .mde-tabs > button {
+  color: black;
+}
+
+.mde-header-item > button{
+  max-width: 30px;
 }
 
 .need-login-message {
