@@ -2,12 +2,14 @@ import "../assets/css/Forms.css";
 import React, { useState } from "react";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 import ReactMde from "react-mde";
 import ReactMarkdown from "react-markdown";
 import "react-mde/lib/styles/css/react-mde-all.css";
 
 function BlogEdit() {
+  const userData = useSelector((state) => state.userData);
   const [postTitle, setPostTitle] = useState("");
   const [value, setValue] = React.useState("");
   const [selectedTab, setSelectedTab] = React.useState("write");
@@ -34,30 +36,34 @@ function BlogEdit() {
     <>
       <div className="form-page">
         <PageTitle titleText={"Update/Delete Blog Post"} />
-        <Form className="form-blog">
-          <Form.Group>
-          <Form.Label>Post Title</Form.Label>
-            <Form.Control
-              name="title"
-              type="text"
-              placeholder="Enter title"
-              onChange={setPostTitle}
-            />
-          </Form.Group>
-          <div className="markdown-container" style={{ "maxWidth": "800px", "margin": "0px auto" }}>
-            <ReactMde
-              value={value}
-              onChange={setValue}
-              selectedTab={selectedTab}
-              onTabChange={setSelectedTab}
-              generateMarkdownPreview={markdown =>
-                Promise.resolve(<ReactMarkdown children={markdown} />)
-              }
+        {userData && userData.user && userData.user.uid ?
+          <Form className="form-blog">
+            <Form.Group>
+              <Form.Label>Post Title</Form.Label>
+              <Form.Control
+                name="title"
+                type="text"
+                placeholder="Enter title"
+                onChange={setPostTitle}
               />
-          </div>
-          <Button>Update Post</Button>
-          <Button>Delete Post</Button>
-        </Form>
+            </Form.Group>
+            <div className="markdown-container" style={{ "maxWidth": "800px", "margin": "0px auto" }}>
+              <ReactMde
+                value={value}
+                onChange={setValue}
+                selectedTab={selectedTab}
+                onTabChange={setSelectedTab}
+                generateMarkdownPreview={markdown =>
+                  Promise.resolve(<ReactMarkdown children={markdown} />)
+                }
+              />
+            </div>
+            <Button>Update Post</Button>
+            <Button>Delete Post</Button>
+          </Form>
+          :
+          <div className="need-login-message">Please log in or register to edit or delete a blog post.</div>
+        }
       </div>
     </>
   );
