@@ -2,6 +2,7 @@ import "../assets/css/Forms.css";
 import React, { useState } from "react";
 import PageTitle from "../components/PageTitle";
 import { Button, Form } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import { useSelector } from "react-redux";
 
 import ReactMde from "react-mde";
@@ -62,7 +63,7 @@ function BlogEdit() {
             <Button>Delete Post</Button>
           </Form>
           :
-          <div className="need-login-message">Please log in or register to edit or delete a blog post.</div>
+          <div className="need-login-message">Please <Link to="/signin">sign in</Link> to edit or delete a blog post.</div>
         }
       </div>
     </>
