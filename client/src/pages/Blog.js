@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route, useHistory } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { reqBlogPosts } from '../state/thunks/reqBlogPosts';
 
 // React components
 import '../assets/css/blog.css';
@@ -136,35 +138,31 @@ const Articles = ({ blogs }) => {
 };
 
 const Blog_Article_Merge = () => {
-  const [blogs, setBlogs] = useState([]);
+  const dispatch = useDispatch();
+  const blogs = useSelector((state) => state.blogData);
 
-  const blogCollectionRef = collection(
-    db,
-    "blogs-markdown"
-  );
   useEffect(() => {
-    const getBlogs = async () => {
-      const data = await getDocs(blogCollectionRef);
-      setBlogs(
-        data.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }))
-      );
-    };
-    getBlogs();
+    (async () => {
+      dispatch(reqBlogPosts());
+    })();
   }, []);
 
   return (
     <>
-      <Route
+      {blogs && blogs.posts ?
+        <>
+        <Route
         path="/blog"
-        component={() => <Blog blogs={blogs} />}
+        component={() => <Blog blogs={blogs.posts} />}
         exact
-      />
-      <Articles blogs={blogs} />
+        />
+      <Articles blogs={blogs.posts} />
+        </>
+      :
+        <></>
+      }
     </>
-  );
+  )
 };
 
 export default Blog_Article_Merge;
