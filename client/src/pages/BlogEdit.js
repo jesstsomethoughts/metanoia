@@ -48,7 +48,7 @@ function BlogEdit() {
                 onChange={setPostTitle}
               />
             </Form.Group>
-            <div className="markdown-container" style={{ "maxWidth": "800px", "margin": "0px auto" }}>
+            <div className="markdown-container">
               <ReactMde
                 value={value}
                 onChange={setValue}
