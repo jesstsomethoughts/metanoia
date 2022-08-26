@@ -1,5 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { reqBlogPosts } from './thunks/reqBlogPosts';
+import { newBlogPost } from './thunks/newBlogPost';
+import { updateBlogPost } from './thunks/updateBlogPost';
+import { deleteBlogPost } from './thunks/deleteBlogPost';
 
 export const blogSlice = createSlice({
   name: 'posts',
@@ -17,6 +20,45 @@ export const blogSlice = createSlice({
       }
       state.errorMsg = {};
       state.posts = payload;
+    },
+    [newBlogPost.fulfilled]: (state, action) => {
+      let {payload} = action;
+      const isError = payload.code && payload.name;
+      if (isError) {
+        state.errorMsg = payload;
+        return;
+      }
+      state.errorMsg = {};
+      state.posts = {
+        payload,
+        ...state.posts,
+      }
+    },
+    [updateBlogPost.fulfilled]: (state, action) => {
+      let {payload} = action;
+      const isError = payload.code && payload.name;
+      if (isError) {
+        state.errorMsg = payload;
+        return;
+      }
+      state.errorMsg = {};
+      state.posts = {
+        payload,
+        ...state.posts,
+      }
+    },
+    [deleteBlogPost.fulfilled]: (state, action) => {
+      let {payload} = action;
+      const isError = payload.code && payload.name;
+      if (isError) {
+        state.errorMsg = payload;
+        return;
+      }
+      state.errorMsg = {};
+      state.posts = {
+        payload,
+        ...state.posts,
+      }
     },
   }
 })
