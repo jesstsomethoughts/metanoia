@@ -14,25 +14,36 @@ function BlogCreate() {
   const dispatch = useDispatch();
   const userData = useSelector((state) => state.userData);
   const [postBody, setPostBody] = useState("");
-  const [postTitle, setPostTitle] = React.useState("");
+  const [postInfo, setPostInfo] = React.useState({
+    title: "",
+    author: "",
+    description: "",
+    image: ""
+  });
   const [selectedTab, setSelectedTab] = React.useState("write");
 
   async function submitPost(e) {
     e.preventDefault();
     try {
       dispatch(newBlogPost({
-        title: postTitle,
+        title: postInfo["title"],
         body: postBody,
-        author: userData["user"]["providerData"][0]["displayName"] || "Metanoia",
-        description: ""
-      }))
+        author: postInfo["author"] || "Metanoia",
+        description: postInfo["description"],
+        image: postInfo["image"] || "https://firebasestorage.googleapis.com/v0/b/metanoia-books.appspot.com/o/metanoia_newlogo.png?alt=media&token=1941dac6-40e5-4179-8ba6-900820abfaa4"
+      }));
     } catch (error) {
       console.log("Error: ", error);
     }
   }
 
-  function updatePostTitle(e) {
-    setPostTitle(e.target.value);
+  function updatePostInfo(e) {
+    const field = e.target.name;
+    const val = e.target.value;
+    setPostInfo({
+      ...postInfo,
+      [field]: val,
+    });
   }
 
   return (
@@ -41,14 +52,45 @@ function BlogCreate() {
         <PageTitle titleText={"Create New Blog Post"} />
         {userData && userData.user && userData.user.uid ?
           <Form className="form-blog" onSubmit={submitPost}>
-            <Form.Group>
-              <Form.Label>Post Title</Form.Label>
+            <Form.Group
+            className="mb-3">
+              <Form.Label>Title</Form.Label>
               <Form.Control
                 name="title"
                 type="text"
                 placeholder="Enter title"
-                onChange={updatePostTitle}
+                onChange={updatePostInfo}
               />
+            </Form.Group>
+            <Form.Group
+              className="mb-3">
+              <Form.Label>Description</Form.Label>
+              <Form.Control
+                name="description"
+                type="text"
+                placeholder="Enter description"
+                onChange={updatePostInfo}
+                />
+            </Form.Group>
+            <Form.Group
+              className="mb-3">
+              <Form.Label>Author</Form.Label>
+              <Form.Control
+                name="author"
+                type="text"
+                placeholder="Enter author name or leave blank for 'Metanoia'"
+                onChange={updatePostInfo}
+                />
+            </Form.Group>
+            <Form.Group
+              className="mb-3">
+              <Form.Label>Image URL</Form.Label>
+              <Form.Control
+                name="image"
+                type="text"
+                placeholder="Enter image URL or leave blank to use default image"
+                onChange={updatePostInfo}
+                />
             </Form.Group>
             <div className="markdown-container">
               <ReactMde
