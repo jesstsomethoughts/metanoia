@@ -33,7 +33,7 @@ export const blogSlice = createSlice({
     },
     [updateBlogPost.fulfilled]: (state, action) => {
       let {payload} = action;
-      const isError = payload.code && payload.name;
+      const isError = payload?.code && payload?.name;
       if (isError) {
         state.errorMsg = payload;
         return;
@@ -43,7 +43,7 @@ export const blogSlice = createSlice({
     },
     [deleteBlogPost.fulfilled]: (state, action) => {
       let {payload} = action;
-      const isError = payload.code && payload.name;
+      const isError = payload?.code && payload?.name;
       if (isError) {
         state.errorMsg = payload;
         return;
