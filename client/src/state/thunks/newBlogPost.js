@@ -5,6 +5,7 @@ import { collection, addDoc } from "firebase/firestore";
 export const newBlogPost = createAsyncThunk('blogData/newBlogPost', async (postObj) => {
   const {title, author, description, image, body} = postObj;
   const date = new Date();
+  const path = "";
   try {
     const ref = await addDoc(collection(db, "blogs-markdown"), {
       title,
@@ -13,9 +14,10 @@ export const newBlogPost = createAsyncThunk('blogData/newBlogPost', async (postO
       description,
       image,
       body,
+      path
     });
 
-    return {title, author, date, description, body};
+    return {title, author, date, description, body, path};
   } catch (error) {
     return JSON.parse(JSON.stringify(error));
   }
