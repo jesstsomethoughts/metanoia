@@ -8,9 +8,7 @@ import '../assets/css/blog.css';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import PageTitle from "../components/PageTitle";
 
-//firebase
-import { db } from '../firebase.js';
-import { collection, getDocs } from 'firebase/firestore';
+import { deleteBlogPost } from '../state/thunks/deleteBlogPost';
 
 import ReactMarkdown from "react-markdown";
 
@@ -76,7 +74,23 @@ const Blog = ({ blogs }) => {
   );
 };
 
-const Article = ({ author, date, img, title, body }) => {
+const DeleteButton = ({id}) => {
+  const userData = useSelector((state) => state.userData);
+  const dispatch = useDispatch()
+  const redirect = process?.env?.REACT_APP_REDIRECTS?.split(',');
+
+  if (redirect && userData && userData.user && userData.user.email && redirect.includes(userData.user.email)) {
+    return (
+      <Button onClick={() => dispatch(deleteBlogPost(id))} style={{"backgroundColor": "red"}}>Delete Post</Button>
+    )
+  }
+
+  return (
+    <></>
+  )
+}
+
+const Article = ({ author, date, img, title, body, id }) => {
   body = body.replaceAll(`\\`, "\n");
 
   // Firebase stores dates with seconds, but JS needs milliseconds.
@@ -100,6 +114,7 @@ const Article = ({ author, date, img, title, body }) => {
         <div className="article-author-date">{author}</div>
         <div className="article-author-date">{date}</div>
         <ReactMarkdown children={body} />
+        <DeleteButton id={id} />
       </div>
     </>
   );
