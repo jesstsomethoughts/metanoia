@@ -13,7 +13,6 @@ import "react-mde/lib/styles/css/react-mde-all.css";
 function BlogCreate() {
   const dispatch = useDispatch();
   const userData = useSelector((state) => state.userData);
-  const blogData = useSelector((state) => state.blogData);
   const [postBody, setPostBody] = useState("");
   const [postInfo, setPostInfo] = React.useState({
     title: "",
@@ -45,6 +44,16 @@ function BlogCreate() {
       ...postInfo,
       [field]: val,
     });
+  }
+
+  const SuccessMsg = () => {
+    const blogData = useSelector((state) => state.blogData);
+    return (
+      blogData?.posts?.length ?
+        <div className="success-message">Post created!</div>
+        :
+        <></>
+    );
   }
 
   return (
@@ -105,12 +114,7 @@ function BlogCreate() {
               />
             </div>
             <Button variant="primary" type="submit">Submit Post</Button>
-            {
-              blogData?.posts?.length ?
-                  <div className="success-message">Post created!</div>
-                  :
-                  <></>
-            }
+            <SuccessMsg/>
           </Form>
           :
           <div className="need-login-message">Please <Link to="/signin">sign in</Link> to create a blog post.</div>
