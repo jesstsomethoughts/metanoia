@@ -29,10 +29,7 @@ export const blogSlice = createSlice({
         return;
       }
       state.errorMsg = {};
-      state.posts = {
-        payload,
-        ...state.posts,
-      }
+      state.posts = [payload];
     },
     [updateBlogPost.fulfilled]: (state, action) => {
       let {payload} = action;
@@ -42,10 +39,7 @@ export const blogSlice = createSlice({
         return;
       }
       state.errorMsg = {};
-      state.posts = {
-        payload,
-        ...state.posts,
-      }
+      state.posts = [payload];
     },
     [deleteBlogPost.fulfilled]: (state, action) => {
       let {payload} = action;
@@ -55,10 +49,7 @@ export const blogSlice = createSlice({
         return;
       }
       state.errorMsg = {};
-      state.posts = {
-        payload,
-        ...state.posts,
-      }
+      state.posts = [];
     },
   }
 })
