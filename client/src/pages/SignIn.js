@@ -51,7 +51,12 @@ function SignIn() {
 
     if (userData && userData.user && userData.user.uid) {
       // Successful sign in.
-      history.push("/");
+      const redirect = process?.env?.REACT_APP_REDIRECTS?.split(',');
+      if (redirect && redirect.includes(userData.user.email)) {
+        history.push("/blogcreate");
+      } else {
+        history.push("/");
+      }
     }
   }, [userData]);
 
