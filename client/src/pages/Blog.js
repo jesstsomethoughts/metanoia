@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, useHistory } from 'react-router-dom';
+import { Route, useHistory, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { reqBlogPosts } from '../state/thunks/reqBlogPosts';
 
@@ -74,9 +74,26 @@ const Blog = ({ blogs }) => {
   );
 };
 
+const EditButton = ({id}) => {
+  const userData = useSelector((state) => state.userData);
+  const redirect = process?.env?.REACT_APP_REDIRECTS?.split(',');
+
+  if (redirect && userData && userData.user && userData.user.email && redirect.includes(userData.user.email)) {
+    return (
+      <Button>
+        <Link to={`/blogedit/${id}`} style={{"color": "white"}}>Edit Post</Link>
+      </Button>
+    )
+  }
+
+  return (
+    <></>
+  )
+}
+
 const DeleteButton = ({id}) => {
   const userData = useSelector((state) => state.userData);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const redirect = process?.env?.REACT_APP_REDIRECTS?.split(',');
 
   if (redirect && userData && userData.user && userData.user.email && redirect.includes(userData.user.email)) {
@@ -114,6 +131,7 @@ const Article = ({ author, date, img, title, body, id }) => {
         <div className="article-author-date">{author}</div>
         <div className="article-author-date">{date}</div>
         <ReactMarkdown children={body} />
+        <EditButton id={id} />
         <DeleteButton id={id} />
       </div>
     </>
