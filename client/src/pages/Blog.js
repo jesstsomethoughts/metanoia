@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Route, useHistory } from 'react-router-dom';
+import { Route, useHistory, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { reqBlogPosts } from '../state/thunks/reqBlogPosts';
 
 // React components
 import '../assets/css/blog.css';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import PageTitle from "../components/PageTitle";
 
-//firebase
-import { db } from '../firebase.js';
-import { collection, getDocs } from 'firebase/firestore';
+import { deleteBlogPost } from '../state/thunks/deleteBlogPost';
 
 import ReactMarkdown from "react-markdown";
 
@@ -74,7 +74,40 @@ const Blog = ({ blogs }) => {
   );
 };
 
-const Article = ({ author, date, img, title, body }) => {
+const EditButton = ({id}) => {
+  const userData = useSelector((state) => state.userData);
+  const redirect = process?.env?.REACT_APP_REDIRECTS?.split(',');
+
+  if (redirect && userData && userData.user && userData.user.email && redirect.includes(userData.user.email)) {
+    return (
+      <Button>
+        <Link to={`/blogedit/${id}`} style={{"color": "white"}}>Edit Post</Link>
+      </Button>
+    )
+  }
+
+  return (
+    <></>
+  )
+}
+
+const DeleteButton = ({id}) => {
+  const userData = useSelector((state) => state.userData);
+  const dispatch = useDispatch();
+  const redirect = process?.env?.REACT_APP_REDIRECTS?.split(',');
+
+  if (redirect && userData && userData.user && userData.user.email && redirect.includes(userData.user.email)) {
+    return (
+      <Button onClick={() => dispatch(deleteBlogPost(id))} style={{"backgroundColor": "red"}}>Delete Post</Button>
+    )
+  }
+
+  return (
+    <></>
+  )
+}
+
+const Article = ({ author, date, img, title, body, id }) => {
   body = body.replaceAll(`\\`, "\n");
 
   // Firebase stores dates with seconds, but JS needs milliseconds.
@@ -98,6 +131,8 @@ const Article = ({ author, date, img, title, body }) => {
         <div className="article-author-date">{author}</div>
         <div className="article-author-date">{date}</div>
         <ReactMarkdown children={body} />
+        <EditButton id={id} />
+        <DeleteButton id={id} />
       </div>
     </>
   );
@@ -136,35 +171,31 @@ const Articles = ({ blogs }) => {
 };
 
 const Blog_Article_Merge = () => {
-  const [blogs, setBlogs] = useState([]);
+  const dispatch = useDispatch();
+  const blogs = useSelector((state) => state.blogData);
 
-  const blogCollectionRef = collection(
-    db,
-    "blogs-markdown"
-  );
   useEffect(() => {
-    const getBlogs = async () => {
-      const data = await getDocs(blogCollectionRef);
-      setBlogs(
-        data.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }))
-      );
-    };
-    getBlogs();
+    (async () => {
+      dispatch(reqBlogPosts());
+    })();
   }, []);
 
   return (
     <>
-      <Route
+      {blogs && blogs.posts ?
+        <>
+        <Route
         path="/blog"
-        component={() => <Blog blogs={blogs} />}
+        component={() => <Blog blogs={blogs.posts} />}
         exact
-      />
-      <Articles blogs={blogs} />
+        />
+      <Articles blogs={blogs.posts} />
+        </>
+      :
+        <></>
+      }
     </>
-  );
+  )
 };
 
 export default Blog_Article_Merge;

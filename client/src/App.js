@@ -15,6 +15,8 @@ import Footer from './components/Footer.js';
 import SignIn from "./pages/SignIn.js";
 import Register from "./pages/Register.js";
 import Settings from "./pages/Settings.js";
+import BlogCreate from "./pages/BlogCreate.js";
+import BlogEdit from "./pages/BlogEdit";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path="/signin" component={SignIn} />
         <Route path="/register" component={Register} />
         <Route path="/settings" component={Settings} />
+        <Route path="/blogcreate" component={BlogCreate} />
+        <Route path="/blogedit" component={BlogEdit} />
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
         <Route path="/subscribe" component={Subscribe} />
