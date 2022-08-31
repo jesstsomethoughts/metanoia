@@ -2,7 +2,7 @@
     background-color: #AC3791;
     display: flex;
     align-items: center;
-    height: 180px;
+    min-height: 180px;
 }
 
 .content_container {
@@ -31,7 +31,9 @@
 .footer_links {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 5px;
+    justify-content: space-around;
 }
 
 .indiv_links {
