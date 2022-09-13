@@ -11,10 +11,16 @@ export const reqBlogPosts = createAsyncThunk('blogData/reqBlogPosts', async () =
 
     const data = await getDocs(blogCollectionRef);
 
-    return data.docs.map((doc) => ({
+    const docsWithId = data.docs.map((doc) => ({
       id: doc.id,
       ...doc.data(),
     }));
+
+    docsWithId.sort((a, b) => {
+      return b.date.seconds - a.date.seconds;
+    });
+
+    return docsWithId;
   } catch (error) {
     return JSON.parse(JSON.stringify(error));
   }
