@@ -99,11 +99,12 @@ const EditButton = ({id}) => {
 const DeleteButton = ({id}) => {
   const userData = useSelector((state) => state.userData);
   const dispatch = useDispatch();
+  const history = useHistory();
   const redirect = process?.env?.REACT_APP_REDIRECTS?.split(',');
 
   if (redirect && userData && userData.user && userData.user.email && redirect.includes(userData.user.email)) {
     return (
-      <Button onClick={() => dispatch(deleteBlogPost(id))} style={{"backgroundColor": "red"}}>Delete Post</Button>
+      <Button onClick={() => { dispatch(deleteBlogPost(id)); history.push("/blog/"); }} style={{"backgroundColor": "red"}}>Delete Post</Button>
     )
   }
 
