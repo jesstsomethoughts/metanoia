@@ -58,7 +58,8 @@ const Blog = ({ blogs }) => {
     <>
       <PageTitle titleText="Blog" />
       <Row xs={1} md={4} className="g-4 m-4">
-        {blogs.map((blog) => (
+        {blogs && blogs.length ?
+          blogs.map((blog) => (
           <Col key={selectPath(blog.path, blog.title)}>
             <BlogCard
               img={blog.image}
@@ -68,7 +69,11 @@ const Blog = ({ blogs }) => {
               link={selectPath(blog.path, blog.title)}
             />
           </Col>
-        ))}
+          ))
+          :
+          <>
+          </>
+        }
       </Row>
     </>
   );
@@ -144,6 +149,8 @@ const Articles = ({ blogs }) => {
       ? articleTitle.replace(/[^0-9a-zA-Z]/g, "")
       : path;
   };
+
+  if (!blogs || !blogs[0]) return (<></>);
 
   return (
     <>
