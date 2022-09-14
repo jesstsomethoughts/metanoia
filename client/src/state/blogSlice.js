@@ -48,8 +48,9 @@ export const blogSlice = createSlice({
         state.errorMsg = payload;
         return;
       }
+      const postsWithoutDeleted = state.posts.filter((post) => post.id !== payload);
       state.errorMsg = {};
-      state.posts = [];
+      state.posts = postsWithoutDeleted;
     },
   }
 })

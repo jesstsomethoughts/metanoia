@@ -58,7 +58,8 @@ const Blog = ({ blogs }) => {
     <>
       <PageTitle titleText="Blog" />
       <Row xs={1} md={4} className="g-4 m-4">
-        {blogs.map((blog) => (
+        {blogs && blogs.length ?
+          blogs.map((blog) => (
           <Col key={selectPath(blog.path, blog.title)}>
             <BlogCard
               img={blog.image}
@@ -68,7 +69,11 @@ const Blog = ({ blogs }) => {
               link={selectPath(blog.path, blog.title)}
             />
           </Col>
-        ))}
+          ))
+          :
+          <>
+          </>
+        }
       </Row>
     </>
   );
@@ -94,11 +99,12 @@ const EditButton = ({id}) => {
 const DeleteButton = ({id}) => {
   const userData = useSelector((state) => state.userData);
   const dispatch = useDispatch();
+  const history = useHistory();
   const redirect = process?.env?.REACT_APP_REDIRECTS?.split(',');
 
   if (redirect && userData && userData.user && userData.user.email && redirect.includes(userData.user.email)) {
     return (
-      <Button onClick={() => dispatch(deleteBlogPost(id))} style={{"backgroundColor": "red"}}>Delete Post</Button>
+      <Button onClick={() => { dispatch(deleteBlogPost(id)); history.push("/blog/"); }} style={{"backgroundColor": "red"}}>Delete Post</Button>
     )
   }
 
@@ -144,6 +150,8 @@ const Articles = ({ blogs }) => {
       ? articleTitle.replace(/[^0-9a-zA-Z]/g, "")
       : path;
   };
+
+  if (!blogs || !blogs[0]) return (<></>);
 
   return (
     <>

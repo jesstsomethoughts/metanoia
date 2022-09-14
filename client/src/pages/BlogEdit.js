@@ -14,6 +14,8 @@ function BlogEdit() {
   const dispatch = useDispatch();
   const userData = useSelector((state) => state.userData);
   const blogData = useSelector((state) => state.blogData);
+  const errorMsg = useSelector((state) => state.blogData.errorMsg);
+  const [submittedEdit, setSubmittedEdit] = React.useState(false);
   const [postBody, setPostBody] = useState("");
   const [postInfo, setPostInfo] = React.useState({
     title: "",
@@ -51,6 +53,7 @@ function BlogEdit() {
 
   async function submitPost(e) {
     e.preventDefault();
+    setSubmittedEdit(true);
     const id = window.location.href.split('blogedit/')[1];
     try {
       dispatch(updateBlogPost({
@@ -75,16 +78,14 @@ function BlogEdit() {
     });
   }
 
-  // TODO
-  // const SuccessMsg = () => {
-  //   const blogData = useSelector((state) => state.blogData);
-  //   return (
-  //     blogData?.posts?.length ?
-  //       <div className="success-message">Post updated!</div>
-  //       :
-  //       <></>
-  //   );
-  // }
+  const SuccessMsg = () => {
+    return (
+      submittedEdit && Object.keys(errorMsg).length === 0 ?
+        <div className="success-message">Post updated!</div>
+        :
+        <></>
+    );
+  }
 
   return (
     <>
@@ -149,7 +150,7 @@ function BlogEdit() {
               />
           </div>
           <Button variant="primary" type="submit">Update Post</Button>
-          {/* <SuccessMsg/> */}
+          <SuccessMsg/>
         </Form>
           :
           <div className="need-login-message">Please <Link to="/signin">sign in</Link> to edit a blog post.</div>
